@@ -44,3 +44,20 @@ Best suited for **small offices** or **home networks** where users need basic fi
 
 <img src="Module 1/network.jpg" alt="Module 1 Image" width="300"/>
 
+
+
+
+
+🖧 Intermediary Network Devices
+| Device Name        | Role / Function                                                                 | Example (What it Does)                                                                 |
+|--------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| **Repeater**        | Regenerates and retransmits weak signals to extend the distance of the network | Boosts a weak signal across long cables to maintain a strong connection                 |
+| **Hub (Ethernet Hub)** | Multiport repeater; sends data to all connected devices                      | Shares internet to all PCs in a small office, even if not needed                        |
+| **Switch**          | Connects devices in a LAN and forwards data only to the intended device        | Sends files from one computer to another without flooding the whole network             |
+| **Router**          | Connects multiple networks and decides best path for data                      | Connects your home Wi-Fi to the internet and routes data to correct devices             |
+| **Bridge**          | Connects and filters traffic between two network segments                      | Joins two LANs and controls traffic to reduce congestion                                |
+| **Modem**           | Converts digital data to analog and vice versa (used for internet access)      | Lets your computer talk to the internet via telephone or cable line                     |
+| **Access Point (AP)** | Allows wireless devices to connect to a wired network                         | Connects your mobile phone to Wi-Fi in a college or cafe                                |
+| **Firewall**        | Controls what data is allowed in or out based on security rules                | Blocks suspicious websites or hackers from entering your network                        |
+| **Gateway**         | Acts as a translator between different network protocols                       | Allows communication between different types of networks (e.g., LAN to cloud service)   |
+| **Load Balancer**   | Distributes network traffic across multiple servers                            | Helps a website handle many visitors without crashing                                   |
