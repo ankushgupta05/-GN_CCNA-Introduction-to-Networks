@@ -42,4 +42,5 @@ Now, **Computer A** can print documents and also get files from **Computer B**, 
 
 Best suited for **small offices** or **home networks** where users need basic file or printer sharing without complex setup.
 
-![Uploading image.png…]()
+<img src="Module 1/WhatsApp Image 2025-04-30 at 18.47.55_b5141508.jpg" alt="Module 1 Image" width="300"/>
+
