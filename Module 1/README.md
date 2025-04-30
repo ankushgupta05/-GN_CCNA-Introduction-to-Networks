@@ -61,3 +61,24 @@ Best suited for **small offices** or **home networks** where users need basic fi
 | **Firewall**        | Controls what data is allowed in or out based on security rules                | Blocks suspicious websites or hackers from entering your network                        |
 | **Gateway**         | Acts as a translator between different network protocols                       | Allows communication between different types of networks (e.g., LAN to cloud service)   |
 | **Load Balancer**   | Distributes network traffic across multiple servers                            | Helps a website handle many visitors without crashing                                   |
+
+
+
+1.2.5 Network Media
+| **Media Type** | **Description** | **Common Cable Types / Technologies** | **Key Features** | **Example Use Cases** |
+|----------------|-----------------|---------------------------------------|------------------|-----------------------|
+| **Copper Cables** | Data is transmitted as electrical signals through metal wires. | UTP / STP / Coaxial / Cat5e / Cat6 / Cat6a / Cat7 / Cat8 | Cheaper, easy to install, suitable for short distances. | Ethernet LANs, telephone lines, CCTV systems. |
+| **Fiber Optic Cables** | Data is transmitted as light pulses through glass or plastic fibers. | Single-mode (OS1 / OS2) / Multi-mode (OM1 / OM2 / OM3 / OM4 / OM5) | Very fast, supports long distances, immune to electromagnetic interference. | High-speed internet backbones, data centers, long-distance telecommunications. |
+| **Wireless** | Data is transmitted through the air using electromagnetic waves. | Wi-Fi / Bluetooth / Infrared / Radio Waves / Microwaves / Satellite | No physical cables needed, flexible, but can have signal issues. | Mobile networks, Wi-Fi hotspots, satellite communications, remote controls. |
+
+Note:
+
+UTP: Unshielded Twisted Pair
+
+STP: Shielded Twisted Pair
+
+Cat5e/Cat6/etc.: Categories of Ethernet cables with varying performance characteristics.
+
+Single-mode Fiber: Suitable for long-distance communication.
+
+Multi-mode Fiber: Suitable for shorter distances with high data rates.
