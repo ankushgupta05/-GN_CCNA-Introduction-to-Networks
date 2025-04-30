@@ -82,3 +82,46 @@ Cat5e/Cat6/etc.: Categories of Ethernet cables with varying performance characte
 Single-mode Fiber: Suitable for long-distance communication.
 
 Multi-mode Fiber: Suitable for shorter distances with high data rates.
+
+
+
+## 1.2.6 quize
+## 📝 Quiz: Networking Basics
+
+### **Question 1**
+**Which of the following is the name for all computers connected to a network that participate directly in network communication?**
+
+- [ ] Servers  
+- [ ] Intermediary devices  
+- [x] Hosts  
+- [ ] Media  
+
+**✅ Correct Answer:** Hosts  
+**Explanation:** Hosts are all computers connected to a network that participate directly in network communication. :contentReference[oaicite:0]{index=0}&#8203;:contentReference[oaicite:1]{index=1}
+
+---
+
+### **Question 2**
+**When data is encoded as pulses of light, which media is being used to transmit the data?**
+
+- [ ] Wireless  
+- [x] Fiber-optic cable  
+- [ ] Copper cable  
+
+**✅ Correct Answer:** Fiber-optic cable  
+**Explanation:** :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}&#8203;:contentReference[oaicite:4]{index=4}
+
+---
+
+### **Question 3**
+**Which two devices are intermediary devices? (Choose two)**
+
+- [ ] Hosts  
+- [x] Routers  
+- [ ] Servers  
+- [x] Switches  
+
+**✅ Correct Answers:** Routers and Switches  
+**Explanation:** :contentReference[oaicite:5]{index=5} :contentReference[oaicite:6]{index=6}&#8203;:contentReference[oaicite:7]{index=7}
+
+---
