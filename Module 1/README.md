@@ -125,3 +125,46 @@ Multi-mode Fiber: Suitable for shorter distances with high data rates.
 **Explanation:** :contentReference[oaicite:5]{index=5} :contentReference[oaicite:6]{index=6}&#8203;:contentReference[oaicite:7]{index=7}
 
 ---
+
+
+
+
+
+
+📘 Network Devices Overview
+🖥️ End Devices
+End devices are user-operated hardware that serve as the source or destination of data within a network.​
+
+Desktop Computer
+
+Laptop
+
+Printer
+
+IP Phone
+
+Wireless Tablet
+
+TelePresence Endpoint
+
+🔁 Intermediary Devices
+Intermediary devices facilitate the flow of data across the network by directing and managing traffic.​
+
+Wireless Router
+
+LAN Switch
+
+Router
+
+Multilayer Switch
+
+Firewall Appliance
+
+🌐 Network Media
+Network media are the physical or wireless channels through which data travels from one device to another.​
+
+Wireless Media
+
+LAN Media
+
+WAN Media
