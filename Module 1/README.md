@@ -401,3 +401,53 @@ There are several ways to connect to the internet, and the choice depends on the
 
 Each type of connection has its pros and cons, and the choice depends on what you need, where you live, and what’s available in your area!
 
+
+
+
+### 1.6.1 Network Architecture (Made Simple)
+
+When we say "the internet is down", it's often just our own connection problem. Networks are built to be **reliable** so people can work, learn, and connect without interruptions.
+
+**Network Architecture** means:
+- The structure and design of a network.
+- It includes both physical devices (like cables and routers) and software rules (called protocols).
+- A good network must be reliable, grow easily, work well with voice/video, and be secure.
+
+---
+
+### ✅ Key Features of a Good Network:
+
+#### 1. Fault Tolerance (No Break in Service)
+- If one path fails, another path is used (called **redundancy**).
+- **Example**: If one road is blocked, you take a different route.
+- **Packet Switching**: Data is split into packets that take different paths and still reach the same place.
+
+#### 2. Scalability (Can Grow Easily)
+- New users or devices can be added without slowing things down.
+- **Example**: You can add more students to an online class, and everyone still gets a good experience.
+- This is possible because networks use **standard rules (protocols)**.
+
+#### 3. Quality of Service (QoS) – Smooth Communication
+- Some data like voice/video needs to be delivered quickly and smoothly.
+- **Example**: Watching a live video call should not lag, even if others are downloading files.
+- **QoS** helps give priority to important tasks (like calls) during high traffic.
+
+#### 4. Security – Safe and Private
+- Protects both the network (devices & access) and the data.
+- Security has **3 main goals**:
+  - **Confidentiality** – Only the right people can read the data.
+  - **Integrity** – The data is not changed while being sent.
+  - **Availability** – Authorized people can always access the data.
+- **Example**: Your Wi-Fi password stops strangers from using your internet.
+
+---
+
+### Summary Table
+
+| Feature         | What It Means                          | Simple Example                            |
+|----------------|-----------------------------------------|--------------------------------------------|
+| Fault Tolerance| Backup paths if one fails               | Like Google Maps giving a new route        |
+| Scalability     | Add more users without issues           | New students joining online class          |
+| QoS             | Prioritizes important traffic           | Video calls get more attention than emails |
+| Security        | Keeps data and network safe             | Passwords and encryption                   |
+
