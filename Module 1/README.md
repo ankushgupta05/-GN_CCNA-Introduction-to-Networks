@@ -282,15 +282,25 @@ An **extranet** is a network that gives limited access to outsiders, like suppli
 
 ---
 
-### **How They Relate:**
+## Example: School Communication System
 
-Think of it like three circles:
+```
+Internet:
+Imagine you're a student in a school. You can access the school website from home, which is available for anyone on the internet. The website might have things like school news, events, or general information. This is like the Internet — available to anyone, anywhere, in the world.
 
-1. **Intranet**: The innermost circle — Only employees can access it.
-2. **Extranet**: The middle circle — Trusted external partners like suppliers or clients can access it.
-3. **Internet**: The outermost circle — Open to everyone.
+Intranet:
+Now, within the school, there’s a private portal where students and teachers log in to access homework assignments, grades, or internal communication. Only people within the school (students, teachers, and staff) can access this. This is the Intranet — it's private and only accessible within a specific group (like a school).
 
+Extranet:
+Imagine the school wants to collaborate with a company to provide online classes. The school gives the company access to some of its systems (like the course material), but only the company’s employees can access this part of the system, not the general public or all students. This is the Extranet — it's like a private network that allows outsiders (in this case, the company) secure access to certain parts of the school’s system.
 
+Summary:
+Internet: Open to everyone (like a public school website).
+
+Intranet: Private network within a specific organization (like the school's internal portal).
+
+Extranet: Private network that allows specific outside users to access it (like giving a company access to the school’s course materials).
+```
 
 
 
