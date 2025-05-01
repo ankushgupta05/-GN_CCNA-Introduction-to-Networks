@@ -290,3 +290,55 @@ Think of it like three circles:
 2. **Extranet**: The middle circle — Trusted external partners like suppliers or clients can access it.
 3. **Internet**: The outermost circle — Open to everyone.
 
+
+
+
+
+### 1.4.5 Check Your Understanding - Common Types of Networks
+
+---
+
+#### ✅ Question 1  
+**Which network infrastructure provides access to users and end devices in a small geographical area, which is typically a network in a department in an enterprise, a home, or small business?**
+
+| Option  | Answer     | Explanation |
+|---------|------------|-------------|
+| 🅐 Extranet | ❌ Incorrect | An extranet is a private network that allows external users (like suppliers or clients) to access a portion of an organization's internal network. |
+| 🅑 Intranet | ❌ Incorrect | An intranet is a private network within an organization, but it usually covers only internal systems and not the user access in smaller geographical areas. |
+| 🅒 ✅ LAN (Local Area Network) | ✅ Correct | A LAN connects devices within a small area like a department, home, or small office. It’s used for local communication and resource sharing. <br>🔹 *Example:* A home network where computers, printers, and smartphones are connected. |
+| 🅓 WAN (Wide Area Network) | ❌ Incorrect | A WAN connects devices over a larger geographical area, often spanning cities or even countries, and is typically used by organizations for connecting offices across distant locations. |
+
+---
+
+#### ✅ Question 2  
+**Which network infrastructure might an organization use to provide secure and safe access to individuals who work for a different organization but require access to the organization’s data?**
+
+| Option  | Answer     | Explanation |
+|---------|------------|-------------|
+| 🅐 Extranet | ✅ Correct | An extranet allows external organizations, such as suppliers or clients, to securely access certain parts of an organization’s internal network. <br>🔹 *Example:* A supplier can access your company’s inventory system to check stock levels or place an order. |
+| 🅑 Intranet | ❌ Incorrect | An intranet is a private network used within an organization and is not typically used for external parties to access internal data. |
+| 🅒 LAN | ❌ Incorrect | A LAN is used to connect devices within a small geographical area, not for external access. |
+| 🅓 WAN | ❌ Incorrect | A WAN connects devices over a larger area, but it’s not specifically for providing access to external users. |
+
+---
+
+#### ✅ Question 3  
+**Which network infrastructure provides access to other networks over a large geographical area, which is often owned and managed by a telecommunications service provider?**
+
+| Option  | Answer     | Explanation |
+|---------|------------|-------------|
+| 🅐 Extranet | ❌ Incorrect | An extranet is used to provide access to authorized external users but doesn’t cover large geographical areas. |
+| 🅑 Intranet | ❌ Incorrect | An intranet is an internal network for a single organization and doesn’t extend over a large geographical area. |
+| 🅒 LAN | ❌ Incorrect | A LAN is a local network confined to a small geographical area, like a home or office. |
+| 🅓 ✅ WAN (Wide Area Network) | ✅ Correct | A WAN connects networks over a large geographical area, like between cities or countries. It's often managed by telecommunications companies. <br>🔹 *Example:* The internet itself is the largest WAN, connecting computers worldwide. |
+
+---
+
+### 📝 Summary Table
+
+| Question | Correct Answer | Explanation |
+|----------|-----------------|-------------|
+| 1        | LAN             | A LAN is used for connecting devices in small areas like homes, departments, or small offices. |
+| 2        | Extranet        | An extranet provides secure access for external users to an organization’s internal data. |
+| 3        | WAN             | A WAN connects networks over large geographical areas, often spanning cities or countries. |
+
