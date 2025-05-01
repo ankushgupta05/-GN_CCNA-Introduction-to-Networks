@@ -512,3 +512,13 @@ Absolutely, brother! Here's **everything together** — **each question, all opt
 ---
 
 Let me know if you want this in downloadable `.md` format or want me to add emojis/markdown decorations!
+
+
+## ☁️ Cloud Types – Explained Simply
+Cloud computing comes in different types based on who can access the services and how the infrastructure
+| **Cloud Type**     | **Description**                                                                                                                                                                                                                                                                              | **Example (Daily Life)** |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| **🅐 Public Cloud** | Services are available to **everyone** over the internet. Often free or pay-as-you-go. Managed by third-party providers.                                                                                                                                                                      | Google Drive, YouTube – anyone can sign up and use. |
+| **🅑 Private Cloud** | Services are only available to **one organization**. Higher security and control. Can be hosted on-site or managed by a third party.                                                                                                                                                           | A bank’s internal cloud for employees only. |
+| **🅒 Hybrid Cloud** | A **mix of public and private** clouds. Allows sharing of data and applications between them while maintaining privacy where needed.                                                                                                                                                         | A hospital storing patient data privately but using public cloud for training videos. |
+| **🅓 Community Cloud** | Shared by a **specific group of organizations** with similar needs (e.g., healthcare, education). Combines benefits of public and private cloud, with extra policies (like security and compliance).                                                                                       | Universities sharing research data securely in a shared system. |
