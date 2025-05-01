@@ -196,12 +196,72 @@ A logical or specialized port used to connect networks, especially on routers.
 
 # 📘 Check Your Understanding – Network Representations and Topologies
 
-This section contains a detailed explanation of network representation and topology concepts with multiple-choice questions, correct answers, explanations, and examples.
+```
+Network Interface Card (NIC):
+A hardware component in a device that allows it to connect to a network.
+🔹 Example: A laptop’s Wi-Fi card or Ethernet port is a NIC.
 
----
+Physical Port:
+A tangible connector on a device where network cables plug in.
+🔹 Example: The RJ-45 Ethernet jack on a switch or PC.
+
+Interface:
+A logical or specialized port used to connect networks, especially on routers.
+🔹 Example: A router’s GigabitEthernet0/0 interface connects to the internet or another LAN.
+```
+
+
+
+
+
+### ✅ Question 1  
+**Which connection physically connects the end device to the network?**
 
 | Option | Answer | Explanation |
 |--------|--------|-------------|
 | 🅐 Port | ❌ Incorrect | A port is a physical outlet, but by itself, it does not connect the device — it’s where the connection is made. |
 | 🅑 NIC (Network Interface Card) | ✅ Correct | A NIC is the hardware inside the end device that connects it to a network via cables (Ethernet) or wirelessly (Wi-Fi).<br>🔹 *Example:* Ethernet or Wi-Fi card in a laptop or desktop.<br>🔹 *Use:* Required for devices to send/receive data over a network. |
 | 🅒 Interface | ❌ Incorrect | Interfaces are used on networking devices like routers to connect networks, not end devices. |
+
+---
+
+### ✅ Question 2  
+**Which connections are specialized ports on a networking device that connect to individual networks?**
+
+| Option | Answer | Explanation |
+|--------|--------|-------------|
+| 🅐 Port | ❌ Incorrect | Generic term for a physical connector. Not all ports are designed to connect to networks. |
+| 🅑 NIC | ❌ Incorrect | A NIC is for end devices, not networking devices like routers or switches. |
+| 🅒 Interface | ✅ Correct | An interface is a specialized port on routers/switches used to connect to different networks.<br>🔹 *Example:* `GigabitEthernet0/1` on a Cisco router.<br>🔹 *Use:* Connects to LANs, WANs, or the internet. |
+
+---
+
+### ✅ Question 3  
+**Which type of network topology lets you see which end devices are connected to which intermediary devices and what media is being used?**
+
+| Option | Answer | Explanation |
+|--------|--------|-------------|
+| 🅐 Physical topology | ✅ Correct | Shows the actual layout of devices and cables in a network.<br>🔹 *Example:* Diagram showing a PC connected to a switch via Ethernet.<br>🔹 *Use:* For planning, installation, and troubleshooting. |
+| 🅑 Logical topology | ❌ Incorrect | Shows how data flows through the network, not the physical layout. |
+
+---
+
+### ✅ Question 4  
+**Which type of network topology lets you see the actual location of intermediary devices and cable installation?**
+
+| Option | Answer | Explanation |
+|--------|--------|-------------|
+| 🅐 Physical topology | ✅ Correct | It shows the physical layout of cables, devices, and locations.<br>🔹 *Example:* Floor plan with exact router/switch placement and cable paths.<br>🔹 *Use:* Network cabling, hardware installation. |
+| 🅑 Logical topology | ❌ Incorrect | It doesn’t show physical placement, only logical flow (like IP addressing and routing paths). |
+
+---
+
+### 📝 Summary Table
+
+| Question | Correct Answer     | Explanation |
+|----------|--------------------|-------------|
+| 1        | NIC                | NIC physically connects a device to the network. |
+| 2        | Interface          | Interfaces are specialized router/switch ports that connect to networks. |
+| 3        | Physical topology  | Shows which devices are connected and what media (e.g., Ethernet) is used. |
+| 4        | Physical topology  | Shows actual physical layout and cable installation. |
+
