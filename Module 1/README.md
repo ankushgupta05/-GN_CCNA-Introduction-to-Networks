@@ -265,3 +265,28 @@ A logical or specialized port used to connect networks, especially on routers.
 | 3        | Physical topology  | Shows which devices are connected and what media (e.g., Ethernet) is used. |
 | 4        | Physical topology  | Shows actual physical layout and cable installation. |
 
+
+
+
+### Intranet and Extranet: Simple Explanation
+
+#### **Intranet**
+An **intranet** is a private network used within an organization. Only people within the organization, like employees, can access it. It’s used for sharing resources like files, internal tools, and communication.
+
+- **Example:** A company’s internal website where employees can access HR documents or project updates.
+
+#### **Extranet**
+An **extranet** is a network that gives limited access to outsiders, like suppliers or clients, to specific parts of the organization's network. This access is secure but allows collaboration with trusted external partners.
+
+- **Example:** A supplier login page where vendors can check stock levels or place orders.
+
+---
+
+### **How They Relate:**
+
+Think of it like three circles:
+
+1. **Intranet**: The innermost circle — Only employees can access it.
+2. **Extranet**: The middle circle — Trusted external partners like suppliers or clients can access it.
+3. **Internet**: The outermost circle — Open to everyone.
+
