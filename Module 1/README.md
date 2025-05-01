@@ -131,7 +131,8 @@ Multi-mode Fiber: Suitable for shorter distances with high data rates.
 
 
 
-📘 Network Devices Overview
+### 📘 Network Devices Overview
+```
 🖥️ End Devices
 End devices are user-operated hardware that serve as the source or destination of data within a network.​
 
@@ -168,3 +169,25 @@ Wireless Media
 LAN Media
 
 WAN Media
+```
+
+
+
+
+
+### Network Representations
+```
+Here’s a concise summary with examples:
+
+Network Interface Card (NIC):
+A hardware component in a device that allows it to connect to a network.
+🔹 Example: A laptop’s Wi-Fi card or Ethernet port is a NIC.
+
+Physical Port:
+A tangible connector on a device where network cables plug in.
+🔹 Example: The RJ-45 Ethernet jack on a switch or PC.
+
+Interface:
+A logical or specialized port used to connect networks, especially on routers.
+🔹 Example: A router’s GigabitEthernet0/0 interface connects to the internet or another LAN.
+```
