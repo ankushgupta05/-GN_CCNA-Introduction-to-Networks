@@ -451,3 +451,14 @@ When we say "the internet is down", it's often just our own connection problem. 
 | QoS             | Prioritizes important traffic           | Video calls get more attention than emails |
 | Security        | Keeps data and network safe             | Passwords and encryption                   |
 
+
+
+
+## 1.6.6 Check Your Understanding – Reliable Networks
+Check your understanding of reliable networks by reviewing the questions, answers, and explanations below.
+| No. | Question | Options | ✅ Correct Answer | 💡 Explanation |
+|-----|----------|---------|------------------|----------------|
+| 1 | When designers follow accepted standards and protocols, which of the four basic characteristics of network architecture is achieved? | - Fault tolerance  <br> - ✅ Scalability <br> - QoS <br> - Security | ✅ Scalability | Using common standards and protocols makes it easier to **add new devices or users** without performance issues. |
+| 2 | Confidentiality, integrity, and availability are requirements of which of the four basic characteristics of network architecture? | - Fault tolerance <br> - Scalability <br> - QoS <br> - ✅ Security | ✅ Security | These are the **core principles of security**: only the right people get data (confidentiality), no tampering (integrity), and available when needed (availability). |
+| 3 | With which type of policy, a router can manage the flow of data and voice traffic, giving priority to voice communications if the network experiences congestion? | - Fault tolerance <br> - Scalability <br> - ✅ QoS <br> - Security | ✅ QoS (Quality of Service) | QoS ensures **important traffic like voice** is sent first during congestion for smooth experience. |
+| 4 | Having multiple paths to a destination is known as redundancy. This is an example of which characteristic of network architecture? | ✅ Fault tolerance <br> - Scalability <br> - QoS <br> - Security | ✅ Fault tolerance | Fault tolerance means **network keeps working** even if one part fails, by using alternate paths (redundancy). |
