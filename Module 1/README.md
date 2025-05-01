@@ -455,10 +455,60 @@ When we say "the internet is down", it's often just our own connection problem. 
 
 
 ## 1.6.6 Check Your Understanding – Reliable Networks
-Check your understanding of reliable networks by reviewing the questions, answers, and explanations below.
-| No. | Question | Options | ✅ Correct Answer | 💡 Explanation |
-|-----|----------|---------|------------------|----------------|
-| 1 | When designers follow accepted standards and protocols, which of the four basic characteristics of network architecture is achieved? | - Fault tolerance  <br> - ✅ Scalability <br> - QoS <br> - Security | ✅ Scalability | Using common standards and protocols makes it easier to **add new devices or users** without performance issues. |
-| 2 | Confidentiality, integrity, and availability are requirements of which of the four basic characteristics of network architecture? | - Fault tolerance <br> - Scalability <br> - QoS <br> - ✅ Security | ✅ Security | These are the **core principles of security**: only the right people get data (confidentiality), no tampering (integrity), and available when needed (availability). |
-| 3 | With which type of policy, a router can manage the flow of data and voice traffic, giving priority to voice communications if the network experiences congestion? | - Fault tolerance <br> - Scalability <br> - ✅ QoS <br> - Security | ✅ QoS (Quality of Service) | QoS ensures **important traffic like voice** is sent first during congestion for smooth experience. |
-| 4 | Having multiple paths to a destination is known as redundancy. This is an example of which characteristic of network architecture? | ✅ Fault tolerance <br> - Scalability <br> - QoS <br> - Security | ✅ Fault tolerance | Fault tolerance means **network keeps working** even if one part fails, by using alternate paths (redundancy). |
+Absolutely, brother! Here's **everything together** — **each question, all options, the correct answer, and explanations**, ready to copy-paste into your `README.md` file.
+
+---
+
+## ✅ 1.6.6 Check Your Understanding – Reliable Networks
+
+---
+
+### 📘 Question 1  
+**Q: When designers follow accepted standards and protocols, which of the four basic characteristics of network architecture is achieved?**
+
+| Option | Answer | Explanation |
+|--------|--------|-------------|
+| 🅐 Fault tolerance | ❌ Incorrect | Fault tolerance is about continuing service during failures. |
+| 🅑 ✅ Scalability | ✅ Correct | Standards and protocols help networks grow easily by ensuring compatibility. |
+| 🅒 QoS | ❌ Incorrect | QoS manages service quality, not growth. |
+| 🅓 Security | ❌ Incorrect | Security protects systems, but it’s not about protocols and growth. |
+
+---
+
+### 📘 Question 2  
+**Q: Confidentiality, integrity, and availability are requirements of which of the four basic characteristics of network architecture?**
+
+| Option | Answer | Explanation |
+|--------|--------|-------------|
+| 🅐 Fault tolerance | ❌ Incorrect | Fault tolerance deals with recovery from failure. |
+| 🅑 Scalability | ❌ Incorrect | Scalability means supporting more users without performance issues. |
+| 🅒 QoS | ❌ Incorrect | QoS ensures good performance for time-sensitive data. |
+| 🅓 ✅ Security | ✅ Correct | These three (CIA) are the key pillars of network security. |
+
+---
+
+### 📘 Question 3  
+**Q: With which type of policy can a router manage the flow of data and voice traffic, giving priority to voice communications if the network experiences congestion?**
+
+| Option | Answer | Explanation |
+|--------|--------|-------------|
+| 🅐 Fault tolerance | ❌ Incorrect | It helps maintain service during failures, not manage traffic types. |
+| 🅑 Scalability | ❌ Incorrect | It deals with network expansion, not congestion handling. |
+| 🅒 ✅ QoS (Quality of Service) | ✅ Correct | QoS gives priority to time-sensitive data like voice/video. |
+| 🅓 Security | ❌ Incorrect | Security protects network and data, not traffic flow. |
+
+---
+
+### 📘 Question 4  
+**Q: Having multiple paths to a destination is known as redundancy. This is an example of which characteristic of network architecture?**
+
+| Option | Answer | Explanation |
+|--------|--------|-------------|
+| 🅐 ✅ Fault tolerance | ✅ Correct | Redundant paths allow the network to keep working even if one path fails. |
+| 🅑 Scalability | ❌ Incorrect | Scalability is about adding users/services easily. |
+| 🅒 QoS | ❌ Incorrect | QoS ensures performance, not failover. |
+| 🅓 Security | ❌ Incorrect | Security is about protection, not backup routing. |
+
+---
+
+Let me know if you want this in downloadable `.md` format or want me to add emojis/markdown decorations!
