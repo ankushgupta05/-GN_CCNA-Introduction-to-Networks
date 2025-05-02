@@ -69,3 +69,29 @@ These devices use something called **Cisco IOS**, which is **command-based** (CL
 - Both let you control the device, but in different ways (GUI vs CLI).
 
 
+
+## 🔐 2.1.4 Access Methods
+
+By default, a **Cisco switch** will allow devices to talk to each other **without any setup**. For example, if you connect two properly set-up computers to a new switch, they'll start communicating automatically.
+
+But for **security and control**, we always configure and manage the switch using special access methods.
+
+### 👇 Let's look at 3 common ways to access a Cisco device:
+
+| 🔧 **Method** | 📄 **Description** | 🧠 **Real-Life Example** |
+|--------------|--------------------|--------------------------|
+| **Console** | Physical port on the switch used for direct access. It’s an **out-of-band** method, meaning it works even when the network isn't set up yet. | Think of it like plugging a USB cable from your computer to a printer to set it up directly, before connecting it to Wi-Fi. |
+| **SSH (Secure Shell)** | A **secure, remote** way to connect over the network using encrypted communication. The device must have IP settings already. | Like using a banking app on your phone — it connects over the internet but keeps your data safe using encryption. |
+| **Telnet** | Also a **remote** method, but **not secure**. All data (like passwords) is sent in plain text. Use **only in labs**, never on live networks. | Imagine sending your ATM PIN through a postcard — it works, but anyone can read it! Use SSH instead. |
+
+📝 **Note:** Some older devices also have an **AUX port** (like a backup console port) for out-of-band access using a telephone modem. Rarely used today.
+
+---
+
+### 🚦 In Simple Terms:
+- Use **Console** when setting up a device for the first time (offline setup).
+- Use **SSH** when managing devices over a network (secure online access).
+- **Avoid Telnet** in real environments because it's not safe.
+
+
+
