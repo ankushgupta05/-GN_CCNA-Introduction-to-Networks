@@ -588,5 +588,65 @@ You live in a **village or remote area** with **no wired internet**, but your **
 
 ---
 
-> 💬 Still confused? Ask with your house setup and we’ll help you choose the best option!
+> 💬 Still confused? Ask with your house setup and we’ll help you choose the best option
+
+
+
+
+Here's the answer key for the **"1.7.10 Check Your Understanding - Network Trends"** section in the same format you requested:
+
+---
+
+### Q1: Which feature is a good conferencing tool to use with others who are located elsewhere in your city, or even in another country?
+
+| Option | Answer                 | Explanation                                                                              |
+| ------ | ---------------------- | ---------------------------------------------------------------------------------------- |
+| 🅐     | BYOD                   | ❌ Incorrect – BYOD means using personal devices, not specifically for conferencing.      |
+| 🅑     | ✅ Video communications | ✅ Correct – Video communication tools like Zoom, Webex, etc., are used for conferencing. |
+| 🅒     | Cloud computing        | ❌ Incorrect – Cloud is for storage/computing, not mainly for live conferencing.          |
+
+---
+
+### Q2: Which feature describes using personal tools to access information and communicate across a business or campus network?
+
+| Option | Answer               | Explanation                                                                                                    |
+| ------ | -------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 🅐     | ✅ BYOD               | ✅ Correct – BYOD (Bring Your Own Device) allows users to use their own devices on a company or campus network. |
+| 🅑     | Video communications | ❌ Incorrect – This is about conferencing, not personal device access.                                          |
+| 🅒     | Cloud computing      | ❌ Incorrect – This is more about data access and storage on the cloud.                                         |
+
+---
+
+### Q3: Which feature contains options such as Public, Private, Custom and Hybrid?
+
+| Option | Answer               | Explanation                                                   |
+| ------ | -------------------- | ------------------------------------------------------------- |
+| 🅐     | BYOD                 | ❌ Incorrect – BYOD relates to device usage, not cloud models. |
+| 🅑     | Video communications | ❌ Incorrect – Video communication has no such models.         |
+| 🅒     | ✅ Cloud computing    | ✅ Correct – These are types of cloud deployment models.       |
+
+---
+
+### Q4: Which feature is being used when connecting a device to the network using an electrical outlet?
+
+| Option | Answer                | Explanation                                                               |
+| ------ | --------------------- | ------------------------------------------------------------------------- |
+| 🅐     | Smart home technology | ❌ Incorrect – This refers to automation, not networking method.           |
+| 🅑     | ✅ Powerline           | ✅ Correct – Powerline networking uses electrical wiring to transmit data. |
+| 🅒     | Wireless broadband    | ❌ Incorrect – Wireless broadband uses mobile signal, not power outlets.   |
+
+---
+
+### Q5: Which feature uses the same cellular technology as a smartphone?
+
+| Option | Answer                | Explanation                                                     |
+| ------ | --------------------- | --------------------------------------------------------------- |
+| 🅐     | Smart home technology | ❌ Incorrect – Smart homes use Wi-Fi or Zigbee, not cellular.    |
+| 🅑     | Powerline             | ❌ Incorrect – Powerline uses electrical wiring, not cellular.   |
+| 🅒     | ✅ Wireless broadband  | ✅ Correct – It uses 3G/4G/5G cellular tech to deliver internet. |
+
+---
+
+Let me know if you'd like these saved in a `README.md` format or as a table image!
+
 
