@@ -89,3 +89,67 @@ This activity helps you practice moving between Cisco IOS modes using real comma
 
 > 🧠 Tip: Think of IOS modes like nested menus in your phone's settings – each step gets you deeper into specific options, and each exit or end takes you back a level or all the way out.
 
+
+
+
+## ✅ 2.2.8 Check Your Understanding – IOS Navigation
+
+### Question 1  
+Which IOS mode allows access to all commands and features?
+
+Option | Answer | Explanation  
+------ | ------ | -----------  
+🅐 Global configuration mode | ❌ Incorrect | This mode allows setting device-wide configurations, but not all commands/features are accessible here.  
+🅑 Interface subconfiguration mode | ❌ Incorrect | This is a specific part of configuration, not where full access is granted.  
+🅒 Line console subconfiguration mode | ❌ Incorrect | This is for line settings only, limited scope.  
+🅓 Privileged EXEC mode | ✅ Correct | This mode allows access to all monitoring, configuration, and management commands.  
+🅔 User EXEC mode | ❌ Incorrect | View-only mode; limited command access.  
+🔹 Example: Needed to enter configuration mode using `configure terminal`.  
+🔹 Use: Full admin control of the device.
+
+---
+
+### Question 2  
+Which IOS mode are you in if the `Switch(config)#` prompt is displayed?
+
+Option | Answer | Explanation  
+------ | ------ | -----------  
+🅐 Global configuration mode | ✅ Correct | The `(config)#` prompt indicates global configuration mode.  
+🅑 Interface subconfiguration mode | ❌ Incorrect | Would show `(config-if)#` in prompt.  
+🅒 Line console subconfiguration mode | ❌ Incorrect | Would show `(config-line)#`.  
+🅓 Privileged EXEC mode | ❌ Incorrect | Shows as `Switch#`, no `(config)` in prompt.  
+🅔 User EXEC mode | ❌ Incorrect | Shows as `Switch>`.  
+🔹 Example: `Switch# configure terminal` takes you here.  
+🔹 Use: To configure device-wide settings.
+
+---
+
+### Question 3  
+Which IOS mode are you in if the `Switch>` prompt is displayed?
+
+Option | Answer | Explanation  
+------ | ------ | -----------  
+🅐 Global configuration mode | ❌ Incorrect | Would show `Switch(config)#`.  
+🅑 Interface subconfiguration mode | ❌ Incorrect | Would show `Switch(config-if)#`.  
+🅒 Line console subconfiguration mode | ❌ Incorrect | Would show `Switch(config-line)#`.  
+🅓 Privileged EXEC mode | ❌ Incorrect | Would show `Switch#`.  
+🅔 User EXEC mode | ✅ Correct | The `>` symbol indicates User EXEC mode.  
+🔹 Example: First mode after accessing the CLI.  
+🔹 Use: Limited commands like `ping` or `show`.
+
+---
+
+### Question 4  
+Which two commands would return you to the **privileged EXEC** prompt regardless of the configuration mode you are in? (Choose two.)
+
+Option | Answer | Explanation  
+------ | ------ | -----------  
+🅐 CTRL+Z | ✅ Correct | This shortcut exits all modes and returns to privileged EXEC.  
+🅑 disable | ❌ Incorrect | This returns you to user EXEC, not privileged EXEC.  
+🅒 enable | ❌ Incorrect | Used to *enter* privileged EXEC from user EXEC, not to return to it.  
+🅓 end | ✅ Correct | This command ends all configuration modes and returns to privileged EXEC.  
+🅔 exit | ❌ Incorrect | This exits one level up, not always directly to privileged EXEC.  
+🔹 Example: Use `end` or `Ctrl+Z` to return quickly to privileged EXEC mode.  
+🔹 Use: Helps you skip multiple "exit" steps.
+
+---
