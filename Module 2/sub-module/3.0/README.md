@@ -197,3 +197,64 @@ Understanding how to read and interpret IOS command syntax is essential for conf
 ```bash
 Switch(config-if)# switchport port-security aging { static | time time | type {absolute | inactivity} }
 
+
+
+## ✅ 2.3.5 Hot Keys and Shortcuts
+
+The Cisco IOS CLI provides keyboard shortcuts (hot keys) to speed up configuration, editing, and navigation. Below is a summary of the most commonly used hot keys and their functions.
+
+### 🔹 Command Line Editing Shortcuts
+
+| Keystroke | Description |
+|-----------|-------------|
+| **Tab** | Completes a partially typed command or keyword |
+| **Backspace** | Deletes the character to the left of the cursor |
+| **Ctrl+D** | Deletes the character at the cursor |
+| **Ctrl+K** | Deletes all characters from the cursor to the end of the command line |
+| **Ctrl+U** or **Ctrl+X** | Deletes all characters from the cursor to the beginning of the line |
+| **Ctrl+W** | Deletes the word to the left of the cursor |
+| **Esc B** | Moves the cursor backward one word |
+| **Esc F** | Moves the cursor forward one word |
+| **Left Arrow** or **Ctrl+B** | Moves the cursor one character to the left |
+| **Right Arrow** or **Ctrl+F** | Moves the cursor one character to the right |
+| **Ctrl+A** | Moves the cursor to the beginning of the line |
+| **Ctrl+E** | Moves the cursor to the end of the line |
+
+---
+
+### 🔹 Command History Navigation
+
+| Keystroke | Description |
+|-----------|-------------|
+| **Up Arrow** or **Ctrl+P** | Recalls the previous command from the history buffer |
+| **Down Arrow** or **Ctrl+N** | Moves forward to the next command in the history buffer |
+
+---
+
+### 🔹 Redisplay and Interrupt
+
+| Keystroke | Description |
+|-----------|-------------|
+| **Ctrl+R**, **Ctrl+L**, or **Ctrl+I** | Redisplays the system prompt and current command line after an interruption |
+| **Ctrl+C** | Aborts current command or exits configuration mode to privileged EXEC mode |
+| **Ctrl+Shift+6** | Break sequence to abort operations like ping, traceroute, DNS lookup |
+
+---
+
+### 🔹 When Output Shows `--More--` Prompt
+
+| Keystroke | Description |
+|-----------|-------------|
+| **Enter** | Displays the next line of output |
+| **Spacebar** | Displays the next screen of output |
+| **Q** | Quits the output and returns to the prompt |
+| **Any other key** (except "y") | Displays the next screen (same as Spacebar) |
+| **Y** | Acts like Spacebar, also confirms "yes" when prompted |
+
+---
+
+✅ **Tip:** You can abbreviate commands as long as the abbreviation is unique.  
+🔹 Example: `configure terminal` → `conf t`  
+But `con` is not valid because it's ambiguous.
+
+
