@@ -153,3 +153,47 @@ Option | Answer | Explanation
 🔹 Use: Helps you skip multiple "exit" steps.
 
 ---
+
+
+
+## ✅ 2.3.2 IOS Command Syntax Check
+
+Understanding how to read and interpret IOS command syntax is essential for configuring Cisco devices accurately. Below is a breakdown of command documentation conventions and examples.
+
+### 📘 Syntax Conventions
+
+| Convention | Meaning | Example | Explanation |
+|-----------|---------|---------|-------------|
+| **boldface** | Literal commands and keywords entered exactly as shown | **ping** | Type the command exactly as written |
+| *italics* | User-supplied argument | *ip-address* | You provide a value, like 192.168.1.1 |
+| [x] | Optional element | [vrf NAME] | You may include it, but it's not required |
+| {x} | Required choice between options | {static \| dynamic} | Must choose one of the enclosed options |
+| [x {y \| z}] | Optional element with required choice | [mode {access \| trunk}] | Optional as a whole, but if used, one choice is required |
+
+---
+
+### 📘 Example Command: `description string`
+
+| Syntax | Explanation |
+|--------|-------------|
+| **description** *string* | `description` is the literal command. `string` is a user-supplied description for the interface. |
+| 🔹 Example: | `description Connects to the main headquarter office switch` |
+
+---
+
+### 📘 Other Examples
+
+| Command | Explanation |
+|--------|-------------|
+| **ping** *ip-address* | Sends ICMP Echo Requests to the specified IP. |
+| 🔹 Example: | `ping 10.10.10.5` |
+| **traceroute** *ip-address* | Traces the route packets take to reach the IP. |
+| 🔹 Example: | `traceroute 192.168.254.254` |
+
+---
+
+### 📘 Complex Command Example
+
+```bash
+Switch(config-if)# switchport port-security aging { static | time time | type {absolute | inactivity} }
+
