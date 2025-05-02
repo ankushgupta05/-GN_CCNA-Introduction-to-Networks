@@ -812,3 +812,182 @@ External threats like **Viruses, Worms, Trojans**, and **Denial of Service (DoS)
 
 ## The IT Professional
 The **CCNA certification** prepares you for various networking jobs, similar to how a degree in a specialized field opens up professional opportunities.
+
+
+
+
+## Here are the answers to the **1.10.2 Module Quiz - Networking Today** in the specified format with explanations:
+
+---
+
+### Q1: During a routine inspection, a technician discovered that software was secretly collecting data about websites visited. Which type of threat is this?
+
+| Option | Answer          | Explanation                                                                     |
+| ------ | --------------- | ------------------------------------------------------------------------------- |
+| 🅐     | DoS attack      | ❌ Incorrect – DoS disrupts services, not collects user data.                    |
+| 🅑     | Identity theft  | ❌ Incorrect – Involves stealing personal credentials, not tracking websites.    |
+| 🅒     | ✅ Spyware       | ✅ Correct – Spyware secretly monitors user activity.                            |
+| 🅓     | Zero-day attack | ❌ Incorrect – Zero-day exploits unknown vulnerabilities, not tracking behavior. |
+
+---
+
+### Q2: Which term refers to a network that provides secure access to the corporate offices by suppliers, customers and collaborators?
+
+| Option | Answer      | Explanation                                                        |
+| ------ | ----------- | ------------------------------------------------------------------ |
+| 🅐     | Internet    | ❌ Incorrect – Internet is public, not restricted to collaborators. |
+| 🅑     | Intranet    | ❌ Incorrect – Intranet is for internal use only.                   |
+| 🅒     | ✅ Extranet  | ✅ Correct – Extranet allows limited access to external partners.   |
+| 🅓     | Extendednet | ❌ Incorrect – Not a standard term in networking.                   |
+
+---
+
+### Q3: A corporation allows personal devices to access resources. What networking trend is this?
+
+| Option | Answer                  | Explanation                                                             |
+| ------ | ----------------------- | ----------------------------------------------------------------------- |
+| 🅐     | Cloud computing         | ❌ Incorrect – Refers to storing/processing data on remote servers.      |
+| 🅑     | Online collaboration    | ❌ Incorrect – Refers to shared workspaces and tools.                    |
+| 🅒     | ✅ Bring your own device | ✅ Correct – BYOD means using personal devices on the corporate network. |
+| 🅓     | Video conferencing      | ❌ Incorrect – It's a communication tool, not about device access.       |
+
+---
+
+### Q4: What is an ISP?
+
+| Option | Answer                                  | Explanation                                                     |
+| ------ | --------------------------------------- | --------------------------------------------------------------- |
+| 🅐     | Standards body                          | ❌ Incorrect – This refers to organizations like IEEE.           |
+| 🅑     | Protocol                                | ❌ Incorrect – ISP is not a protocol.                            |
+| 🅒     | ✅ Organization enabling internet access | ✅ Correct – ISPs provide internet connectivity to users.        |
+| 🅓     | Networking device                       | ❌ Incorrect – ISP is a service provider, not a hardware device. |
+
+---
+
+### Q5: In which scenario would using a WISP be recommended?
+
+| Option | Answer                                 | Explanation                                                              |
+| ------ | -------------------------------------- | ------------------------------------------------------------------------ |
+| 🅐     | Internet cafe in a city                | ❌ Incorrect – Likely has wired access.                                   |
+| 🅑     | ✅ Farm in rural area without broadband | ✅ Correct – WISP is useful in remote areas lacking wired infrastructure. |
+| 🅒     | Home with many wireless devices        | ❌ Incorrect – A typical ISP setup would suffice.                         |
+| 🅓     | Apartment with cable                   | ❌ Incorrect – Cable internet is more common and practical here.          |
+
+---
+
+### Q6: Which network characteristic enables growth without impacting current users?
+
+| Option | Answer             | Explanation                                                    |
+| ------ | ------------------ | -------------------------------------------------------------- |
+| 🅐     | Reliability        | ❌ Incorrect – Reliability is about uptime, not growth.         |
+| 🅑     | ✅ Scalability      | ✅ Correct – Scalability allows adding more users/applications. |
+| 🅒     | Quality of service | ❌ Incorrect – QoS handles prioritization, not growth.          |
+| 🅓     | Accessibility      | ❌ Incorrect – Accessibility refers to ease of access.          |
+
+---
+
+### Q7: Network continues after fiber is cut. What feature is shown?
+
+| Option | Answer            | Explanation                                                           |
+| ------ | ----------------- | --------------------------------------------------------------------- |
+| 🅐     | QoS               | ❌ Incorrect – QoS is about prioritizing traffic.                      |
+| 🅑     | Scalability       | ❌ Incorrect – Scalability is about growing a network.                 |
+| 🅒     | Security          | ❌ Incorrect – Not related to physical damage or uptime.               |
+| 🅓     | ✅ Fault tolerance | ✅ Correct – Network rerouted traffic when cable was damaged.          |
+| 🅔     | Integrity         | ❌ Incorrect – Integrity relates to data accuracy, not network repair. |
+
+---
+
+### Q8: What are two characteristics of a scalable network?
+
+| Option | Answer | Explanation                                                         |
+| ------ | ------ | ------------------------------------------------------------------- |
+| 🅐     | ❌      | Overloaded networks are not scalable.                               |
+| 🅑     | ✅      | Scalability allows growth without affecting performance.            |
+| 🅒     | ❌      | Scalability does not reduce reliability.                            |
+| 🅓     | ✅      | Modular devices support easy expansion, a key trait of scalability. |
+| 🅔     | ❌      | Limited applications go against the idea of scalability.            |
+
+---
+
+### Q9: Which device determines the path for messages?
+
+| Option | Answer     | Explanation                                                         |
+| ------ | ---------- | ------------------------------------------------------------------- |
+| 🅐     | ✅ Router   | ✅ Correct – Routers forward data between networks using best paths. |
+| 🅑     | Firewall   | ❌ Incorrect – Firewalls filter traffic for security.                |
+| 🅒     | Web server | ❌ Incorrect – Hosts websites, doesn’t route traffic.                |
+| 🅓     | DSL modem  | ❌ Incorrect – Modems connect home networks to ISPs.                 |
+
+---
+
+### Q10: Which two options don’t require physical cables?
+
+| Option | Answer        | Explanation                                                      |
+| ------ | ------------- | ---------------------------------------------------------------- |
+| 🅐     | ❌ DSL         | Requires phone lines.                                            |
+| 🅑     | ✅ Cellular    | ✅ Correct – Cellular networks work wirelessly via mobile towers. |
+| 🅒     | ✅ Satellite   | ✅ Correct – Communicates via space satellites, no cables needed. |
+| 🅓     | ❌ Dialup      | Requires a phone line connection.                                |
+| 🅔     | ❌ Leased line | Requires physical wiring to the premises.                        |
+
+---
+
+### Q11: What network must be accessed for online shopping?
+
+| Option | Answer     | Explanation                                                   |
+| ------ | ---------- | ------------------------------------------------------------- |
+| 🅐     | Intranet   | ❌ Incorrect – Intranet is internal to an organization.        |
+| 🅑     | ✅ Internet | ✅ Correct – Online shopping is done over the public Internet. |
+| 🅒     | Extranet   | ❌ Incorrect – Limited access for partners, not shopping.      |
+| 🅓     | LAN        | ❌ Incorrect – LAN is local; cannot reach e-commerce sites.    |
+
+---
+
+### Q12: How does BYOD change business networks?
+
+| Option | Answer | Explanation                                                                   |
+| ------ | ------ | ----------------------------------------------------------------------------- |
+| 🅐     | ❌      | BYOD does not require laptop-only setups.                                     |
+| 🅑     | ❌      | Security responsibility still lies with the organization.                     |
+| 🅒     | ❌      | BYOD devices may be cheaper or already owned.                                 |
+| 🅓     | ✅      | ✅ Correct – BYOD allows flexible access from anywhere using personal devices. |
+
+---
+
+### Q13: Which allows secure remote access to a network?
+
+| Option | Answer | Explanation                                                         |
+| ------ | ------ | ------------------------------------------------------------------- |
+| 🅐     | ACL    | ❌ Incorrect – ACLs control access, don’t provide remote access.     |
+| 🅑     | IPS    | ❌ Incorrect – IPS detects and blocks threats.                       |
+| 🅒     | ✅ VPN  | ✅ Correct – VPN creates secure, encrypted remote access tunnels.    |
+| 🅓     | BYOD   | ❌ Incorrect – BYOD is about device usage, not secure remote access. |
+
+---
+
+### Q14: What is the Internet?
+
+| Option | Answer           | Explanation                                                    |
+| ------ | ---------------- | -------------------------------------------------------------- |
+| 🅐     | Ethernet         | ❌ Incorrect – Ethernet is a local connection standard.         |
+| 🅑     | Mobile access    | ❌ Incorrect – Internet includes more than just mobile devices. |
+| 🅒     | ✅ Global network | ✅ Correct – Internet connects millions of global networks.     |
+| 🅓     | Private network  | ❌ Incorrect – The internet is public, not private.             |
+
+---
+
+### Q15: What are two functions of end devices?
+
+| Option | Answer | Explanation                                                         |
+| ------ | ------ | ------------------------------------------------------------------- |
+| 🅐     | ✅      | ✅ Correct – End devices generate the data (emails, searches, etc.). |
+| 🅑     | ❌      | Routing is done by intermediary devices, not end devices.           |
+| 🅒     | ❌      | Firewalls filter data, not end devices.                             |
+| 🅓     | ✅      | ✅ Correct – They are the human interface (PCs, phones, etc.).       |
+| 🅔     | ❌      | Media provides the channel, not end devices.                        |
+
+---
+
+Let me know if you want this added to your README.md or exported to a file.
+
