@@ -13,3 +13,26 @@ Cisco devices have two main modes in CLI (Command Line Interface):
 
 You must switch to **Privileged EXEC Mode** to configure devices.
 
+
+
+## ⚙️ 2.2.2 Configuration and Subconfiguration Modes – With Daily Life Examples
+
+To **configure a Cisco device**, you need to go beyond just viewing settings. You must enter **Global Configuration Mode**, and from there, you can access more specific settings through **Subconfiguration Modes**.
+
+### 🧾 Modes Overview
+
+| Mode                         | Prompt Example             | Description                                                                                 | Daily Life Example                                                                 |
+|------------------------------|----------------------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| **Global Configuration Mode** | `Switch(config)#`          | Used to change overall settings on the device.                                              | Like going into the settings menu of your phone to change general preferences.     |
+| **Line Configuration Mode**   | `Switch(config-line)#`     | Used to configure access methods like console, SSH, or Telnet.                              | Like changing the way you unlock your phone – password, fingerprint, or face ID.   |
+| **Interface Configuration Mode** | `Switch(config-if)#`   | Used to configure a specific port or interface on the switch or router.                    | Like changing Wi-Fi settings for one specific network in your phone.               |
+
+### 🧠 Summary:
+- All configuration starts from **Global Config Mode**.
+- From there, you go into more detailed settings using **Subconfiguration Modes**.
+- The **prompt changes** depending on which mode you're in:
+  - Global: `(config)#`
+  - Line: `(config-line)#`
+  - Interface: `(config-if)#`
+
+This structure helps keep things organized and focused when configuring different parts of a Cisco device.
