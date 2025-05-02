@@ -749,3 +749,35 @@ Just like locking your house with a door lock, grill, and alarm — using **mult
 
 Let me know if you'd like me to include diagrams, quiz questions, or visual examples too!
 
+
+Here are the answers in the format you've requested:
+
+---
+
+| Question                                                                                                 | Option                             | Answer      | Explanation                                                                                   |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------- | ----------- | --------------------------------------------------------------------------------------------- |
+| Which attack slows down or crashes equipment and programs?                                               | 🅐 Firewall                        | ❌ Incorrect | A firewall is a security device that blocks unauthorized access, not an attack.               |
+|                                                                                                          | 🅑 Virus, worm, or Trojan horse    | ❌ Incorrect | These are malicious codes, but they don't focus on slowing down or crashing systems directly. |
+|                                                                                                          | 🅒 Zero-day or Zero-hour           | ❌ Incorrect | Zero-day attacks exploit vulnerabilities but don’t necessarily crash systems immediately.     |
+|                                                                                                          | 🅓 ✅ Denial of Service (DoS)       | ✅ Correct   | A DoS attack floods systems, causing them to slow down or crash.                              |
+| Which option creates a secure connection for remote workers?                                             | 🅐 Firewall                        | ❌ Incorrect | A firewall secures networks but doesn’t create secure remote connections.                     |
+|                                                                                                          | 🅑 Virus, worm, or Trojan horse    | ❌ Incorrect | These are types of attacks, not security solutions for remote workers.                        |
+|                                                                                                          | 🅒 Zero-day or Zero-hour           | ❌ Incorrect | Zero-day attacks are threats, not solutions for remote access.                                |
+|                                                                                                          | 🅓 ✅ Virtual Private Network (VPN) | ✅ Correct   | VPN creates secure connections for remote workers, ensuring encrypted traffic.                |
+| Which option blocks unauthorized access to your network?                                                 | 🅐 ✅ Firewall                      | ✅ Correct   | A firewall blocks unauthorized access, monitoring both inbound and outbound traffic.          |
+|                                                                                                          | 🅑 Virus, worm, or Trojan horse    | ❌ Incorrect | These are threats, not security measures that block unauthorized access.                      |
+|                                                                                                          | 🅒 Zero-day or Zero-hour           | ❌ Incorrect | Zero-day attacks exploit vulnerabilities, but don't block unauthorized access directly.       |
+|                                                                                                          | 🅓 Virtual Private Network (VPN)   | ❌ Incorrect | VPN ensures secure communication, but doesn’t block unauthorized access to the network.       |
+| Which option describes a network attack that occurs on the first day that a vulnerability becomes known? | 🅐 Firewall                        | ❌ Incorrect | A firewall is used to protect, not to describe a type of attack.                              |
+|                                                                                                          | 🅑 Virus, worm, or Trojan horse    | ❌ Incorrect | These are malicious software types but not related to attacks exploiting new vulnerabilities. |
+|                                                                                                          | 🅒 ✅ Zero-day or Zero-hour         | ✅ Correct   | Zero-day attacks target vulnerabilities as soon as they are discovered.                       |
+|                                                                                                          | 🅓 Virtual Private Network (VPN)   | ❌ Incorrect | VPN is a secure connection method, not an attack on a vulnerability.                          |
+| Which option describes malicious code running on user devices?                                           | 🅐 Firewall                        | ❌ Incorrect | A firewall prevents malicious access but isn’t malicious code itself.                         |
+|                                                                                                          | 🅑 ✅ Virus, worm, or Trojan horse  | ✅ Correct   | These are types of malicious software that can infect user devices.                           |
+|                                                                                                          | 🅒 Zero-day or Zero-hour           | ❌ Incorrect | Zero-day is an attack, not a type of malicious software on devices.                           |
+|                                                                                                          | 🅓 Virtual Private Network (VPN)   | ❌ Incorrect | VPNs protect communication but don’t involve malicious code on devices.                       |
+
+---
+
+I hope this helps! Let me know if you need further clarifications.
+
