@@ -62,3 +62,30 @@ Cisco IOS uses different modes for different tasks. Knowing how to move between 
 
 This system helps keep your configurations organized and controlled — just like navigating different menus and settings on your smartphone.
 
+
+
+## 🧪 2.2.7 Syntax Checker – Navigate Between IOS Modes (With Real-Life Examples)
+
+This activity helps you practice moving between Cisco IOS modes using real commands. Here's a step-by-step breakdown with simple daily life comparisons.
+
+| Step | Command                        | IOS Mode Entered                     | Prompt                        | Real-Life Example                                                       |
+|------|--------------------------------|--------------------------------------|-------------------------------|-------------------------------------------------------------------------|
+| 1    | `enable`                       | Privileged EXEC Mode                 | `Switch#`                     | Like unlocking your phone to access all settings.                       |
+| 2    | `disable`                      | Back to User EXEC Mode               | `Switch>`                     | Like locking your phone screen again.                                   |
+| 3    | `enable`                       | Privileged EXEC Mode                 | `Switch#`                     | Unlocking it again.                                                     |
+| 4    | `configure terminal`           | Global Configuration Mode            | `Switch(config)#`             | Entering system settings to make device-wide changes.                   |
+| 5    | `exit`                         | Back to Privileged EXEC Mode         | `Switch#`                     | Pressing “Back” from settings.                                          |
+| 6    | `configure terminal`           | Global Configuration Mode            | `Switch(config)#`             | Re-entering settings.                                                   |
+| 7    | `line console 0`               | Line Config Mode (Console)           | `Switch(config-line)#`        | Going into screen lock settings.                                        |
+| 8    | `exit`                         | Back to Global Configuration Mode    | `Switch(config)#`             | Back to main settings menu.                                             |
+| 9    | `line vty 0 15`                | Line Config Mode (VTY - SSH/Telnet)  | `Switch(config-line)#`        | Going into remote access settings.                                      |
+| 10   | `exit`                         | Back to Global Configuration Mode    | `Switch(config)#`             | Again, back to main settings.                                           |
+| 11   | `interface vlan 1`             | Interface Config Mode                | `Switch(config-if)#`          | Configuring a specific network interface.                               |
+| 12   | `line console 0`               | Line Config Mode (Console again)     | `Switch(config-line)#`        | Switching from Wi-Fi settings to screen lock settings directly.         |
+| 13   | `exit`                         | Back to Global Configuration Mode    | `Switch(config)#`             | Back to main settings.                                                  |
+| 14   | `end`                          | Back to Privileged EXEC Mode         | `Switch#`                     | Exiting all settings to the main admin screen.                          |
+
+✅ **You successfully navigated through different Cisco IOS command line modes!**
+
+> 🧠 Tip: Think of IOS modes like nested menus in your phone's settings – each step gets you deeper into specific options, and each exit or end takes you back a level or all the way out.
+
