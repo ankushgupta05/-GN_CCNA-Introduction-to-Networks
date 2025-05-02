@@ -194,9 +194,10 @@ Understanding how to read and interpret IOS command syntax is essential for conf
 
 ### 📘 Complex Command Example
 
-```bash
+```
+bash
 Switch(config-if)# switchport port-security aging { static | time time | type {absolute | inactivity} }
-
+```
 
 
 ## ✅ 2.3.5 Hot Keys and Shortcuts
