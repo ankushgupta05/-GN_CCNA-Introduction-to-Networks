@@ -358,11 +358,11 @@ Would you like me to generate this as a downloadable `README.md` file?
 
 
 
-Here is your quiz in the exact format you requested, including ✅/❌ indicators, explanations, and examples:
+## Here is your quiz in the exact format you requested, including ✅/❌ indicators, explanations, and examples:
 
 ---
 
-````markdown
+
 ## 2.4.8 Check Your Understanding - Basic Device Configuration
 
 Check your understanding of basic device configuration by choosing the BEST answer to the following questions.
