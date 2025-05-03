@@ -355,3 +355,98 @@ Sw-Floor-1(config)# banner motd #Warning! Authorized access only!#
 
 Would you like me to generate this as a downloadable `README.md` file?
 ```
+
+
+
+Here is your quiz in the exact format you requested, including ✅/❌ indicators, explanations, and examples:
+
+---
+
+````markdown
+## 2.4.8 Check Your Understanding - Basic Device Configuration
+
+Check your understanding of basic device configuration by choosing the BEST answer to the following questions.
+
+---
+
+### Question 1  
+What is the command to assign the name “Sw-Floor-2” to a switch?
+
+| Option | Answer              | Explanation                                                                 |
+|--------|---------------------|-----------------------------------------------------------------------------|
+| 🅐     | done                | ❌ Incorrect. This is not a valid command.                                  |
+| 🅑     | hostname Sw-Floor-2 | ✅ Correct. `hostname` is the proper command to name the switch.            |
+| 🅒     | host name Sw-Floor-2| ❌ Incorrect. `host name` has a space, which makes it an invalid command.   |
+| 🅓     | name Sw-Floor-2     | ❌ Incorrect. `name` is not a valid CLI command to set hostname.            |
+🔹 Example: `Switch(config)# hostname Sw-Floor-2`  
+🔹 Use: To set or change the switch name.
+
+---
+
+### Question 2  
+How is the privileged EXEC mode access secured on a switch?
+
+| Option | Answer              | Explanation                                                                 |
+|--------|---------------------|-----------------------------------------------------------------------------|
+| 🅐     | close               | ❌ Incorrect. `close` is not a valid command.                               |
+| 🅑     | enable class        | ❌ Incorrect. Incomplete. This sets the password but doesn't secure it.     |
+| 🅒     | secret class        | ❌ Incorrect. Not a complete command.                                       |
+| 🅓     | enable secret class | ✅ Correct. This securely sets the password for privileged EXEC mode.       |
+🔹 Example: `Switch(config)# enable secret class`  
+🔹 Use: To secure privileged EXEC access with an encrypted password.
+
+---
+
+### Question 3  
+Which command enables password authentication for user EXEC mode access on a switch?
+
+| Option | Answer               | Explanation                                                               |
+|--------|----------------------|---------------------------------------------------------------------------|
+| 🅐     | enable secret        | ❌ Incorrect. This secures privileged EXEC, not user EXEC.                |
+| 🅑     | done                 | ❌ Incorrect. This is not a valid command.                                |
+| 🅒     | login                | ✅ Correct. Enables password checking at login for console or VTY lines. |
+| 🅓     | secret               | ❌ Incorrect. Incomplete/invalid command.                                 |
+| 🅔     | service password-encryption | ❌ Incorrect. Encrypts passwords but doesn't enable login prompt.   |
+🔹 Example:  
+```bash
+Switch(config)# line console 0  
+Switch(config-line)# password cisco  
+Switch(config-line)# login
+````
+
+🔹 Use: To ensure users must enter a password when accessing user EXEC mode.
+
+---
+
+### Question 4
+
+Which command encrypts all plaintext passwords access on a switch?
+
+| Option                                                        | Answer                      | Explanation                                                       |
+| ------------------------------------------------------------- | --------------------------- | ----------------------------------------------------------------- |
+| 🅐                                                            | enable secret               | ❌ Incorrect. Encrypts only the privileged EXEC password.          |
+| 🅑                                                            | login                       | ❌ Incorrect. Only enables login prompt, doesn’t encrypt anything. |
+| 🅒                                                            | secret                      | ❌ Incorrect. Not a valid command by itself.                       |
+| 🅓                                                            | service password-encryption | ✅ Correct. Encrypts all plaintext passwords.                      |
+| 🔹 Example: `Switch(config)# service password-encryption`     |                             |                                                                   |
+| 🔹 Use: To secure stored passwords in the configuration file. |                             |                                                                   |
+
+---
+
+### Question 5
+
+Which is the command to configure a banner to be displayed when connecting to a switch?
+
+| Option                                               | Answer                      | Explanation                                                     |
+| ---------------------------------------------------- | --------------------------- | --------------------------------------------------------------- |
+| 🅐                                                   | banner \$ Keep out \$       | ❌ Incorrect. Missing banner type (`motd`).                      |
+| 🅑                                                   | banner motd \$ Keep out \$  | ✅ Correct. Displays a message when users connect to the device. |
+| 🅒                                                   | display \$ Keep out \$      | ❌ Incorrect. Invalid command in Cisco IOS.                      |
+| 🅓                                                   | login banner \$ Keep out \$ | ❌ Incorrect. Invalid command.                                   |
+| 🔹 Example: `Switch(config)# banner motd #Keep out#` |                             |                                                                 |
+| 🔹 Use: To warn unauthorized users before login.     |                             |                                                                 |
+
+```
+
+Let me know if you'd like a downloadable `.md` file or additional questions added!
+```
