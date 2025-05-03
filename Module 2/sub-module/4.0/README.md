@@ -250,3 +250,108 @@ Sw(config)# enable secret MyAdmin@321
 
 > 🔐 Tip: Hamesha strong password use karo jisme capital, small letters, numbers, aur special characters ho.
 
+
+
+Here is the `README.md` content in the **question → answer** format exactly as requested, without changing your original questions:
+
+---
+
+````markdown
+# Cisco Basic Configuration (Q/A Format)
+
+---
+
+### Question  
+Enter global configuration mode.  
+
+### Answer  
+```bash
+Switch# configure terminal
+````
+
+---
+
+### Question
+
+Name the switch “Sw-Floor-1”.
+
+### Answer
+
+```bash
+Switch(config)# hostname Sw-Floor-1
+```
+
+---
+
+### Question
+
+Secure user EXEC mode access by entering line console 0, assign the password cisco, enable login, and return to the global configuration mode using exit.
+
+### Answer
+
+```bash
+Sw-Floor-1(config)# line console 0  
+Sw-Floor-1(config-line)# password cisco  
+Sw-Floor-1(config-line)# login  
+Sw-Floor-1(config-line)# exit
+```
+
+---
+
+### Question
+
+Secure privileged EXEC mode access using the password class.
+
+### Answer
+
+```bash
+Sw-Floor-1(config)# enable secret class
+```
+
+---
+
+### Question
+
+Secure the VTY lines 0 through 15, assign the password cisco, enable login, and return to the global configuration mode using exit.
+
+### Answer
+
+```bash
+Sw-Floor-1(config)# line vty 0 15  
+Sw-Floor-1(config-line)# password cisco  
+Sw-Floor-1(config-line)# login  
+Sw-Floor-1(config-line)# exit
+```
+
+---
+
+### Question
+
+Encrypt all plaintext passwords.
+
+### Answer
+
+```bash
+Sw-Floor-1(config)# service password-encryption
+```
+
+---
+
+### Question
+
+Create a banner message using the “#” symbol as the delimiter. The banner should display exactly: Warning! Authorized access only!
+
+### Answer
+
+```bash
+Sw-Floor-1(config)# banner motd #Warning! Authorized access only!#
+```
+
+---
+
+✅ You successfully completed the basic requirements to access and secure a device.
+
+```
+
+Would you like me to generate this as a downloadable `README.md` file?
+```
