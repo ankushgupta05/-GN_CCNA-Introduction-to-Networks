@@ -370,3 +370,63 @@ Let me know if you'd like this saved as a downloadable `README.md` file.
 ```
 
 
+# Cisco Switch Session Log
+
+This log contains the sequence of commands executed on the Cisco switch `S1` along with their respective outputs.
+
+```bash
+S1>?               # Lists all available user EXEC commands
+  Exec commands:
+    <1-99>           Session number to resume
+    connect          Open a terminal connection
+    disable          Turn off privileged commands
+    disconnect       Disconnect an existing network connection
+    enable           Turn on privileged commands
+    exit             Exit from the EXEC
+    logout           Exit from the EXEC
+    ping             Send echo messages
+    resume           Resume an active network connection
+    show             Show running system information
+    ssh              Open a secure shell client connection
+    telnet           Open a telnet connection
+    traceroute       Trace route to destination
+
+S1>t?              # No matching command — incomplete
+% Unrecognized command
+
+S1>te?             # Autocompletion for 'telnet'
+
+S1>enable          # Enters privileged EXEC mode
+S1#?               # Lists all available privileged EXEC commands
+  Privileged exec commands:
+    ... (many options listed)
+
+S1#C?              # Partial input, likely meant to enter "configure"
+% Ambiguous command:  "C"  -- too many matches found
+
+S1#Conf?           # Autocompletion for "configure"
+
+S1#Configure       # Attempts to enter configuration mode
+                   # (May fail due to incorrect case — Cisco is case-sensitive)
+
+S1(config)#exit    # Exits configuration mode
+S1#show clock      # Shows current system time
+*00:15:28.999 UTC Mon Mar 1 1993
+
+S1#clock ?         # Shows available clock subcommands
+  set  Set the time and date
+
+S1#clock set 15:00:00 01/31/2035   # Incorrect date format (MM/DD/YYYY not accepted)
+% Invalid input detected at '^' marker.
+
+S1#clock set 15:00:00 31 Jan 2035  # Correctly sets clock to 3:00 PM, Jan 31, 2035
+
+S1#show clock      # Displays updated clock
+15:00:00.000 UTC Thu Jan 31 2035
+
+S1#clock set 25:00:00              # Invalid time (25:00:00 is out of range)
+% Invalid input detected at '^' marker.
+
+S1#clock set 15:00:00 32           # Invalid date (32 is not a valid day)
+% Incomplete command.
+```
