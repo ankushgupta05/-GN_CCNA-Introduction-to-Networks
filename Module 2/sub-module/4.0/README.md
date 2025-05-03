@@ -37,3 +37,156 @@ Use the following commands:
 Switch# configure terminal
 Switch(config)# hostname Sw-Floor-1
 Sw-Floor-1(config)#
+
+```
+
+
+Here is the updated `README.md` content for **sections 2.4.2 to 2.4.5** including examples for each concept, while keeping the original content intact:
+
+---
+
+````markdown
+# 2.4.2 Password Guidelines
+
+Weak or easily guessed passwords remain one of the biggest security vulnerabilities. All network devices—including home routers—should always require a password for administrative access.
+
+Cisco IOS supports **hierarchical passwords** to grant different access levels. Always secure the following modes:
+- **User EXEC**
+- **Privileged EXEC**
+- **Remote Telnet/SSH**
+
+### Password Best Practices
+
+- Use **more than eight characters**
+- Combine **uppercase, lowercase, digits, and special characters**
+- Avoid reusing the same password across devices
+- Avoid common words or predictable patterns
+- Consider using an online **password generator**
+
+> ⚠️ **Note:** Labs in this course may use weak passwords (like `cisco` or `class`) for simplicity. These should never be used in production environments.
+
+### ✅ Example: Strong Password
+```bash
+# Instead of using weak password like: cisco
+# Use something strong like:
+Pa$$w0rd!2025
+````
+
+---
+
+# 2.4.3 Configure Passwords
+
+When connecting to a Cisco device for the first time, you're placed in **user EXEC mode**. Here’s how to secure it:
+
+## 🔐 Secure Console Access (User EXEC Mode)
+
+```bash
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# line console 0
+Sw-Floor-1(config-line)# password Cisco123!
+Sw-Floor-1(config-line)# login
+Sw-Floor-1(config-line)# end
+Sw-Floor-1#
+```
+
+## 🔐 Secure Privileged EXEC Mode
+
+This mode allows full device configuration. Use `enable secret`:
+
+```bash
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# enable secret StrongEnablePass!
+Sw-Floor-1(config)# exit
+Sw-Floor-1#
+```
+
+## 🔐 Secure Remote Access (VTY Lines)
+
+Most Cisco devices support 16 VTY lines (0 to 15). Secure them using:
+
+```bash
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# line vty 0 15
+Sw-Floor-1(config-line)# password Remote$Access123
+Sw-Floor-1(config-line)# login
+Sw-Floor-1(config-line)# end
+Sw-Floor-1#
+```
+
+---
+
+# 2.4.4 Encrypt Passwords
+
+By default, passwords in the running or startup config are stored in plaintext. To prevent this:
+
+## 🔐 Apply Encryption to Passwords
+
+```bash
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# service password-encryption
+Sw-Floor-1(config)#
+```
+
+This uses **weak encryption** (type 7), but it hides passwords from casual viewing.
+
+## 🔍 Verify Encrypted Passwords
+
+```bash
+Sw-Floor-1# show running-config
+!
+line con 0
+password 7 14141B180F0B
+login
+!
+line vty 0 4
+password 7 0A1E1C485C081E
+login
+line vty 5 15
+password 7 061F4B1C1B1C
+login
+!
+```
+
+### 📝 Example Before and After
+
+```bash
+# Before encryption
+password Remote$Access123
+
+# After service password-encryption
+password 7 061F4B1C1B1C
+```
+
+---
+
+# 2.4.5 Banner Messages
+
+A banner displays a **message of the day (MOTD)** when accessing the device. This is useful for legal notification and access warnings.
+
+## 🛑 Configure Banner MOTD
+
+Use the `banner motd` command with a delimiter:
+
+```bash
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# banner motd #Unauthorized Access is Prohibited. Violators will be prosecuted.#
+```
+
+* The `#` character is the delimiter (you can use any character that **does not appear in the message**).
+* The message will display to **all users on login**.
+
+### 💡 Example Output on Login
+
+```bash
+Unauthorized Access is Prohibited. Violators will be prosecuted.
+```
+
+> ✅ Tip: Banner messages are sometimes required to enforce monitoring and prosecution policies in legal systems.
+
+---
+
+```
+
+Would you like me to export this as a downloadable `README.md` file for your project?
+```
+
