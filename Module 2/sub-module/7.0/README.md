@@ -72,4 +72,37 @@ This setup allows the switch to be managed over the network just like any other 
 
 ---
 
-Would you like the next section added in the same format?
+Here’s how you can write section **2.7.5** in your `README.md` file using a clear and structured format:
+
+---
+
+## ⚙️ 2.7.5 Syntax Checker - Configure a Switch Virtual Interface
+
+This section demonstrates how to configure a **Switch Virtual Interface (SVI)** on VLAN 1 to enable network communication and remote management.
+
+### 🛠️ Step-by-Step Configuration:
+
+1. **Enter interface configuration mode for VLAN 1**:
+
+   ```bash
+   Switch(config)#interface vlan 1
+   ```
+
+2. **Configure the IPv4 address and subnet mask**:
+
+   ```bash
+   Switch(config-if)#ip address 192.168.1.20 255.255.255.0
+   ```
+
+3. **Enable the interface**:
+
+   ```bash
+   Switch(config-if)#no shutdown
+   %LINK-5-CHANGED: Interface Vlan1, changed state to up
+   ```
+
+### ✅ Result:
+
+You have successfully configured the switch virtual interface for **VLAN 1**. This allows the switch to participate in the network and be accessed remotely for management.
+
+---
