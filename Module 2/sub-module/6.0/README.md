@@ -50,3 +50,28 @@ Har media type alag features deta hai:
 ---
 
 Would you like me to add actual IP configuration commands as well in the README?
+
+
+
+
+
+
+
+
+
+Here’s how you can write the above quiz questions and correct answers in your `README.md` file in a clean and clear format:
+
+---
+
+## ✅ 2.6.3 Check Your Understanding - Ports and Addresses
+
+| **Question**                                                           | **Correct Answer**                                             |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------- |
+| **1. What is the structure of an IPv4 address called?**                | ✅ Dotted-decimal format                                        |
+| **2. How is an IPv4 address represented?**                             | ✅ Four decimal numbers between 0 and 255 separated by periods. |
+| **3. What type of interface has no physical port associated with it?** | ✅ Switch virtual interface (SVI)                               |
+
+---
+
+Let me know if you want me to format more questions like this.
+
