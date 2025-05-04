@@ -1,3 +1,7 @@
+## NOTE :- 8 number ka question and answer wrong hai
+
+# module 2  final Quize
+
 Here are the answers to the *2.9.4 Module Quiz - Basic Switch and End Device Configuration* in the required format:
 
 ---
