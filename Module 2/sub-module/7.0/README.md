@@ -112,125 +112,154 @@ You have successfully configured the switch virtual interface for **VLAN 1**. Th
 
 
 
-Here are **all the commands** from the Cisco Packet Tracer exercise **“2.7.6 - Implement Basic Connectivity”**, organized step-by-step for configuring switches and PCs:
+Great! Below is the updated `README.md` content **with exact commands** and **where they are fired from**, clearly marked for **Switch (S1/S2)** and **PC (PC1/PC2)**:
 
 ---
 
-## ✅ **Part 1: Basic Configuration on S1 and S2**
+```markdown
+# 📘 2.7.6 - Implement Basic Connectivity
 
-### S1 Configuration
-
-```plaintext
-enable
-configure terminal
-hostname S1
-
-line console 0
-password cisco
-login
-exit
-
-enable secret class
-
-banner motd #Authorized access only. Violators will be prosecuted to the full extent of the law.#
-
-end
-write memory
-```
-
-### Repeat the same for S2
-
-```plaintext
-enable
-configure terminal
-hostname S2
-
-line console 0
-password cisco
-login
-exit
-
-enable secret class
-
-banner motd #Authorized access only. Violators will be prosecuted to the full extent of the law.#
-
-end
-write memory
-```
+This file contains **all commands** and **manual configuration steps** for setting up basic connectivity between switches and PCs in Cisco Packet Tracer.
 
 ---
 
-## ✅ **Part 2: Configure PCs**
+## 📁 Project Structure
 
-### PC1
+```
 
-* Go to **Desktop > IP Configuration**
-* Set:
+2.7.6-Implement-Basic-Connectivity/
+│
+├── Switches/
+│   ├── S1/
+│   │   ├── Basic Config
+│   │   ├── VLAN 1 Interface Setup
+│   │   └── IP Verification
+│   └── S2/
+│       ├── Basic Config
+│       ├── VLAN 1 Interface Setup
+│       └── IP Verification
+│
+├── PCs/
+│   ├── PC1/
+│   │   └── Manual IP + Ping Test
+│   └── PC2/
+│       └── Manual IP + Ping Test
 
-  ```plaintext
-  IP Address: 192.168.1.1
-  Subnet Mask: 255.255.255.0
-  ```
-
-### PC2
-
-* Go to **Desktop > IP Configuration**
-* Set:
-
-  ```plaintext
-  IP Address: 192.168.1.2
-  Subnet Mask: 255.255.255.0
-  ```
+````
 
 ---
 
-## ✅ **Part 3: Configure the Switch Management Interface**
+## 🔌 Switch Configuration (S1 and S2)
 
-### On S1
+> 💻 Fired from: Switch CLI (S1 or S2 Terminal)
 
-```plaintext
-enable
-configure terminal
-interface vlan 1
-ip address 192.168.1.253 255.255.255.0
-no shutdown
-exit
-end
-write memory
+### ✅ Step 1: Basic Configuration
+
+```bash
+Switch> enable
+Switch# configure terminal
+Switch(config)# hostname S1          # Use S2 for second switch
+S1(config)# line console 0
+S1(config-line)# password cisco
+S1(config-line)# login
+S1(config-line)# exit
+S1(config)# enable secret class
+S1(config)# banner motd #Unauthorized access is prohibited#
+S1(config)# end
+S1# write memory
+````
+
+### ✅ Step 2: VLAN Interface Setup
+
+```bash
+S1# configure terminal
+S1(config)# interface vlan 1
+S1(config-if)# ip address 192.168.1.253 255.255.255.0
+S1(config-if)# no shutdown
+S1(config-if)# exit
+S1(config)# end
+S1# write memory
 ```
 
-### On S2
+> 🔁 Repeat same steps for S2 with IP: `192.168.1.254`
+
+---
+
+## 💻 PC Configuration
+
+> 📍 Fired from: GUI on PC (Desktop > IP Configuration)
+
+### ✅ PC1:
 
 ```plaintext
-enable
-configure terminal
-interface vlan 1
-ip address 192.168.1.254 255.255.255.0
-no shutdown
-exit
-end
-write memory
+IP Address:      192.168.1.1
+Subnet Mask:     255.255.255.0
+Default Gateway: [Leave Blank]
+```
+
+### ✅ PC2:
+
+```plaintext
+IP Address:      192.168.1.2
+Subnet Mask:     255.255.255.0
+Default Gateway: [Leave Blank]
 ```
 
 ---
 
-## ✅ **Verify Configuration**
+## 🔍 IP Address Verification
 
-### From Switch (S1 or S2)
+> 💻 Fired from: **Windows Command Prompt on PC1 or PC2**
 
-```plaintext
-show ip interface brief
-show running-config
+```bash
+C:\> ipconfig
 ```
 
-### From PC1/PC2 (Command Prompt)
+You should see:
 
 ```plaintext
-ping 192.168.1.253   ← (S1 IP)
-ping 192.168.1.254   ← (S2 IP)
-ping 192.168.1.2     ← (PC2 IP, from PC1)
+IPv4 Address. . . . . . . . . . . : 192.168.1.1
+Subnet Mask . . . . . . . . . . . : 255.255.255.0
+Default Gateway . . . . . . . . . : 
 ```
 
 ---
 
-Would you like this in a nicely formatted README.md file too?
+## 🧪 Ping Tests
+
+> 🧪 Fired from: **PC1 Command Prompt**
+
+```bash
+ping 192.168.1.2       # Ping PC2
+ping 192.168.1.253     # Ping Switch S1
+ping 192.168.1.254     # Ping Switch S2
+```
+
+> 🧪 Fired from: **PC2 Command Prompt**
+
+```bash
+ping 192.168.1.1       # Ping PC1
+```
+
+---
+
+## 📊 Show Commands on Switch
+
+> 🔧 Fired from: Switch CLI (S1 or S2)
+
+```bash
+S1# show ip interface brief
+S1# show running-config
+```
+
+---
+
+✅ This confirms successful manual IP configuration and device connectivity in a basic LAN setup.
+
+```
+
+---
+
+Would you like me to export this as a `.md` file for your project folder?
+```
+
