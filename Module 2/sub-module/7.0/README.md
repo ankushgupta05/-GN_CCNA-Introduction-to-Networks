@@ -106,3 +106,131 @@ This section demonstrates how to configure a **Switch Virtual Interface (SVI)** 
 You have successfully configured the switch virtual interface for **VLAN 1**. This allows the switch to participate in the network and be accessed remotely for management.
 
 ---
+
+
+
+
+
+
+Here are **all the commands** from the Cisco Packet Tracer exercise **“2.7.6 - Implement Basic Connectivity”**, organized step-by-step for configuring switches and PCs:
+
+---
+
+## ✅ **Part 1: Basic Configuration on S1 and S2**
+
+### S1 Configuration
+
+```plaintext
+enable
+configure terminal
+hostname S1
+
+line console 0
+password cisco
+login
+exit
+
+enable secret class
+
+banner motd #Authorized access only. Violators will be prosecuted to the full extent of the law.#
+
+end
+write memory
+```
+
+### Repeat the same for S2
+
+```plaintext
+enable
+configure terminal
+hostname S2
+
+line console 0
+password cisco
+login
+exit
+
+enable secret class
+
+banner motd #Authorized access only. Violators will be prosecuted to the full extent of the law.#
+
+end
+write memory
+```
+
+---
+
+## ✅ **Part 2: Configure PCs**
+
+### PC1
+
+* Go to **Desktop > IP Configuration**
+* Set:
+
+  ```plaintext
+  IP Address: 192.168.1.1
+  Subnet Mask: 255.255.255.0
+  ```
+
+### PC2
+
+* Go to **Desktop > IP Configuration**
+* Set:
+
+  ```plaintext
+  IP Address: 192.168.1.2
+  Subnet Mask: 255.255.255.0
+  ```
+
+---
+
+## ✅ **Part 3: Configure the Switch Management Interface**
+
+### On S1
+
+```plaintext
+enable
+configure terminal
+interface vlan 1
+ip address 192.168.1.253 255.255.255.0
+no shutdown
+exit
+end
+write memory
+```
+
+### On S2
+
+```plaintext
+enable
+configure terminal
+interface vlan 1
+ip address 192.168.1.254 255.255.255.0
+no shutdown
+exit
+end
+write memory
+```
+
+---
+
+## ✅ **Verify Configuration**
+
+### From Switch (S1 or S2)
+
+```plaintext
+show ip interface brief
+show running-config
+```
+
+### From PC1/PC2 (Command Prompt)
+
+```plaintext
+ping 192.168.1.253   ← (S1 IP)
+ping 192.168.1.254   ← (S2 IP)
+ping 192.168.1.2     ← (PC2 IP, from PC1)
+```
+
+---
+
+Would you like this in a nicely formatted README.md file too?
