@@ -12,16 +12,17 @@ Here are the answers to the *2.9.4 Module Quiz - Basic Switch and End Device Con
 | 🅓     | ❌ It is automatically saved when the router reboots.                | ❌ Incorrect – Running config is lost unless saved manually.               |
 
 ---
+---
 
-### Q2: Which two statements are true regarding the user EXEC mode?
+### ✅ **Corrected Q2: Which two statements are true regarding the user EXEC mode?**
 
-| Option | Answer                                                                      | Explanation                                                                         |
-| ------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| 🅐     | ❌ All router commands are available.                                        | ❌ Incorrect – Only basic monitoring commands are available.                         |
-| 🅑     | ✅ Global configuration mode can be accessed by entering the enable command. | ✅ Correct – You enter privileged EXEC mode via `enable`, then access global config. |
-| 🅒     | ✅ The device prompt for this mode ends with the '>' symbol.                 | ✅ Correct – ‘>’ denotes user EXEC mode.                                             |
-| 🅓     | ❌ Interfaces and routing protocols can be configured.                       | ❌ Incorrect – That requires global config mode.                                     |
-| 🅔     | ❌ Only some aspects of the router configuration can be viewed.              | ❌ Incorrect – It can view very limited non-config data.                             |
+| Option | Answer                                                                      | Explanation                                                              |
+| ------ | --------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| 🅐     | ❌ All router commands are available.                                        | ❌ Incorrect – Only a subset of basic commands is available.              |
+| 🅑     | ❌ Global configuration mode can be accessed by entering the enable command. | ❌ Incorrect – `enable` leads to privileged EXEC mode, not global config. |
+| 🅒     | ✅ The device prompt for this mode ends with the '>' symbol.                 | ✅ Correct – ‘>’ indicates user EXEC mode.                                |
+| 🅓     | ❌ Interfaces and routing protocols can be configured.                       | ❌ Incorrect – Configuration is not possible in user EXEC mode.           |
+| 🅔     | ✅ Only some aspects of the router configuration can be viewed.              | ✅ Correct – You can view basic info but not all configuration.           |
 
 ---
 
