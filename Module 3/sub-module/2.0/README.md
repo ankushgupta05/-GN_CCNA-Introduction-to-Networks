@@ -61,7 +61,7 @@ Every time you open a website, these protocols **work silently in the background
 ---
 
 
-📦 Protocol Functions – Easy Explanation
+## 📦 Protocol Functions – Easy Explanation
 Computers and devices use agreed-upon rules called protocols to talk to each other over a network.
 Each protocol has a different job or function.
 
