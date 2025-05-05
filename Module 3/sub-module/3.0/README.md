@@ -114,6 +114,37 @@ Over the years, TCP/IP has evolved to support many services like file transfer, 
 TCP/IP is the **heart of the internet**. Every message, email, or website you access uses these layered protocols to get the job done — reliably and efficiently.
 
 ---
+Here’s a clean and well-structured summary of the **Application Layer protocols** in the **TCP/IP protocol suite**, organized by category for easier understanding and reference:
 
-Would you like a **diagram-style visualization** of the TCP/IP stack, or a **worksheet/quiz** to test your understanding?
+---
+
+## 🌐 Application Layer Protocols – TCP/IP Suite
+
+| **Category**           | **Protocol** | **Full Name**                              | **Function**                                                                |
+| ---------------------- | ------------ | ------------------------------------------ | --------------------------------------------------------------------------- |
+| **Name System**        | **DNS**      | Domain Name System                         | Translates domain names (e.g., `cisco.com`) into IP addresses.              |
+| **Host Config**        | **DHCPv4**   | Dynamic Host Configuration Protocol (IPv4) | Assigns IPv4 addresses to clients at startup; allows reuse of addresses.    |
+|                        | **DHCPv6**   | Dynamic Host Configuration Protocol (IPv6) | Same as DHCPv4 but for IPv6 addressing.                                     |
+|                        | **SLAAC**    | Stateless Address Autoconfiguration        | Allows devices to configure their own IPv6 addresses without a DHCP server. |
+| **Email**              | **SMTP**     | Simple Mail Transfer Protocol              | Sends email from client to server or between servers.                       |
+|                        | **POP3**     | Post Office Protocol version 3             | Retrieves and downloads emails from server to client (local storage).       |
+|                        | **IMAP**     | Internet Message Access Protocol           | Accesses and manages email directly on the mail server.                     |
+| **File Transfer**      | **FTP**      | File Transfer Protocol                     | Reliable, connection-oriented file transfer between hosts.                  |
+|                        | **SFTP**     | SSH File Transfer Protocol                 | Secure, encrypted file transfer over SSH.                                   |
+|                        | **TFTP**     | Trivial File Transfer Protocol             | Simple, connectionless, unacknowledged file transfer. Low overhead.         |
+| **Web & Web Services** | **HTTP**     | Hypertext Transfer Protocol                | Transfers web content (text, images, videos) over the web.                  |
+|                        | **HTTPS**    | HTTP Secure                                | Secure version of HTTP using encryption (SSL/TLS).                          |
+|                        | **REST**     | Representational State Transfer            | Web services using APIs and HTTP methods (GET, POST, etc.).                 |
+
+---
+
+### 🧠 Tips to Remember:
+
+* **DNS** = Domain-to-IP
+* **DHCP** = Automatic IP configuration
+* **SMTP/POP3/IMAP** = Email handling
+* **FTP/SFTP/TFTP** = File moving across networks
+* **HTTP/HTTPS/REST** = Web and API interaction
+
+Would you like the same kind of structured summary for **Transport Layer**, **Internet Layer**, and **Network Access Layer** next?
 
