@@ -76,3 +76,71 @@ Here’s what network protocols must handle:
 | **Timing**                       | Sending and receiving at the right time.            |
 | **Delivery Options**             | Choosing whether it’s one-to-one or one-to-many.    |
 
+
+
+
+
+
+Here are your answers to **3.1.12 – Check Your Understanding: The Rules**, formatted with explanations and examples:
+
+---
+
+### Question 1
+
+**What is the process of converting information into the proper form for transmission?**
+
+| Option                                                                        | Answer      | Explanation                                                             |
+| ----------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------- |
+| 🅐 Formatting                                                                 | ❌ Incorrect | Formatting adds structure, but not the actual conversion.               |
+| 🅑 Encoding                                                                   | ✅ Correct   | Encoding converts data into a transmittable format like bits.           |
+| 🅒 Encapsulation                                                              | ❌ Incorrect | Encapsulation wraps data with headers/trailers, but doesn’t convert it. |
+| 🔹 **Example:** Encoding changes text into binary (1s and 0s) before sending. |             |                                                                         |
+| 🔹 **Use:** Computers encode messages into signals for transmission.          |             |                                                                         |
+
+---
+
+### Question 2
+
+**Which step of the communication process is concerned with properly identifying the address of the sender and receiver?**
+
+| Option                                                                        | Answer      | Explanation                                                                 |
+| ----------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------------------- |
+| 🅐 Formatting                                                                 | ✅ Correct   | Formatting includes setting sender and receiver information.                |
+| 🅑 Encoding                                                                   | ❌ Incorrect | Encoding is about converting the message, not identifying addresses.        |
+| 🅒 Encapsulation                                                              | ❌ Incorrect | While encapsulation includes addresses, it's not *primarily* focused on it. |
+| 🔹 **Example:** Formatting defines headers with sender/receiver IP addresses. |             |                                                                             |
+| 🔹 **Use:** Ensures message goes to the correct destination.                  |             |                                                                             |
+
+---
+
+### Question 3
+
+**Which three are components of message timing? (Choose three.)**
+
+| Option                                                                        | Answer      | Explanation                                                     |
+| ----------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------- |
+| 🅐 Flow control                                                               | ✅ Correct   | Manages the rate of data transmission to avoid overload.        |
+| 🅑 Sequence numbers                                                           | ❌ Incorrect | These ensure order, not timing.                                 |
+| 🅒 Access method                                                              | ✅ Correct   | Determines when devices can transmit. Helps prevent collisions. |
+| 🅓 Retransmit time                                                            | ❌ Incorrect | Not a standard term; misleading.                                |
+| 🅔 Response timeout                                                           | ✅ Correct   | Wait time before considering no response received.              |
+| 🔹 **Example:** Flow control avoids flooding the receiver with too much data. |             |                                                                 |
+| 🔹 **Use:** Ensures smooth, timely communication.                             |             |                                                                 |
+
+---
+
+### Question 4
+
+**Which delivery method is used to transmit information to one or more end devices, but not all devices on the network?**
+
+| Option                                                                      | Answer      | Explanation                                  |
+| --------------------------------------------------------------------------- | ----------- | -------------------------------------------- |
+| 🅐 Unicast                                                                  | ❌ Incorrect | Sends to a single device only.               |
+| 🅑 Multicast                                                                | ✅ Correct   | Sends to multiple selected devices, not all. |
+| 🅒 Broadcast                                                                | ❌ Incorrect | Sends to *all* devices in the network.       |
+| 🔹 **Example:** Streaming a live video to specific users via multicast.     |             |                                              |
+| 🔹 **Use:** Efficient for group communication without flooding all devices. |             |                                              |
+
+---
+
+Let me know if you want this in a downloadable markdown file!
