@@ -35,6 +35,20 @@ Each one has a different job. Think of them as a **team**, each doing their part
 
 ---
 
+
+
+| **Function**              | **What It Means**                                                                                           | **Examples**                        |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| **Addressing**            | Identifies **who is sending** and **who should receive** the message using unique addresses.                | Ethernet (MAC address), IPv4, IPv6  |
+| **Reliability**           | Makes sure the message reaches the destination even if something goes wrong.                                | TCP (Transmission Control Protocol) |
+| **Flow Control**          | Controls the **speed of data** so the sender doesn’t overwhelm the receiver.                                | TCP                                 |
+| **Sequencing**            | Breaks data into parts and numbers them so they can be reassembled in the correct order at the destination. | TCP                                 |
+| **Error Detection**       | Checks if the message got damaged or changed during travel.                                                 | Ethernet, IPv4, IPv6, TCP           |
+| **Application Interface** | Helps apps (like browsers and servers) talk to each other across the network.                               | HTTP (for web), HTTPS (secure web)  |
+
+
+
+
 ### 💡 Real-Life Example: Sending a Letter by Post
 
 Imagine you're sending a letter to your friend who lives in another city:
