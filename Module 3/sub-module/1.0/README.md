@@ -60,3 +60,19 @@ These steps are important because they reduce **misunderstandings** and ensure t
 ---
 
 Let me know if you want this converted into a Word or PDF format, or if you'd like a diagram added!
+
+
+
+🖧 3.1.5 Network Protocol Requirements
+Computers also follow rules, just like people, when they "talk" on a network. These rules are called protocols.
+
+Here’s what network protocols must handle:
+
+| Rule                             | Example                                             |
+| -------------------------------- | --------------------------------------------------- |
+| **Message Encoding**             | Converting text into 1s and 0s.                     |
+| **Formatting and Encapsulation** | Adding structure so devices understand the message. |
+| **Message Size**                 | Breaking big files into smaller chunks.             |
+| **Timing**                       | Sending and receiving at the right time.            |
+| **Delivery Options**             | Choosing whether it’s one-to-one or one-to-many.    |
+
