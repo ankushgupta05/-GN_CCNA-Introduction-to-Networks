@@ -266,3 +266,109 @@ Tumne ek *chitthi* (message) likhi hai jo tumhare dost tak pahunchani hai — ba
 ---
 
 Agar chaho to main isko ek **diagram** ya visual ke form mein bhi bana ke dikhata hoon — bolna bas.
+
+
+
+
+
+
+
+
+
+
+Here are the answers to your "Check Your Understanding - Protocol Suites" questions in the requested format:
+
+---
+
+### **Question 1**
+
+**UDP and TCP belong to which layer of the TCP/IP protocol?**
+
+| Option                                                                                                         | Answer      | Explanation                                                                |
+| -------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------- |
+| 🅐 Application                                                                                                 | ❌ Incorrect | The Application layer uses TCP/UDP but they do not belong to it.           |
+| 🅑 Transport                                                                                                   | ✅ Correct   | TCP and UDP are core protocols of the Transport layer in the TCP/IP model. |
+| 🅒 Internet                                                                                                    | ❌ Incorrect | IP is the main protocol at the Internet layer, not TCP/UDP.                |
+| 🅓 Network access                                                                                              | ❌ Incorrect | This layer handles Ethernet and WLAN, not TCP/UDP.                         |
+| 🔹 **Example:** When loading a website, TCP ensures the data arrives correctly, showing its role in Transport. |             |                                                                            |
+
+---
+
+### **Question 2**
+
+**Which two protocols belong in the TCP/IP model application layer?**
+
+| Option                                                                                                                 | Answer      | Explanation                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------- |
+| ☐ EIGRP                                                                                                                | ❌ Incorrect | EIGRP is a routing protocol, part of the Internet layer.                      |
+| ☑ DNS                                                                                                                  | ✅ Correct   | DNS is an application-layer protocol used to resolve domain names to IPs.     |
+| ☐ OSPF                                                                                                                 | ❌ Incorrect | OSPF is also a routing protocol used in the Internet layer.                   |
+| ☐ ICMP                                                                                                                 | ❌ Incorrect | ICMP belongs to the Internet layer (used for error reporting).                |
+| ☑ DHCP                                                                                                                 | ✅ Correct   | DHCP is used to assign IP addresses, making it part of the Application layer. |
+| 🔹 **Example:** When you type a web address, **DNS** finds the IP. Your device may use **DHCP** to get its IP address. |             |                                                                               |
+
+---
+
+### **Question 3**
+
+**Which protocol operates at the network access layer of the TCP/IP model?**
+
+| Option                                                                                  | Answer      | Explanation                                                         |
+| --------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------- |
+| 🅐 HTTP                                                                                 | ❌ Incorrect | HTTP works at the Application layer.                                |
+| 🅑 IP                                                                                   | ❌ Incorrect | IP operates at the Internet layer.                                  |
+| 🅒 DNS                                                                                  | ❌ Incorrect | DNS belongs to the Application layer.                               |
+| 🅓 Ethernet                                                                             | ✅ Correct   | Ethernet is a Data Link protocol, part of the Network Access layer. |
+| 🔹 **Example:** Ethernet defines how your laptop sends data over a cable to the router. |             |                                                                     |
+
+---
+
+### **Question 4**
+
+**Which of the following are protocols that provide feedback from the destination host to the source host regarding errors in packet delivery?**
+
+| Option                                                                                                      | Answer      | Explanation                                                        |
+| ----------------------------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------ |
+| ☐ IPv4                                                                                                      | ❌ Incorrect | IPv4 is a delivery protocol, not for error messaging.              |
+| ☐ TCP                                                                                                       | ❌ Incorrect | TCP handles reliable delivery, not low-level feedback like errors. |
+| ☑ ICMPv4                                                                                                    | ✅ Correct   | ICMPv4 is used to send error messages in IPv4 networks.            |
+| ☐ IPv6                                                                                                      | ❌ Incorrect | IPv6 is a delivery protocol, similar to IPv4.                      |
+| ☐ UDP                                                                                                       | ❌ Incorrect | UDP is connectionless and does not provide error feedback.         |
+| ☑ ICMPv6                                                                                                    | ✅ Correct   | ICMPv6 is used to send error messages in IPv6 networks.            |
+| 🔹 **Example:** If a router can’t reach a host, it may send back an ICMP “destination unreachable” message. |             |                                                                    |
+
+---
+
+### **Question 5**
+
+**A device receives a data link frame with data and processes and removes the Ethernet information. What information would be the next to be processed by the receiving device?**
+
+| Option                                                                                                              | Answer      | Explanation                                                                 |
+| ------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------------------- |
+| 🅐 HTTP at the application layer                                                                                    | ❌ Incorrect | HTTP is processed much later, after Internet and Transport layers.          |
+| 🅑 HTML at the application layer                                                                                    | ❌ Incorrect | HTML is part of content, not protocol handling.                             |
+| 🅒 IP at the internet layer                                                                                         | ✅ Correct   | After Ethernet (Data Link), IP headers are processed next (Internet layer). |
+| 🅓 UDP at the internet layer                                                                                        | ❌ Incorrect | UDP is a Transport layer protocol.                                          |
+| 🅔 TCP at the transport layer                                                                                       | ❌ Incorrect | TCP is processed after the IP layer.                                        |
+| 🔹 **Example:** Think of removing the envelope (Ethernet) to find the address (IP) before opening the letter (TCP). |             |                                                                             |
+
+---
+
+### **Question 6**
+
+**Which services are provided by the internet layer of the TCP/IP protocol suite? (Choose three.)**
+
+| Option                                                                                                                 | Answer      | Explanation                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------ |
+| ☐ File Transfer                                                                                                        | ❌ Incorrect | File transfer is an Application layer function (e.g., FTP).                    |
+| ☐ Address Resolution                                                                                                   | ❌ Incorrect | Address resolution (like ARP) is in Network Access or Layer 2.                 |
+| ☑ Routing Protocols                                                                                                    | ✅ Correct   | Protocols like OSPF and BGP operate in the Internet layer for routing.         |
+| ☑ Messaging                                                                                                            | ✅ Correct   | Messaging includes ICMP, which provides control and error messaging.           |
+| ☐ Ethernet                                                                                                             | ❌ Incorrect | Ethernet is part of the Network Access layer.                                  |
+| ☑ Internet Protocol                                                                                                    | ✅ Correct   | IP is the main protocol of the Internet layer used for addressing and routing. |
+| 🔹 **Example:** The Internet layer ensures your packet travels the best path using IP and routing protocols like OSPF. |             |                                                                                |
+
+---
+
+Let me know if you’d like a downloadable PDF or Markdown version of these answers!
+
