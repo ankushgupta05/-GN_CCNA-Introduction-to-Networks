@@ -52,4 +52,68 @@ Let’s say you’re visiting a **website**:
 
 ---
 
-Would you like a **visual diagram of TCP/IP vs OSI layer mapping** or a **quiz** to test your understanding?
+Here’s a clean and simple summary of **Sections 3.3.3 and 3.3.4** on the **TCP/IP Protocol Example and TCP/IP Protocol Suite**, including visuals in text form, examples, and easy-to-understand explanations:
+
+---
+
+## 🌐 3.3.3 TCP/IP Protocol Example
+
+The **TCP/IP protocol stack** includes protocols for the **application**, **transport**, and **internet** layers.
+There are **no TCP/IP-specific protocols** for the **network access layer** — this layer uses protocols like **Ethernet** or **WLAN (Wi-Fi)** instead.
+
+---
+
+### 📦 Protocol Flow Example (Web Browser to Web Server)
+
+When you open a website, your computer uses the following **stack of protocols**:
+
+| **Layer**             | **Protocol Used**   | **Function**                                                                           |
+| --------------------- | ------------------- | -------------------------------------------------------------------------------------- |
+| **Application Layer** | **HTTP**            | Sends the actual request for a webpage (e.g., [www.google.com](http://www.google.com)) |
+| **Transport Layer**   | **TCP**             | Ensures reliable delivery of the webpage data                                          |
+| **Internet Layer**    | **IP**              | Finds the path to the web server (routing)                                             |
+| **Network Access**    | **Ethernet / WLAN** | Physically sends data over cables or wirelessly                                        |
+
+➡️ Think of this as putting your message (HTTP) into an envelope (TCP), then into a bigger envelope (IP), and finally handing it over to the mailman (Ethernet).
+
+---
+
+## 🧠 3.3.4 TCP/IP Protocol Suite (Full View)
+
+Over the years, TCP/IP has evolved to support many services like file transfer, email, video calls, etc. Here's a breakdown of protocols in each layer:
+
+---
+
+### 🗂️ TCP/IP Protocol Suite Summary Table
+
+| **Layer**             | **Category**          | **Popular Protocols**                        |
+| --------------------- | --------------------- | -------------------------------------------- |
+| **Application Layer** | 🔤 Name System        | DNS                                          |
+|                       | 🖥️ Host Config       | DHCPv4, DHCPv6, SLAAC                        |
+|                       | 📧 Email              | SMTP, POP3, IMAP                             |
+|                       | 📁 File Transfer      | FTP, SFTP, TFTP                              |
+|                       | 🌐 Web/Service        | HTTP, HTTPS, REST                            |
+| **Transport Layer**   | 🔄 Communication      | TCP (reliable), UDP (fast but less reliable) |
+| **Internet Layer**    | 🌍 Internet Protocol  | IPv4, IPv6, NAT                              |
+|                       | 📩 Messaging          | ICMPv4, ICMPv6, ICMPv6 ND                    |
+|                       | 🧭 Routing            | OSPF, EIGRP, BGP                             |
+| **Network Access**    | 🧭 Address Resolution | ARP                                          |
+|                       | 🔌 Data Link          | Ethernet, WLAN                               |
+
+---
+
+## ✅ Why TCP/IP Matters
+
+1. **🔓 Open Standard** – Free to use, supported by all vendors.
+2. **📏 Standards-Based** – Approved by global networking organizations, so devices from different brands work together smoothly.
+
+---
+
+## 🧠 Key Takeaway
+
+TCP/IP is the **heart of the internet**. Every message, email, or website you access uses these layered protocols to get the job done — reliably and efficiently.
+
+---
+
+Would you like a **diagram-style visualization** of the TCP/IP stack, or a **worksheet/quiz** to test your understanding?
+
