@@ -174,7 +174,62 @@ Here’s a concise and structured summary of the **Transport Layer protocols** i
 | Use Cases         | Web, Email, File Transfer | Streaming, VoIP, DNS queries |
 
 ---
+Here’s a clear and organized summary of the **Internet Layer protocols** in the **TCP/IP protocol suite**:
 
-Would you like to proceed with a structured table for the **Internet Layer protocols** next?
+---
 
+## 🌐 Internet Layer Protocols – TCP/IP Suite
 
+| **Category**          | **Protocol** | **Full Name**               | **Function**                                                                                                               |
+| --------------------- | ------------ | --------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Internet Protocol** | **IPv4**     | Internet Protocol version 4 | Packages and addresses data for end-to-end delivery; uses a **32-bit address**.                                            |
+|                       | **IPv6**     | Internet Protocol version 6 | Similar to IPv4 but uses a **128-bit address** for a larger address space.                                                 |
+|                       | **NAT**      | Network Address Translation | Translates **private IPv4 addresses** into **public IP addresses**, allowing multiple devices to share a single public IP. |
+
+---
+
+### ✉️ Messaging Protocols
+
+| **Protocol**  | **Full Name**                        | **Function**                                                                                     |
+| ------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| **ICMPv4**    | Internet Control Message Protocol v4 | Sends error messages and operational information for IPv4 packets.                               |
+| **ICMPv6**    | Internet Control Message Protocol v6 | Similar to ICMPv4, but for IPv6 packets.                                                         |
+| **ICMPv6 ND** | ICMPv6 Neighbor Discovery            | Handles IPv6-specific functions like **address resolution** and **duplicate address detection**. |
+
+---
+
+### 🧭 Routing Protocols
+
+| **Protocol** | **Full Name**                              | **Function**                                                                           |
+| ------------ | ------------------------------------------ | -------------------------------------------------------------------------------------- |
+| **OSPF**     | Open Shortest Path First                   | Link-state **interior routing** protocol; organizes routers into areas for efficiency. |
+| **EIGRP**    | Enhanced Interior Gateway Routing Protocol | Cisco-developed hybrid protocol using metrics like bandwidth and delay.                |
+| **BGP**      | Border Gateway Protocol                    | **Exterior gateway** protocol; governs routing between ISPs and large networks.        |
+
+---
+
+Here’s a well-organized summary of the **Network Access Layer** in the TCP/IP protocol suite:
+
+---
+
+## 🧩 Network Access Layer – TCP/IP Suite
+
+| **Category**           | **Protocol** | **Full Name**               | **Function**                                                                                                                                                                                                                            |
+| ---------------------- | ------------ | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Address Resolution** | **ARP**      | Address Resolution Protocol | Dynamically maps an **IPv4 address** to a **MAC (hardware) address**. <br>🔍 Although ARP is often categorized at Layer 3, it operates at Layer 2 in this context because it resolves **MAC addresses**, which are Layer 2 identifiers. |
+
+---
+
+### 🔗 Data Link Protocols
+
+| **Protocol** | **Full Name**               | **Function**                                                                                     |
+| ------------ | --------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Ethernet** | —                           | Establishes the **wiring and signaling standards** for wired LAN communication.                  |
+| **WLAN**     | Wireless Local Area Network | Defines the rules for **wireless communication** over the **2.4 GHz** and **5 GHz** radio bands. |
+
+---
+
+✅ **Summary**:
+The **Network Access Layer** is responsible for physically transmitting data over the network medium and discovering hardware addresses like MACs. It includes protocols for both wired (Ethernet) and wireless (WLAN) communication, and mechanisms like ARP to link IP addressing to hardware.
+
+Would you like a full TCP/IP layered protocol chart or diagram summarizing all layers together?
