@@ -148,3 +148,33 @@ Here’s a clean and well-structured summary of the **Application Layer protocol
 
 Would you like the same kind of structured summary for **Transport Layer**, **Internet Layer**, and **Network Access Layer** next?
 
+
+
+Here’s a concise and structured summary of the **Transport Layer protocols** in the **TCP/IP protocol suite**:
+
+---
+
+## 🚚 Transport Layer Protocols – TCP/IP Suite
+
+| **Category**            | **Protocol** | **Full Name**                 | **Function**                                                                                                                                                                                     |
+| ----------------------- | ------------ | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Connection-Oriented** | **TCP**      | Transmission Control Protocol | Ensures **reliable**, **ordered**, and **acknowledged** delivery of data between applications on different hosts. Used by applications that require guaranteed delivery (e.g., HTTP, FTP, SMTP). |
+| **Connectionless**      | **UDP**      | User Datagram Protocol        | Provides **fast**, **unreliable**, and **non-acknowledged** transmission of data. Used by applications that can tolerate some data loss (e.g., video streaming, VoIP, DNS).                      |
+
+---
+
+### 🧠 Quick Comparison:
+
+| Feature           | **TCP**                   | **UDP**                      |
+| ----------------- | ------------------------- | ---------------------------- |
+| Reliability       | ✔ Guaranteed              | ✘ Not guaranteed             |
+| Order of delivery | ✔ Maintains order         | ✘ May arrive out of order    |
+| Acknowledgments   | ✔ Yes                     | ✘ No                         |
+| Speed             | ✘ Slower (more overhead)  | ✔ Faster (low overhead)      |
+| Use Cases         | Web, Email, File Transfer | Streaming, VoIP, DNS queries |
+
+---
+
+Would you like to proceed with a structured table for the **Internet Layer protocols** next?
+
+
