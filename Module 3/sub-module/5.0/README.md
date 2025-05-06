@@ -29,3 +29,19 @@ Here is the **OSI Model with associated protocols** at each layer, explained in 
 ---
 
 Let me know if you want the **TCP/IP vs OSI comparison table** too!
+
+
+
+3.5.3 The TCP/IP Protocol Model
+The TCP/IP protocol model for internetwork communications was created in the early 1970s and is sometimes referred to as the internet model. This type of model closely matches the structure of a particular protocol suite. The TCP/IP model is a protocol model because it describes the functions that occur at each layer of protocols within the TCP/IP suite. TCP/IP is also used as a reference model. The table shows details about each layer of the TCP/IP model.
+TCP/IP Model Layer
+Description
+4- Application
+Represents data to the user, plus encoding and dialog control.
+3- Transport
+Supports communication between various devices across diverse networks.
+2- Internet
+Determines the best path through the network.
+1-Network Access
+Controls the hardware devices and media that make up the network.
+The definitions of the standard and the TCP/IP protocols are discussed in a public forum and defined in a publicly available set of IETF RFCs. An RFC is authored by networking engineers and sent to other IETF members for comments.
