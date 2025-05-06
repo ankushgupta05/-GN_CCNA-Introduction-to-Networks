@@ -301,3 +301,111 @@ Destination MAC: 11-11-11-11-11-11 (R1)
 Agar ab samajh aa gaya ho to bol, nahi to mai isko aur simple karke visuals ke sath samjha deta hoon.
 
 
+
+
+
+Bahut badiya, ab hum **3.7.8 – Data Link Addresses** ko **simple aur step-by-step** format mein samjhte hain — jaise tum chaahte ho, bilkul clear breakdown ke saath:
+
+---
+
+### ✅ **3.7.8 Data Link Addresses – Easy Explanation**
+
+---
+
+### 🔍 **Purpose of Data Link (Layer 2) Address:**
+
+* Data Link (Layer 2) **physical address = MAC address**
+* **Kaam kya hai?** → Ek **NIC (Network Interface Card)** se doosre NIC tak **frame pahunchana** (same local network pe).
+* Jab bhi koi **IP packet physical network** (wired/wireless) se guzarta hai, usse **frame** mein wrap kiya jaata hai (encapsulation hota hai).
+
+---
+
+### 📦 **Layer 2 Encapsulation in Action:**
+
+Jab packet travel karta hai:
+
+1. **Host to First Router**
+2. **Router to Next Router**
+3. **Last Router to Final Destination**
+
+Har step pe:
+
+* **L2 (Data Link)** addresses **change hote hain**
+* **L3 (IP)** addresses **same rehte hain**
+
+---
+
+### 📊 **Example Topology**
+
+```
+PC1 --> Router1 --> Router2 --> Web Server
+```
+
+* PC1 IP: `192.168.1.110`, MAC: `AA-AA-AA-AA-AA-AA`
+* Router1 MAC (inbound): `11-11-11-11-11-11`, outbound: `22-22-22-22-22-22`
+* Router2 MAC (inbound): `22-22-22-22-22-22`, outbound: `33-33-33-33-33-33`
+* Web Server MAC: `AB-CD-EF-12-34-56`
+* Web Server IP: `172.16.1.99`
+
+---
+
+### 🔄 **Hop-by-Hop Frame Addressing:**
+
+#### **1️⃣ Host to Router1:**
+
+```
+L3 (IP Layer):
+  Source IP:      192.168.1.110
+  Destination IP: 172.16.1.99
+
+L2 (Data Link Layer):
+  Source MAC:      AA-AA-AA-AA-AA-AA (PC1)
+  Destination MAC: 11-11-11-11-11-11 (Router1)
+```
+
+#### **2️⃣ Router1 to Router2:**
+
+```
+L3 (same):
+  Source IP:      192.168.1.110
+  Destination IP: 172.16.1.99
+
+L2 (new):
+  Source MAC:      22-22-22-22-22-22 (Router1 out)
+  Destination MAC: 33-33-33-33-33-33 (Router2 in)
+```
+
+#### **3️⃣ Router2 to Web Server:**
+
+```
+L3 (same):
+  Source IP:      192.168.1.110
+  Destination IP: 172.16.1.99
+
+L2 (new):
+  Source MAC:      33-33-33-33-33-33 (Router2)
+  Destination MAC: AB-CD-EF-12-34-56 (Web Server)
+```
+
+---
+
+### 📌 Important Points:
+
+| Hop               | Source MAC        | Destination MAC   | IP Source     | IP Destination |
+| ----------------- | ----------------- | ----------------- | ------------- | -------------- |
+| PC1 → Router1     | AA-AA-AA-AA-AA-AA | 11-11-11-11-11-11 | 192.168.1.110 | 172.16.1.99    |
+| Router1 → Router2 | 22-22-22-22-22-22 | 33-33-33-33-33-33 | 192.168.1.110 | 172.16.1.99    |
+| Router2 → Server  | 33-33-33-33-33-33 | AB-CD-EF-12-34-56 | 192.168.1.110 | 172.16.1.99    |
+
+---
+
+### 🧠 Summary:
+
+* **Layer 2 (MAC):** Used **only within local network**, changes **at every hop**
+* **Layer 3 (IP):** Used for **end-to-end delivery**, stays **same throughout**
+* **Routers:** Remove old L2 info, attach new L2 info when forwarding
+
+---
+
+Agar tum chaaho to main is example ka **illustration/diagram** bhi bana sakta hoon. Batao chahiye kya?
+
