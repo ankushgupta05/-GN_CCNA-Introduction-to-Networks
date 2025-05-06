@@ -1,45 +1,31 @@
-Here’s a **very simple explanation** of the **OSI Reference Model** with daily life examples, layer numbers, and their descriptions — perfect for understanding it easily:
+Here is the **OSI Model with associated protocols** at each layer, explained in a **simple daily life way**, and shown in a clean table format:
 
 ---
 
-## 🌐 **OSI (Open Systems Interconnection) Reference Model**
+## 🧱 OSI Model Layers with Protocols (with Simple Examples)
 
-The **OSI model** has **7 layers**. Each layer has a specific role in helping data travel from one device to another.
-
----
-
-### 🧱 OSI Model Layers (with Simple Examples)
-
-| Layer No. | Layer Name       | Function (Simple)                                            | Daily Life Example                                        |
-| --------- | ---------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
-| **7**     | **Application**  | What the user sees and interacts with (e.g., browser, email) | You write and read an email                               |
-| **6**     | **Presentation** | Makes data readable (e.g., encryption, formatting)           | Translates language so both people understand             |
-| **5**     | **Session**      | Starts, maintains, and ends communication                    | Phone call: connects, stays connected, ends               |
-| **4**     | **Transport**    | Breaks data into pieces and ensures correct delivery         | Delivery van: breaks big order into boxes and tracks them |
-| **3**     | **Network**      | Decides the path data takes across networks                  | GPS: Chooses best route for the delivery                  |
-| **2**     | **Data Link**    | Moves data between devices on the same network               | Street signs helping delivery on local roads              |
-| **1**     | **Physical**     | Physical connection: wires, Wi-Fi, signals                   | The actual road or wires the van travels on               |
+| Layer No. | Layer Name       | Function (Simple)                                            | Daily Life Example                              | Example Protocols                                  |
+| --------- | ---------------- | ------------------------------------------------------------ | ----------------------------------------------- | -------------------------------------------------- |
+| **7**     | **Application**  | What the user sees and interacts with (apps, user interface) | You open Gmail to send an email                 | **HTTP, HTTPS, FTP, SMTP, DNS, DHCP**              |
+| **6**     | **Presentation** | Translates data format, encryption, compression              | English to Hindi translator                     | **SSL, TLS, JPEG, MPEG, ASCII**                    |
+| **5**     | **Session**      | Starts and ends communication sessions                       | Starting and ending a phone call                | **NetBIOS, PPTP, RPC, SAP**                        |
+| **4**     | **Transport**    | Reliable or fast delivery of data                            | Courier service that ensures delivery           | **TCP (reliable), UDP (fast)**                     |
+| **3**     | **Network**      | Chooses the path for data across networks                    | GPS finding best route to home                  | **IP (IPv4, IPv6), ICMP, ARP**                     |
+| **2**     | **Data Link**    | Moves data on local network (between devices)                | Apartment gate security - verifies local access | **Ethernet, PPP, Switch MAC, VLAN**                |
+| **1**     | **Physical**     | Sends data as bits over cables, Wi-Fi                        | The actual roads and cables                     | **USB, Bluetooth, Wi-Fi (802.11), Ethernet cable** |
 
 ---
 
-### 🧠 **Remember This Trick (Mnemonic)**
+### 🌟 Mnemonic to Remember OSI Layers
 
-> **All People Seem To Need Data Processing**
-> → (Application, Presentation, Session, Transport, Network, Data Link, Physical)
+* From **top to bottom** (Layer 7 → Layer 1):
 
-Or from bottom to top:
+  > **All People Seem To Need Data Processing**
 
-> **Please Do Not Throw Sausage Pizza Away**
-> → (Physical, Data Link, Network, Transport, Session, Presentation, Application)
+* From **bottom to top** (Layer 1 → Layer 7):
 
----
-
-### 🛠️ Key Points
-
-* The OSI model **explains what happens at each stage**, but **does not say how** to do it.
-* It helps different systems communicate in a standard way.
-* The **TCP/IP model** is more practical and used in real-world networks, but it maps closely to OSI.
+  > **Please Do Not Throw Sausage Pizza Away**
 
 ---
 
-Would you like a table comparing OSI with the TCP/IP model next?
+Let me know if you want the **TCP/IP vs OSI comparison table** too!
