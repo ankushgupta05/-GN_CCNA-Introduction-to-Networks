@@ -357,3 +357,73 @@ Here's the solution for **Questions 17 to 25** in the same detailed format with 
 
 Would you like me to continue from Question 26 onward in this same format?
 
+
+
+Here are the answers in the format you requested:
+
+---
+
+**Question 26**
+Which method allows a computer to react accordingly when it requests data from a server and the server takes too long to respond?
+
+| Option              | Answer      | Explanation                                                                                          |
+| ------------------- | ----------- | ---------------------------------------------------------------------------------------------------- |
+| 🅐 Flow control     | ❌ Incorrect | Flow control is related to managing data flow rates, not response time.                              |
+| 🅑 Access method    | ❌ Incorrect | Access method refers to how data is accessed in networks or storage.                                 |
+| 🅒 Response timeout | ✅ Correct   | A response timeout ensures the system reacts if the server does not respond in time.                 |
+| 🅓 Encapsulation    | ❌ Incorrect | Encapsulation is a process in networking and programming where data is wrapped in a protocol header. |
+
+---
+
+**Question 27**
+What is a characteristic of multicast messages?
+
+| Option                                       | Answer      | Explanation                                                          |
+| -------------------------------------------- | ----------- | -------------------------------------------------------------------- |
+| 🅐 They must be acknowledged.                | ❌ Incorrect | Acknowledgment is not mandatory for multicast messages.              |
+| 🅑 They are sent to all hosts on a network.  | ❌ Incorrect | This describes broadcast, not multicast.                             |
+| 🅒 They are sent to a select group of hosts. | ✅ Correct   | Multicast is designed to send messages to a specific group of hosts. |
+| 🅓 They are sent to a single destination.    | ❌ Incorrect | This describes unicast, not multicast.                               |
+
+---
+
+**Question 28**
+Why would a Layer 2 switch need an IP address?
+
+| Option                                                           | Answer      | Explanation                                                                             |
+| ---------------------------------------------------------------- | ----------- | --------------------------------------------------------------------------------------- |
+| 🅐 To enable the switch to receive frames from attached PCs      | ❌ Incorrect | The IP address does not affect the switch's ability to receive frames.                  |
+| 🅑 To enable the switch to be managed remotely                   | ✅ Correct   | The IP address allows remote management of the switch via protocols like SSH or HTTP.   |
+| 🅒 To enable the switch to send broadcast frames to attached PCs | ❌ Incorrect | Broadcasting is done within the switch’s local network; the IP address is not required. |
+| 🅓 To enable the switch to function as a default gateway         | ❌ Incorrect | The IP address of the switch is for management, not for routing traffic.                |
+
+---
+
+**Question 29**
+A CLI output that says the following: Switch1> config t ^ % Invalid input detected at '^' marker. The ^ is under the "f" in the word "config"
+Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?
+
+| Option                                                                                      | Answer      | Explanation                                                                                                 |
+| ------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------- |
+| 🅐 The administrator must first enter privileged EXEC mode before issuing the command.      | ✅ Correct   | The error suggests the administrator needs to enter privileged EXEC mode first (using `enable`).            |
+| 🅑 The entire command, configure terminal, must be used.                                    | ❌ Incorrect | The command `config t` is a valid shorthand for `configure terminal`.                                       |
+| 🅒 The administrator must connect via the console port to access global configuration mode. | ❌ Incorrect | Accessing global configuration mode does not require a console connection.                                  |
+| 🅓 The administrator is already in global configuration mode.                               | ❌ Incorrect | The error indicates the administrator is not in the correct mode, not already in global configuration mode. |
+
+---
+
+**Question 30**
+What is the IP address of the switch virtual interface (SVI) on Switch0?
+
+| Option          | Answer      | Explanation                                                   |
+| --------------- | ----------- | ------------------------------------------------------------- |
+| 🅐 192.168.10.5 | ❌ Incorrect | This is not the correct IP address for the SVI on Switch0.    |
+| 🅑 192.168.10.1 | ❌ Incorrect | This is not the correct IP address for the SVI on Switch0.    |
+| 🅒 192.168.5.10 | ✅ Correct   | This is the correct IP address for the SVI on Switch0.        |
+| 🅓 192.168.5.0  | ❌ Incorrect | 192.168.5.0 is a network address, not a valid IP for the SVI. |
+
+---
+
+Let me know if you need further assistance!
+
+
