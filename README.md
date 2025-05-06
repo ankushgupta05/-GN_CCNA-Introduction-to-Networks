@@ -227,3 +227,133 @@ Here’s the solution in the same format for **Questions 11 to 16**:
 ---
 
 Would you like me to continue with Question 17 to 20 in this same table format?
+
+
+
+Here's the solution for **Questions 17 to 25** in the same detailed format with explanations:
+
+---
+
+### **Question 17**
+
+**At which layer of the OSI model would a logical address be added during encapsulation?**
+
+| Option             | Answer      | Explanation                                                    |
+| ------------------ | ----------- | -------------------------------------------------------------- |
+| 🅐 Transport layer | ❌ Incorrect | Transport layer adds port numbers, not logical (IP) addresses. |
+| 🅑 Data link layer | ❌ Incorrect | Data link layer adds physical (MAC) addresses.                 |
+| 🅒 Physical layer  | ❌ Incorrect | Physical layer handles bits, not addressing.                   |
+| 🅓 Network layer   | ✅ Correct   | The IP (logical) address is added at the network layer.        |
+
+---
+
+### **Question 18**
+
+**Which name is assigned to the transport layer PDU?**
+
+| Option     | Answer      | Explanation                                                   |
+| ---------- | ----------- | ------------------------------------------------------------- |
+| 🅐 Frame   | ❌ Incorrect | Frame is the Data Link layer PDU.                             |
+| 🅑 Bits    | ❌ Incorrect | Bits are used in the Physical layer.                          |
+| 🅒 Segment | ✅ Correct   | The PDU at the Transport layer is called a segment (for TCP). |
+| 🅓 Data    | ❌ Incorrect | "Data" is a general term used at the Application layer.       |
+| 🅔 Packet  | ❌ Incorrect | Packet is used at the Network layer.                          |
+
+---
+
+### **Question 19**
+
+**What three application layer protocols are part of the TCP/IP protocol suite? (Choose three.)**
+
+| Option | Answer      | Explanation                                                    |
+| ------ | ----------- | -------------------------------------------------------------- |
+| ⛔ PPP  | ❌ Incorrect | PPP operates at the data link layer.                           |
+| ✅ DHCP | ✅ Correct   | DHCP is used for dynamic IP address assignment.                |
+| ⛔ ARP  | ❌ Incorrect | ARP operates at the network access layer.                      |
+| ✅ FTP  | ✅ Correct   | FTP is used for file transfer at the application layer.        |
+| ⛔ NAT  | ❌ Incorrect | NAT operates at the internet layer, not the application layer. |
+| ✅ DNS  | ✅ Correct   | DNS resolves domain names to IP addresses.                     |
+
+---
+
+### **Question 20**
+
+**What process involves placing one PDU inside of another PDU?**
+
+| Option           | Answer      | Explanation                                                               |
+| ---------------- | ----------- | ------------------------------------------------------------------------- |
+| 🅐 Encapsulation | ✅ Correct   | This is the process of wrapping data with protocol headers at each layer. |
+| 🅑 Flow control  | ❌ Incorrect | Flow control manages the rate of data transmission.                       |
+| 🅒 Segmentation  | ❌ Incorrect | Segmentation splits data into smaller chunks.                             |
+| 🅓 Encoding      | ❌ Incorrect | Encoding is converting data into a transmission format.                   |
+
+---
+
+### **Question 21**
+
+**A web client is receiving a response for a web page from a web server. From the perspective of the client, what is the correct order of the protocol stack that is used to decode the received transmission?**
+
+| Option                     | Answer      | Explanation                                                     |
+| -------------------------- | ----------- | --------------------------------------------------------------- |
+| 🅐 HTTP, Ethernet, IP, TCP | ❌ Incorrect | Ethernet comes first at the bottom, not the top.                |
+| 🅑 Ethernet, IP, TCP, HTTP | ✅ Correct   | This is the correct order for de-encapsulation (bottom to top). |
+| 🅒 HTTP, TCP, IP, Ethernet | ❌ Incorrect | This is the order for encapsulation, not de-encapsulation.      |
+| 🅓 Ethernet, TCP, IP, HTTP | ❌ Incorrect | The correct middle order is IP before TCP.                      |
+
+---
+
+### **Question 22**
+
+**What layer is responsible for routing messages through an internetwork in the TCP/IP model?**
+
+| Option            | Answer      | Explanation                                         |
+| ----------------- | ----------- | --------------------------------------------------- |
+| 🅐 Transport      | ❌ Incorrect | Transport ensures delivery, not routing.            |
+| 🅑 Session        | ❌ Incorrect | Session is part of the OSI model, not TCP/IP.       |
+| 🅒 Internet       | ✅ Correct   | The Internet layer is responsible for routing (IP). |
+| 🅓 Network access | ❌ Incorrect | This layer handles the physical transmission.       |
+
+---
+
+### **Question 23**
+
+**Which two OSI model layers have the same functionality as a single layer of the TCP/IP model? (Choose two.)**
+
+| Option      | Answer      | Explanation                                             |
+| ----------- | ----------- | ------------------------------------------------------- |
+| ✅ Physical  | ✅ Correct   | Combined into the Network Access layer in TCP/IP.       |
+| ✅ Data link | ✅ Correct   | Combined into the Network Access layer in TCP/IP.       |
+| ⛔ Transport | ❌ Incorrect | Maps 1:1 with TCP/IP transport layer.                   |
+| ⛔ Network   | ❌ Incorrect | Also maps directly to TCP/IP Internet layer.            |
+| ⛔ Session   | ❌ Incorrect | Session is merged into the Application layer in TCP/IP. |
+
+---
+
+### **Question 24**
+
+**Which statement is correct about network protocols?**
+
+| Option                                                    | Answer      | Explanation                                                 |
+| --------------------------------------------------------- | ----------- | ----------------------------------------------------------- |
+| 🅐 Only needed for remote networks                        | ❌ Incorrect | Protocols are used for both local and remote communication. |
+| 🅑 Define message exchange between source and destination | ✅ Correct   | Protocols provide rules for communication.                  |
+| 🅒 All function in network access layer                   | ❌ Incorrect | Protocols work across all layers, not just one.             |
+| 🅓 Define hardware and rack mounting                      | ❌ Incorrect | That’s related to physical standards, not protocols.        |
+
+---
+
+### **Question 25**
+
+**What is an advantage of network devices using open standard protocols?**
+
+| Option                                             | Answer      | Explanation                                                |
+| -------------------------------------------------- | ----------- | ---------------------------------------------------------- |
+| 🅐 Different OS systems can exchange data          | ✅ Correct   | Open standards ensure interoperability.                    |
+| 🅑 Competition and innovation are limited          | ❌ Incorrect | Open standards encourage competition and innovation.       |
+| 🅒 Communication is limited to same-vendor devices | ❌ Incorrect | This applies to proprietary protocols, not open standards. |
+| 🅓 Internet is controlled by a single ISP          | ❌ Incorrect | This is unrelated to the concept of open protocols.        |
+
+---
+
+Would you like me to continue from Question 26 onward in this same format?
+
