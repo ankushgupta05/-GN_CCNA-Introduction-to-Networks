@@ -370,5 +370,67 @@ Here are the answers to your "Check Your Understanding - Protocol Suites" questi
 
 ---
 
-Let me know if you’d like a downloadable PDF or Markdown version of these answers!
+
+
+Here's the corrected and formatted version of **3.6.6 Check Your Understanding - Data Encapsulation** using your specified style:
+
+---
+
+### **Question 1**
+
+**What is the process of dividing a large data stream into smaller pieces prior to transmission?**
+
+| Option                                                                             | Answer      | Explanation                                                                                |
+| ---------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------ |
+| 🅐 Sequencing                                                                      | ❌ Incorrect | Sequencing refers to arranging packets in order, not breaking data into parts.             |
+| 🅑 Duplexing                                                                       | ❌ Incorrect | Duplexing refers to the direction of communication (half or full), not data division.      |
+| 🅒 Multiplexing                                                                    | ❌ Incorrect | Multiplexing combines multiple signals, not divides one.                                   |
+| 🅓 Segmentation                                                                    | ✅ Correct   | Segmentation is the process of breaking large data into smaller segments for transmission. |
+| 🔹 **Example**: A long email is broken into smaller parts before sending over TCP. |             |                                                                                            |
+
+---
+
+### **Question 2**
+
+**What is the PDU associated with the transport layer?**
+
+| Option                                                                                   | Answer      | Explanation                                                                        |
+| ---------------------------------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------- |
+| 🅐 Segment                                                                               | ✅ Correct   | The transport layer (e.g., TCP) uses **segments** as its PDU (Protocol Data Unit). |
+| 🅑 Packet                                                                                | ❌ Incorrect | Packet is the PDU at the network layer (e.g., IP).                                 |
+| 🅒 Bits                                                                                  | ❌ Incorrect | Bits are used at the physical layer.                                               |
+| 🅓 Frame                                                                                 | ❌ Incorrect | Frame is the PDU at the data link layer.                                           |
+| 🔹 **Example**: TCP segments include headers with sequence numbers and port information. |             |                                                                                    |
+
+---
+
+### **Question 3**
+
+**Which protocol stack layer encapsulates data into frames?**
+
+| Option                                                                                        | Answer      | Explanation                                                                         |
+| --------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------- |
+| 🅐 Data link                                                                                  | ✅ Correct   | The data link layer encapsulates packets into **frames** for physical transmission. |
+| 🅑 Transport                                                                                  | ❌ Incorrect | Transport layer works with segments, not frames.                                    |
+| 🅒 Network                                                                                    | ❌ Incorrect | Network layer encapsulates data into packets.                                       |
+| 🅓 Application                                                                                | ❌ Incorrect | Application layer generates data but doesn't encapsulate it into frames.            |
+| 🔹 **Example**: Ethernet frames are created at the data link layer for transmission over LAN. |             |                                                                                     |
+
+---
+
+### **Question 4**
+
+**What is the name of the process of adding protocol information to data as it moves down the protocol stack?**
+
+| Option                                                                                     | Answer      | Explanation                                                                       |
+| ------------------------------------------------------------------------------------------ | ----------- | --------------------------------------------------------------------------------- |
+| 🅐 De-encapsulation                                                                        | ❌ Incorrect | De-encapsulation is the process used by the receiving host to remove headers.     |
+| 🅑 Sequencing                                                                              | ❌ Incorrect | Sequencing deals with ordering segments, not adding headers.                      |
+| 🅒 Segmentation                                                                            | ❌ Incorrect | Segmentation breaks data into parts, but does not add headers.                    |
+| 🅓 Encapsulation                                                                           | ✅ Correct   | Encapsulation is the process of **adding headers** as data moves down each layer. |
+| 🔹 **Example**: When sending an email, each layer adds its own header before transmitting. |             |                                                                                   |
+
+---
+
+Let me know if you'd like this in Markdown or added to a document.
 
