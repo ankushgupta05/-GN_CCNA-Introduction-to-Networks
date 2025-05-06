@@ -94,3 +94,43 @@ Yeh standards help karte hain data (IP packets) ko **electronic signals** mein c
 
 Aap chahein toh main iska ek **summary chart ya diagram** bhi bana ke de sakta hoon. Chahiye?
 
+
+
+Here are the correct answers for **3.4.5 Check Your Understanding - Standards Organizations**, along with simple explanations:
+
+---
+
+### ✅ **Question 1**
+
+**True or False:** Standards organizations are usually vendor-neutral.
+**✔️ Correct Answer: True**
+**Why?** Because these organizations set rules that apply equally to all companies and brands, not just one specific vendor.
+
+---
+
+### ✅ **Question 2**
+
+**This standards organization is concerned with the Request for Comments (RFC) documents that specify new protocols and update existing ones.**
+**✔️ Correct Answer: Internet Engineering Task Force (IETF)**
+**Why?** IETF publishes **RFCs** which define how internet protocols like TCP/IP, HTTP, etc., should work.
+
+---
+
+### ✅ **Question 3**
+
+**This standards organization is responsible for IP address allocation and domain name management.**
+**✔️ Correct Answer: Internet Assigned Numbers Authority (IANA)**
+**Why?** IANA manages **IP addresses** and **domain names** globally (like .com, .org, etc.).
+
+---
+
+### ✅ **Question 4**
+
+**What types of standards are developed by the Electronics Industries Alliance (EIA)?**
+**✔️ Correct Answer: Electric wiring and connectors**
+**Why?** EIA focuses on physical standards like **cables**, **connectors**, and **equipment racks**.
+
+---
+
+Let me know if you'd like this in a table or PDF format for easy notes!
+
