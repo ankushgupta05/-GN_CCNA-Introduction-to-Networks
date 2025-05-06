@@ -135,3 +135,95 @@ Here are the correct answers to **Questions 1 to 10**, formatted just like Quest
 ---
 
 Would you like me to continue with Questions 11–20 in the same format?
+
+
+
+
+
+Here’s the solution in the same format for **Questions 11 to 16**:
+
+---
+
+### **Question 11**
+
+**Which two host names follow the guidelines for naming conventions on Cisco IOS devices? (Choose two.)**
+
+| Option            | Answer      | Explanation                                                         |
+| ----------------- | ----------- | ------------------------------------------------------------------- |
+| ✅ SwBranch799     | ✅ Correct   | Uses only letters and numbers; no spaces or special characters.     |
+| ⛔ Floor(15)       | ❌ Incorrect | Contains parentheses, which are not allowed in Cisco IOS hostnames. |
+| ⛔ HO Floor 17     | ❌ Incorrect | Contains spaces, which are not valid in hostnames.                  |
+| ✅ RM-3-Switch-2A4 | ✅ Correct   | Dashes are allowed, and the name is appropriately formatted.        |
+| ⛔ Branch2!        | ❌ Incorrect | Contains an exclamation mark, which is not allowed in hostnames.    |
+
+---
+
+### **Question 12**
+
+**What function does pressing the Tab key have when entering a command in IOS?**
+
+| Option                                                                | Answer      | Explanation                                |
+| --------------------------------------------------------------------- | ----------- | ------------------------------------------ |
+| 🅐 It aborts the current command and returns to configuration mode.   | ❌ Incorrect | Ctrl+C is used to abort commands.          |
+| 🅑 It completes the remainder of a partially typed word in a command. | ✅ Correct   | The Tab key auto-completes command words.  |
+| 🅒 It exits configuration mode and returns to user EXEC mode.         | ❌ Incorrect | Use `end` or `Ctrl+Z` to exit config mode. |
+| 🅓 It moves the cursor to the beginning of the next line.             | ❌ Incorrect | Enter key does this, not Tab.              |
+
+---
+
+### **Question 13**
+
+**What command will prevent all unencrypted passwords from displaying in plain text in a configuration file?**
+
+| Option                                         | Answer      | Explanation                                                     |
+| ---------------------------------------------- | ----------- | --------------------------------------------------------------- |
+| 🅐 (config)# enable secret Secret\_Password    | ❌ Incorrect | This encrypts only the enable secret password.                  |
+| 🅑 (config)# enable password secret            | ❌ Incorrect | Invalid command syntax.                                         |
+| 🅒 (config-line)# password secret              | ❌ Incorrect | Invalid syntax and context for global encryption.               |
+| 🅓 (config)# enable secret Encrypted\_Password | ❌ Incorrect | This sets an encrypted password but doesn't encrypt all others. |
+| 🅔 (config)# service password-encryption       | ✅ Correct   | Encrypts all plaintext passwords in the config file.            |
+
+---
+
+### **Question 14**
+
+**Passwords can be used to restrict access to all or parts of the Cisco IOS. Select the modes and interfaces that can be protected with passwords. (Choose three.)**
+
+| Option                      | Answer      | Explanation                                                 |
+| --------------------------- | ----------- | ----------------------------------------------------------- |
+| ⛔ Boot IOS mode             | ❌ Incorrect | Not a password-protected mode.                              |
+| ⛔ Ethernet interface        | ❌ Incorrect | Cannot be password protected directly.                      |
+| ⛔ Router configuration mode | ❌ Incorrect | Access to this mode is protected indirectly via EXEC mode.  |
+| ✅ Console interface         | ✅ Correct   | You can set a console line password using `line console 0`. |
+| ✅ VTY interface             | ✅ Correct   | VTY lines (Telnet/SSH) can be password protected.           |
+| ✅ Privileged EXEC mode      | ✅ Correct   | Protected using `enable password` or `enable secret`.       |
+
+---
+
+### **Question 15**
+
+**What command is used to verify the condition of the switch interfaces, including the status of the interfaces and a configured IP address?**
+
+| Option                     | Answer      | Explanation                                                |
+| -------------------------- | ----------- | ---------------------------------------------------------- |
+| 🅐 show ip interface brief | ✅ Correct   | Displays the summary of interface status and IP addresses. |
+| 🅑 ipconfig                | ❌ Incorrect | This is a Windows command, not a Cisco IOS command.        |
+| 🅒 ping                    | ❌ Incorrect | Used to test connectivity, not view interface details.     |
+| 🅓 traceroute              | ❌ Incorrect | Shows the route packets take, not interface info.          |
+
+---
+
+### **Question 16**
+
+**Refer to the exhibit. A network administrator is configuring access control to switch SW1. If the administrator uses a console connection to connect to the switch, which password is needed to access user EXEC mode?**
+
+| Option       | Answer      | Explanation                                                                                              |
+| ------------ | ----------- | -------------------------------------------------------------------------------------------------------- |
+| 🅐 letmein   | ❌ Incorrect | This is for `enable password`, used for privileged EXEC mode.                                            |
+| 🅑 linevtyin | ❌ Incorrect | This is for VTY (remote) access, not console access.                                                     |
+| 🅒 secretin  | ❌ Incorrect | This is for `enable secret`, used for privileged EXEC mode.                                              |
+| 🅓 lineconin | ✅ Correct   | This password is configured under `line console 0` and is required to access user EXEC mode via console. |
+
+---
+
+Would you like me to continue with Question 17 to 20 in this same table format?
