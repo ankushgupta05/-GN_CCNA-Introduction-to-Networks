@@ -127,3 +127,92 @@ Here is a concise summary of **Sections 3.7.1 to 3.7.4** on network addressing:
 ---
 
 Would you like a visual diagram to help illustrate how Layer 2 and Layer 3 addressing works together?
+
+
+
+Certainly! Here's the explanation of the process **“Devices on a Remote Network”** using the **same format** and structure you've provided:
+
+---
+
+### 3.7.5 Devices on a Remote Network
+
+But what are the roles of the network layer address and the data link layer address when a device is communicating with a device on a remote network? In this example, we have a client computer, **PC1**, communicating with a server, named **Web Server**, on a different IP network.
+
+---
+
+### 3.7.6 Role of the Network Layer Addresses
+
+When the sender of the packet is on a different network from the receiver, the **source and destination IP addresses** will represent hosts on **different networks**. This is indicated by the **network portion** of the IP address of the destination host.
+
+* **Source IPv4 address** – The IPv4 address of the sending device, the client computer **PC1**: `192.168.1.110`.
+* **Destination IPv4 address** – The IPv4 address of the receiving device, the server **Web Server**: `172.16.1.99`.
+
+> Notice in the figure that the **network portion** of the source and destination IPv4 addresses are **on different networks**.
+
+---
+
+**The figure** shows the data link Ethernet frame header and network layer IP packet header for information flowing from a **source on one network** to a **destination on a different network**.
+
+#### Network Topology:
+
+* **PC1**
+
+  * IP: `192.168.1.110`
+  * MAC: `AA-AA-AA-AA-AA-AA`
+* **R1 (Router)**
+
+  * IP: `192.168.1.1`
+  * MAC: `11-11-11-11-11-11`
+* **R2 (Router)**
+
+  * IP: `172.16.1.1`
+  * MAC: `22-22-22-22-22-22`
+* **Web Server**
+
+  * IP: `172.16.1.99`
+  * MAC: `AB-CD-EF-12-34-56`
+
+---
+
+#### Packet Headers:
+
+| Layer             | Header Details                                                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Data Link**     | **Ethernet Frame Header** <br> - **Destination MAC**: `11-11-11-11-11-11` (R1) <br> - **Source MAC**: `AA-AA-AA-AA-AA-AA` (PC1) |
+| **Network Layer** | **IP Packet Header** <br> - **Source IP**: `192.168.1.110` <br> - **Destination IP**: `172.16.1.99`                             |
+| **Payload**       | Data                                                                                                                            |
+
+---
+
+### 3.7.7 Role of the Data Link Layer Addresses – Different IP Networks
+
+When the sender and receiver of the IP packet are **on different networks**, the Ethernet **data link frame cannot be sent directly** to the destination host. This is because the host is not on the same local network.
+
+Instead, the Ethernet frame is sent to the **default gateway (router)**. In our example, the **default gateway is R1**, which shares the same local network as **PC1**.
+
+#### Addressing:
+
+* **Source MAC address** – The MAC address of **PC1**: `AA-AA-AA-AA-AA-AA`.
+* **Destination MAC address** – Since the destination (Web Server) is on a different network, PC1 sends the frame to the **MAC address of R1**, the default gateway: `11-11-11-11-11-11`.
+
+> This allows the Ethernet frame to reach R1, which will then forward the IP packet toward the final destination.
+
+---
+
+**Summary Flow:**
+
+* **PC1** constructs a frame:
+
+  * **Dest MAC**: `R1`
+  * **Source MAC**: `PC1`
+  * **Dest IP**: `Web Server`
+  * **Source IP**: `PC1`
+
+* **R1** receives the frame, reads the IP header, and forwards the packet through other routers or networks until it reaches **Web Server**.
+
+---
+
+> 💡 **Important:** Every host must have the IP address of its default gateway configured. This ensures packets destined for remote networks can be properly forwarded.
+
+Would you like me to illustrate this flow with a visual diagram?
+
