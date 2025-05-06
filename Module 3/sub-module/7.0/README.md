@@ -216,3 +216,88 @@ Instead, the Ethernet frame is sent to the **default gateway (router)**. In our 
 
 Would you like me to illustrate this flow with a visual diagram?
 
+
+
+
+
+
+Koi baat nahi, chalo simple aur step-by-step tarike se samjhte hain isko. Tum keh rahe ho tumhe samajh nahi aaya — to main easy language mein breakdown karta hoon **3.7.5 to 3.7.7** ka concept **same format** mein, jaise tumne bola:
+
+---
+
+### **3.7.5 Devices on a Remote Network**
+
+Jab ek device (jaise PC1) kisi **doosre network** par hone wale device (jaise Web Server) se baat karta hai, to IP aur MAC address ka alag role hota hai.
+**Example:**
+
+* **PC1:** IP = `192.168.1.110`, MAC = `AA-AA-AA-AA-AA-AA`
+* **Web Server:** IP = `172.16.1.99`, MAC = `AB-CD-EF-12-34-56`
+* Yeh dono **alag networks** mein hain.
+
+---
+
+### **3.7.6 Role of the Network Layer Addresses**
+
+Network layer (jaise IP address) identify karta hai ki **kaun kis network par hai**.
+
+* **Source IP (sender):** `192.168.1.110` (PC1)
+* **Destination IP (receiver):** `172.16.1.99` (Web Server)
+
+> Yeh dono alag networks par hain, to routing zaroori hai.
+
+---
+
+**Example Topology:**
+
+```
+PC1 -- Switch -- R1 -- R2 -- Switch -- Web Server
+
+PC1 IP: 192.168.1.110, MAC: AA-AA-AA-AA-AA-AA  
+R1 IP: 192.168.1.1,    MAC: 11-11-11-11-11-11  
+R2 IP: 172.16.1.1,     MAC: 22-22-22-22-22-22  
+Web Server IP: 172.16.1.99, MAC: AB-CD-EF-12-34-56  
+```
+
+**Network Layer (IP header):**
+
+```
+Source IP:      192.168.1.110  
+Destination IP: 172.16.1.99  
+```
+
+> Yeh IPs throughout packet journey same rahenge. Yeh routers ko batate hain data ka origin aur destination kya hai.
+
+---
+
+### **3.7.7 Role of the Data Link Layer Addresses - Different IP Networks**
+
+**Data Link layer (jaise MAC address)** batata hai ki **packet agle hop (next device)** ko kaise mile.
+
+* PC1 ko directly Web Server ka MAC address nahi pata.
+* To PC1 **default gateway (R1)** ke MAC address pe frame bhejta hai.
+
+**Data Link (Ethernet frame header):**
+
+```
+Source MAC:      AA-AA-AA-AA-AA-AA (PC1)
+Destination MAC: 11-11-11-11-11-11 (R1)
+```
+
+> Yeh MAC addresses **har hop pe change hote hain**, lekin IP address same rehta hai.
+
+---
+
+### Summary:
+
+| Layer         | Source                  | Destination              | Notes                       |
+| ------------- | ----------------------- | ------------------------ | --------------------------- |
+| **Network**   | 192.168.1.110 (PC1)     | 172.16.1.99 (Web Server) | Stays same end-to-end       |
+| **Data Link** | AA-AA-AA-AA-AA-AA (PC1) | 11-11-11-11-11-11 (R1)   | Changes on each network hop |
+
+> Har device apne default gateway ke MAC address ko use karta hai jab destination doosre network pe ho.
+
+---
+
+Agar ab samajh aa gaya ho to bol, nahi to mai isko aur simple karke visuals ke sath samjha deta hoon.
+
+
