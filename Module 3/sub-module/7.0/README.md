@@ -409,3 +409,120 @@ L2 (new):
 
 Agar tum chaaho to main is example ka **illustration/diagram** bhi bana sakta hoon. Batao chahiye kya?
 
+
+
+
+
+Here's a **simple explanation with examples** for each question to help you clearly understand the correct answers:
+
+---
+
+### ✅ **Question 1**
+
+**True or False?** Frames exchanged between devices in different IP networks must be forwarded to a default gateway.
+
+✔️ **Answer:** ✅ **True**
+
+**Explanation:**
+If two devices are on **different IP networks**, they can't directly communicate.
+They send frames to the **default gateway (router)** which then forwards the packets.
+
+🧠 **Example:**
+
+* PC1: `192.168.1.10`
+* PC2: `172.16.0.20`
+  They are in **different networks**, so PC1 sends the frame to the **default gateway (router)**.
+
+---
+
+### ✅ **Question 2**
+
+**True or False?** The right-most part of an IP address is used to identify the network that a device belongs to.
+
+✔️ **Answer:** ❌ **False**
+
+**Explanation:**
+The **left-most part** of an IP address identifies the **network**.
+The **right-most part** is for the **host (device)**.
+
+🧠 **Example:**
+For IP: `192.168.1.10` and subnet mask `255.255.255.0`
+
+* **Network part:** `192.168.1`
+* **Host part:** `10`
+
+---
+
+### ✅ **Question 3**
+
+**What is used to determine the network portion of an IPv4 address?**
+
+✔️ **Answer:** ✅ **Subnet mask**
+
+**Explanation:**
+The **subnet mask** tells which part of the IP address is the **network** and which is the **host**.
+
+🧠 **Example:**
+
+* IP: `192.168.1.10`
+* Subnet mask: `255.255.255.0`
+  → Network: `192.168.1.0`, Host: `10`
+
+---
+
+### ✅ **Question 4**
+
+**Which of the following statements are true regarding network layer and data link layer addresses? (Choose three)**
+
+✔️ **Correct Answers:**
+
+* ✅ **Network layer addresses are logical and data link addresses are expressed as 12 hexadecimal digits.**
+* ✅ **Data link layer addresses are physical and network layer addresses are logical.**
+* ✅ **Network layer addresses are either 32 or 128 bits in length.**
+
+**Explanation:**
+
+* Network Layer = **IP address (logical)** → e.g. `192.168.1.10` (IPv4), 32 bits
+* Data Link Layer = **MAC address (physical)** → e.g. `AA-BB-CC-DD-EE-FF`, 48 bits (12 hex digits)
+
+---
+
+### ✅ **Question 5**
+
+**What is the order of the two addresses in the data link frame?**
+
+✔️ **Answer:** ✅ **Destination MAC, source MAC**
+
+**Explanation:**
+In the data link (Ethernet) frame:
+
+* **First** comes: Destination MAC
+* **Then**: Source MAC
+
+🧠 **Example:**
+If PC1 sends to Router:
+
+* Destination MAC: `11-11-11-11-11-11` (Router)
+* Source MAC: `AA-AA-AA-AA-AA-AA` (PC1)
+
+---
+
+### ✅ **Question 6**
+
+**True or False?** Data Link addresses are physical so they never change in the data link frame from source to destination.
+
+✔️ **Answer:** ❌ **False**
+
+**Explanation:**
+Data Link (MAC) addresses **change at every hop**. Routers strip the old MAC and add a new one.
+
+🧠 **Example:**
+PC1 → Router1 → Router2 → Server
+
+* PC1 to Router1: MAC1 → MAC2
+* Router1 to Router2: MAC3 → MAC4
+* Router2 to Server: MAC5 → MAC6
+
+---
+
+Let me know if you want this in a table or want a visual diagram to help understand better!
