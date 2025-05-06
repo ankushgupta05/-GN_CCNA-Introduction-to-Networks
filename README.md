@@ -378,6 +378,50 @@ Which method allows a computer to react accordingly when it requests data from a
 **Question 27**
 What is a characteristic of multicast messages?
 
+
+Here are the answers in the same format as before:
+
+---
+
+**Question 31**
+Which device performs the function of determining the path that messages should take through internetworks?
+
+| Option          | Answer      | Explanation                                                          |
+| --------------- | ----------- | -------------------------------------------------------------------- |
+| 🅐 A router     | ✅ Correct   | Routers determine the best path for data to travel between networks. |
+| 🅑 A web server | ❌ Incorrect | A web server hosts web pages but doesn't determine message paths.    |
+| 🅒 A firewall   | ❌ Incorrect | Firewalls filter traffic, but do not determine routing paths.        |
+| 🅓 A DSL modem  | ❌ Incorrect | A DSL modem provides internet access but doesn't perform routing.    |
+
+---
+
+**Question 32**
+What term describes a computing model where server software runs on dedicated computers?
+
+| Option           | Answer      | Explanation                                                                                                |
+| ---------------- | ----------- | ---------------------------------------------------------------------------------------------------------- |
+| 🅐 Client/server | ✅ Correct   | In the client/server model, the server software runs on dedicated machines to provide services to clients. |
+| 🅑 Extranet      | ❌ Incorrect | An extranet is a private network allowing access to partners or vendors, not a computing model.            |
+| 🅒 Intranet      | ❌ Incorrect | An intranet is a private internal network, not a computing model.                                          |
+| 🅓 Internet      | ❌ Incorrect | The internet is a global network, not a server computing model.                                            |
+
+---
+
+**Question 33**
+At which OSI layer is a destination MAC address added to a PDU during the encapsulation process?
+
+| Option               | Answer      | Explanation                                                                         |
+| -------------------- | ----------- | ----------------------------------------------------------------------------------- |
+| 🅐 Application layer | ❌ Incorrect | The application layer deals with software and user interaction, not MAC addressing. |
+| 🅑 Network layer     | ❌ Incorrect | The network layer adds IP addresses, not MAC addresses.                             |
+| 🅒 Data link layer   | ✅ Correct   | The data link layer adds the destination and source MAC addresses.                  |
+| 🅓 Transport layer   | ❌ Incorrect | The transport layer deals with ports and segmenting data, not MAC addresses.        |
+
+---
+
+Let me know if you want the next set of questions!
+
+
 | Option                                       | Answer      | Explanation                                                          |
 | -------------------------------------------- | ----------- | -------------------------------------------------------------------- |
 | 🅐 They must be acknowledged.                | ❌ Incorrect | Acknowledgment is not mandatory for multicast messages.              |
