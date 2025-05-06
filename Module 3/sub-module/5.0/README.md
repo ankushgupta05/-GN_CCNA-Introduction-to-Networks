@@ -52,3 +52,34 @@ Here’s a simple and clear **TCP/IP Model with protocols** in a table format, a
 
 Let me know if you’d like a **comparison table of TCP/IP vs OSI model** too!
 
+
+
+
+
+Here's a **comparison table between the OSI Model and TCP/IP Model**, including **layer mappings, functions**, and **example protocols** to help you visualize how the two models align:
+
+---
+
+## 📊 OSI vs TCP/IP Model Comparison Table
+
+| **OSI Layer**        | **TCP/IP Layer**       | **Layer Function (Simple)**                                                                 | **Example Protocols**      |
+| -------------------- | ---------------------- | ------------------------------------------------------------------------------------------- | -------------------------- |
+| **7 - Application**  |                        | Interface for user applications                                                             | HTTP, FTP, SMTP, DNS       |
+| **6 - Presentation** |                        | Data formatting, encryption, and compression                                                | JPEG, MP4, SSL/TLS         |
+| **5 - Session**      |                        | Manages sessions or connections between applications                                        | NetBIOS, PPTP              |
+|                      | **4 - Application**    | Combines Layers 5, 6, 7 — handles app services, data formatting, and communication sessions | HTTP, FTP, SMTP, DNS, DHCP |
+| **4 - Transport**    | **3 - Transport**      | End-to-end communication, reliable or fast delivery                                         | TCP, UDP                   |
+| **3 - Network**      | **2 - Internet**       | Logical addressing and routing across networks                                              | IP, ICMP, ARP              |
+| **2 - Data Link**    |                        | Physical addressing and frame transmission over local network                               | Ethernet, PPP, HDLC        |
+| **1 - Physical**     | **1 - Network Access** | Electrical/optical signal transmission, cabling, connectors                                 | Cables, Hubs, NICs         |
+
+---
+
+### 🧠 Key Takeaways:
+
+* **OSI Layers 5, 6, and 7** are merged into **TCP/IP's Application layer**.
+* Both models **align well at Transport and Network layers**.
+* **TCP/IP is a practical protocol model**, while **OSI is more conceptual** and used for reference and teaching.
+* The **lower two layers in OSI (Data Link and Physical)** are referred to as a single **Network Access layer in TCP/IP**.
+
+Would you like this table as a downloadable image or Markdown file for easy sharing or study?
