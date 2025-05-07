@@ -269,3 +269,70 @@ Although people often say "internet speed," **bandwidth is not how *fast* bits t
 > 📎 **Conclusion:** Bandwidth is about how *much* data can be transferred per second, not how *fast* it moves.
 
 
+
+
+# 4.2.6 – Bandwidth Terminology
+
+When evaluating how well data travels over a network, we use three key terms:
+
+---
+
+## 🚀 1. Latency
+
+**Latency** is the *time delay* for data to travel from one point to another.
+
+> 📌 **Think of latency like travel time**: If you're sending a message from Delhi to Mumbai, the latency is the time it takes to get there.
+
+- Latency includes:
+  - Signal travel time
+  - Processing delays
+  - Queuing delays
+  - Transmission delays
+
+---
+
+## 📊 2. Throughput
+
+**Throughput** is the **actual amount of data** (in bits) successfully transferred over a network in a given time.
+
+> 📌 **Think of throughput like water flow**: How much water (data) gets through the pipe (network) per second.
+
+- It is often **less than** the available **bandwidth** because of:
+  - Traffic congestion
+  - Network device limitations
+  - Protocol overhead
+
+---
+
+## 🟢 3. Goodput
+
+**Goodput** is the **amount of useful data** (excluding overhead) delivered per second.
+
+> 📌 **Think of goodput like drinkable water**: It’s the clean water you can actually use — not the total water including impurities or packaging.
+
+- Goodput = Throughput − Overhead (e.g., retransmissions, headers, acknowledgments)
+
+---
+
+## 🧾 Summary Table
+
+| Term       | Definition                                                  | Analogy                  | Relative Size            |
+|------------|-------------------------------------------------------------|---------------------------|---------------------------|
+| **Latency**| Time delay in data travel                                   | Travel time               | (Not measured in bits/sec)|
+| **Throughput**| Total bits transferred per second                        | Water through the pipe    | ≤ Bandwidth               |
+| **Goodput** | Useful data transferred per second                         | Clean/drinkable water     | ≤ Throughput              |
+
+---
+
+## 🔍 Real-Life Example
+
+You pay for **100 Mbps** internet:
+
+- **Bandwidth**: 100 Mbps (what the provider offers)
+- **Throughput**: 85 Mbps (what you actually get, due to congestion)
+- **Goodput**: 75 Mbps (actual usable data, excluding retransmissions and headers)
+
+---
+
+> ✅ **Tip:** When testing your internet speed, the number you see is usually **throughput**, not bandwidth or goodput.
+
