@@ -139,3 +139,74 @@ On a **Cisco 1941 router**, the physical ports and connectors are implemented ba
 
 Would you like the encoding and signaling sections formatted similarly next?
 
+
+
+# 4.2.3 – Encoding (Line Encoding)
+
+## 🧠 What is Encoding?
+
+Encoding is the method of converting a stream of binary data (`0`s and `1`s) into a predefined **code pattern** that can be recognized by both the **sender** and **receiver**.
+
+> 📌 Think of encoding like Morse code: a series of **dots and dashes** used to represent letters and words. Similarly, encoding in networks uses **voltage changes** or **light pulses** to represent bits.
+
+---
+
+## 🔄 Manchester Encoding (Example)
+
+Manchester encoding is a type of digital encoding used in older Ethernet standards (like 10BASE-T). In this method:
+
+- A **0 bit** is represented by a **high-to-low** voltage transition.
+- A **1 bit** is represented by a **low-to-high** voltage transition.
+- The **transition happens in the middle** of each bit period.
+
+### ⚙️ Used In:
+- **10 Mbps Ethernet** (10BASE-T)
+- Faster versions like 100BASE-TX use **4B/5B encoding**
+- 1000BASE-T uses **8B/10B encoding**
+
+---
+
+### 🖼️ Visualization Example:
+> **Bit Stream:** `0 1 0 0 1 1 0`  
+> At the midpoint of each bit period:
+> - Voltage **drops** for 0  
+> - Voltage **rises** for 1  
+
+Imagine a line graph of voltage over time, with clear "up" and "down" transitions marking each bit. This predictable pattern helps devices understand where each bit starts and ends.
+
+---
+
+# 4.2.4 – Signaling
+
+## 🔊 What is Signaling?
+
+Signaling refers to the method used by the physical layer to **transmit bits** (0s and 1s) over a medium — using electrical, optical, or wireless signals.
+
+> ✨ In simple terms, signaling decides **how a 1 or 0 looks** physically when sent through a wire or wirelessly.
+
+---
+
+## 🧭 Examples of Signaling:
+
+| Media Type        | Signaling Method Example                        |
+|-------------------|--------------------------------------------------|
+| Electrical (Copper) | Change in voltage level                        |
+| Optical (Fiber)     | Pulse of light (long = 1, short = 0)           |
+| Wireless            | Change in radio wave frequency or amplitude    |
+
+---
+
+## 🧩 Real-Life Analogy:
+
+Think of **Morse Code** again:
+- **Long beep** = 1  
+- **Short beep** = 0  
+
+Ships used this method to send messages with **light flashes** or **sound pulses**. Similarly, in networks, devices use signals to convey binary data.
+
+---
+
+> 🧠 **Key Insight:** Encoding defines *how to prepare the bits*, and signaling defines *how to transmit them*.
+
+
+
