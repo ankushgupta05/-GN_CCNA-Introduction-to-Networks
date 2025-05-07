@@ -147,3 +147,21 @@ Yeh part bahut important hai, aur simple examples ke saath samjhaata hoon. Yahaa
 ---
 
 Agar chaho to in cables ke internal structure ka ek simple diagram bhi bana du for better clarity?
+
+
+
+
+
+
+
+Here is a table with **all options**, correct answers, and clear explanations for each question in the **"4.3.6 Check Your Understanding - Copper Cabling"** section:
+
+| **Question**                                                                                         | **Options**                 | **Correct Answer** | **Explanation**                                                                                                                 |
+| ---------------------------------------------------------------------------------------------------- | --------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
+| 1. Which of the following attaches antennas to wireless devices?                                     | - UTP<br>- STP<br>✅ Coaxial | ✅ **Coaxial**      | Coaxial cables are commonly used to connect antennas to wireless devices and are also used in cable internet connections.       |
+| 2. Which of the following counters EMI and RFI by using shielding techniques and special connectors? | - UTP<br>✅ STP<br>- Coaxial | ✅ **STP**          | Shielded Twisted Pair (STP) cables have foil/braided shielding that helps block EMI/RFI, but they need to be properly grounded. |
+| 3. Which of the following is the most common network media?                                          | ✅ UTP<br>- STP<br>- Coaxial | ✅ **UTP**          | Unshielded Twisted Pair (UTP) is the most widely used cable type in LANs, known for being affordable and easy to install.       |
+| 4. Which of the following terminates with BNC, N type and F type connectors?                         | - UTP<br>- STP<br>✅ Coaxial | ✅ **Coaxial**      | Coaxial cables use BNC, N-type, and F-type connectors, which are common in cable TV, wireless, and internet hardware.           |
+
+Let me know if you’d like a visual summary (diagram or chart-style) for this too.
+
