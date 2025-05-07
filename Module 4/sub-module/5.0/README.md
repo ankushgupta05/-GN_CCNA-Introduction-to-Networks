@@ -83,4 +83,27 @@ Fiber cables ke end mein connectors lagte hain jisse switch ya router se connect
 
 ---
 
-Agar aap chahein toh main ek simple **photo diagram** bhi bhej sakta hoon — aapko chahiye kya?
+### **Full-Duplex Transmission over Fiber-Optic Cables**
+
+Pehle, light sirf ek direction mein hi travel kar sakti thi fiber-optic cables ke through. Isliye **full-duplex operation** ko support karne ke liye, do alag-alag fiber cables ki zarurat hoti thi — ek **transmitting** (data bhejne ke liye) aur ek **receiving** (data lene ke liye).
+
+### **Duplex Fiber-Optic Patch Cables**
+
+* Aaj kal, **fiber-optic patch cables** mein **do fiber cables** hote hain jo **ek bundle** mein hote hain, aur dono ko **standard, single-fiber connectors** ke saath terminate kiya jata hai.
+
+* **Duplex connectors** aise connectors hote hain jo **do fiber cables** ko ek hi connector mein accept karte hain — ek fiber transmitting ke liye aur dusra receiving ke liye.
+
+### **Example: Duplex Multimode LC Connector**
+
+* **Duplex Multimode LC Connector** ek **small** and **efficient** connector hai jo **do fiber** ko ek saath connect karta hai.
+* Iska design aisa hota hai ki **data sending** aur **data receiving** ek hi cable ke through possible hota hai, bina multiple fiber cables use kiye.
+
+### **BX Standards (e.g., 100BASE-BX)**
+
+* Kuch **BX standards** jaise **100BASE-BX** mein **ek hi fiber** ke through data ko send aur receive kiya jata hai, lekin **algae wavelengths** use hote hain. Iska matlab hai ki ek wavelength data bhejne ke liye use hota hai aur doosra wavelength data receive karne ke liye.
+
+---
+
+**Summary**: Aaj kal duplex connectors fiber-optic cables mein data ko efficiently send aur receive karne mein madad karte hain, bina **do alag cables** ke. BX standards mein bhi ek hi fiber ke through data ko alag wavelengths ke zariye send aur receive kiya ja sakta hai.
+
+Kya aapko aur details chahiye ya koi visual aid chahiye?
