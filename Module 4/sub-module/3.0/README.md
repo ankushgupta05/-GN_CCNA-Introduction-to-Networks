@@ -217,3 +217,82 @@ Chaliye, isse **simple aur Hindi + English mix** mein samajhte hain:
 
 Aap chahein toh main iske upar ek **MCQ quiz with answers** bhi bana sakta hoon. Banau?
 
+
+
+
+
+Here's a simple and clear explanation of **Straight-through**, **Crossover**, and **Rollover** UTP cables from section 4.4.3 — explained in **easy English + Hindi mix**, along with a useful table:
+
+---
+
+### 🔌 **Types of UTP Cables and Their Uses**
+
+| 📎 **Cable Type**    | 🔗 **Standard Used**        | ⚙️ **Used For** (Hindi + English)                                       |
+| -------------------- | --------------------------- | ----------------------------------------------------------------------- |
+| **Straight-through** | Same standard on both ends  | **Host ↔ Switch**, **Switch ↔ Router** – Most common cable.             |
+| **Crossover**        | T568A one side, T568B other | **Switch ↔ Switch**, **PC ↔ PC**, **Router ↔ Router** – Legacy use now. |
+| **Rollover** (Cisco) | Proprietary pinout          | **PC ↔ Console port of router/switch** (for configuration).             |
+
+---
+
+### 🧪 **Important Note (Troubleshooting Tip)**
+
+Agar galat cable lag gayi (e.g. straight instead of crossover), toh **device damage nahi hota**, lekin **network kaam nahi karega** (no communication).
+Always check cable type first during troubleshooting.
+
+---
+
+### 📏 **T568A vs T568B Pinout Standards**
+
+| 🔢 **Pin Number** | **T568A Wire Color** | **T568B Wire Color** |
+| ----------------- | -------------------- | -------------------- |
+| 1                 | White/Green          | White/Orange         |
+| 2                 | Green                | Orange               |
+| 3                 | White/Orange         | White/Green          |
+| 4                 | Blue                 | Blue                 |
+| 5                 | White/Blue           | White/Blue           |
+| 6                 | Orange               | Green                |
+| 7                 | White/Brown          | White/Brown          |
+| 8                 | Brown                | Brown                |
+
+✅ **Straight-through cable**: Same (T568A–T568A or T568B–T568B) on both ends
+🔄 **Crossover cable**: One end T568A, other end T568B
+
+---
+
+### 🎯 **Shortcut to Remember**:
+
+* **Straight-through = Different devices**
+* **Crossover = Same devices**
+* **Rollover = Cisco console**
+
+---
+
+Would you like a **diagram showing wire color coding** for these cables?
+
+
+
+It looks like you've summarized the **cable types** and their applications from **Module 4: Physical Layer**! Here’s a clean recap of the different **UTP Cable Types** and their **standards**:
+
+---
+
+### Cable Types and Standards
+
+| 📎 **Cable Type**             | 🔗 **Standard Used**               | ⚙️ **Used For** (Application)                                              |
+| ----------------------------- | ---------------------------------- | -------------------------------------------------------------------------- |
+| **Ethernet Straight-through** | Both ends T568A or both ends T568B | **Host ↔ Switch** or **Host ↔ Hub** (connects a network device to host)    |
+| **Ethernet Crossover**        | One end T568A, other end T568B     | **Switch ↔ Switch**, **Router ↔ Router** (connects similar devices)        |
+| **Rollover** (Cisco)          | Cisco proprietary                  | **Workstation ↔ Router Console Port** (used for configuration via adapter) |
+
+---
+
+### ✔️ **Quick Summary:**
+
+1. **Straight-through**: **Different devices** connected (e.g., host to switch).
+2. **Crossover**: **Same devices** connected (e.g., switch to switch).
+3. **Rollover**: **Workstation ↔ Router console port** (for configuring Cisco devices).
+
+---
+
+Would you like to discuss these cable types further or dive deeper into their **real-world applications**?
+
