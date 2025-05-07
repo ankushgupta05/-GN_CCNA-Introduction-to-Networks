@@ -79,5 +79,71 @@ Bilkul! Yahaan pe dono ka **full form** aur unka matlab bhi dekh lo:
 
 ---
 
-Agar chaho to in dono ka comparison table bhi bana du for revision?
+Yeh part bahut important hai, aur simple examples ke saath samjhaata hoon. Yahaan pe humne **3 types of copper cables** padhe hain: **UTP**, **STP**, aur **Coaxial**. Neeche easy comparison, example, aur full form ke saath diya gaya hai:
 
+---
+
+### 🔹 1. UTP – **Unshielded Twisted Pair**
+
+| Feature        | Description                                                                |
+| -------------- | -------------------------------------------------------------------------- |
+| **Full Form**  | Unshielded Twisted Pair                                                    |
+| **Use**        | LAN cables (home/office), router to PC connection                          |
+| **Structure**  | 4 twisted wire pairs inside a plastic cover, **no shield**                 |
+| **Connector**  | RJ-45                                                                      |
+| **Protection** | Twisting reduces interference (like crosstalk), but **no metal shielding** |
+| **Example**    | Ghar ka internet cable jo modem ya switch se laptop me jaata hai           |
+
+📌 **Why use it?**
+
+* Cheap
+* Easy to install
+* Good enough for most environments
+
+---
+
+### 🔹 2. STP – **Shielded Twisted Pair**
+
+| Feature        | Description                                                                   |
+| -------------- | ----------------------------------------------------------------------------- |
+| **Full Form**  | Shielded Twisted Pair                                                         |
+| **Use**        | Industrial environments (factories, labs)                                     |
+| **Structure**  | 4 twisted wire pairs + **foil shield on each pair** + **metal braid outside** |
+| **Connector**  | Special shielded RJ-45                                                        |
+| **Protection** | Very good EMI & crosstalk protection                                          |
+| **Example**    | Factory me network lagana ho jahan machines se signal interference hota ho    |
+
+📌 **Why use it?**
+
+* Extra protection from EMI & RFI
+* But: Costly and hard to install
+
+---
+
+### 🔹 3. Coaxial Cable
+
+| Feature        | Description                                                                       |
+| -------------- | --------------------------------------------------------------------------------- |
+| **Use**        | TV cable, Wi-Fi antenna, Cable internet                                           |
+| **Structure**  | 1 copper wire center + plastic insulation + **metal braid shield** + outer jacket |
+| **Connectors** | BNC, N-Type, F-Type                                                               |
+| **Protection** | Good shielding against EMI                                                        |
+| **Example**    | TV cable ya Wi-Fi antenna wire (modem se antenna tak)                             |
+
+📌 **Why use it?**
+
+* Still used in cable TV, antennas, and sometimes internet (inside homes)
+
+---
+
+### 🔁 Summary Table
+
+| Cable Type | Full Form               | Shielding       | Use Case Example                   | Common Connector |
+| ---------- | ----------------------- | --------------- | ---------------------------------- | ---------------- |
+| UTP        | Unshielded Twisted Pair | ❌ No shielding  | Ghar ka LAN cable                  | RJ-45            |
+| STP        | Shielded Twisted Pair   | ✅ Shielded      | Factory or heavy-machine network   | Shielded RJ-45   |
+| Coaxial    | Coaxial Cable           | ✅ Well shielded | TV cable, Wi-Fi antenna, Cable net | BNC, F-Type      |
+
+---
+
+Agar chaho to in cables ke internal structure ka ek simple diagram bhi bana du for better clarity?
