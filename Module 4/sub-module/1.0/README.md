@@ -336,3 +336,36 @@ You pay for **100 Mbps** internet:
 
 > ✅ **Tip:** When testing your internet speed, the number you see is usually **throughput**, not bandwidth or goodput.
 
+
+Here’s the **corrected and formatted version** of the "Check Your Understanding – Physical Layer Characteristics" quiz:
+
+---
+
+### ✅ Corrected: 4.2.7 – Physical Layer Characteristics
+
+| Question                                                           | Option | Answer        | Explanation                                                                   |
+| ------------------------------------------------------------------ | ------ | ------------- | ----------------------------------------------------------------------------- |
+| **Q1: Which media uses patterns of microwaves to represent bits?** | 🅐     | ❌ Copper      | ❌ Incorrect – Copper uses electrical pulses.                                  |
+|                                                                    | 🅑     | ✅ Wireless    | ✅ Correct – Wireless media uses microwaves and radio waves to represent bits. |
+|                                                                    | 🅒     | ❌ Fiber-optic | ❌ Incorrect – Fiber-optic uses patterns of light.                             |
+
+\| **Q2: Which media uses patterns of light to represent bits?** | 🅐 | ❌ Copper | ❌ Incorrect – Copper uses electrical signals. |
+\|  | 🅑 | ❌ Wireless | ❌ Incorrect – Wireless uses electromagnetic waves. |
+\|  | 🅒 | ✅ Fiber-optic | ✅ Correct – Fiber-optic cables use light pulses to represent data. |
+
+\| **Q3: Which media uses electrical pulses to represent bits?** | 🅐 | ✅ Copper | ✅ Correct – Copper cables transmit data using voltage (electrical pulses). |
+\|  | 🅑 | ❌ Wireless | ❌ Incorrect – Wireless uses electromagnetic waves. |
+\|  | 🅒 | ❌ Fiber-optic | ❌ Incorrect – Fiber-optic uses light pulses. |
+
+\| **Q4: Which of these is the name for the capacity of a medium to carry data?** | 🅐 | ✅ Bandwidth | ✅ Correct – Bandwidth refers to the data-carrying capacity of a medium. |
+\|  | 🅑 | ❌ Throughput | ❌ Incorrect – Throughput is actual measured transfer rate. |
+\|  | 🅒 | ❌ Goodput | ❌ Incorrect – Goodput is the usable data delivered per second. |
+
+\| **Q5: Which of these is a measure of the transfer of bits across the media?** | 🅐 | ❌ Bandwidth | ❌ Incorrect – Bandwidth is the *potential* capacity, not actual data transfer. |
+\|  | 🅑 | ✅ Throughput | ✅ Correct – Throughput measures how much data was actually transferred. |
+\|  | 🅒 | ❌ Goodput | ❌ Incorrect – Goodput excludes overhead and measures only usable data. |
+
+---
+
+Let me know if you’d like this in markdown format or exported to a `.pdf` or `.md` file!
+
