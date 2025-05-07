@@ -52,3 +52,32 @@ Tum phone pe baat kar rahe ho aur kisi aur ki awaaz sunai de jaati hai — woh h
 | **Coaxial** | TV ka cable jisme Dish ka signal aata hai          | Cable TV, Broadband | 1 center wire + plastic + braid shield |
 
 ---
+
+
+
+Bilkul! Yahaan pe dono ka **full form** aur unka matlab bhi dekh lo:
+
+---
+
+### ✅ **UTP – Unshielded Twisted Pair**
+
+* **Full Form:** Unshielded Twisted Pair
+* **Meaning:** Is cable me wires twist kiye hote hain, lekin unke aas-paas **koi shield (metal cover)** nahi hoti.
+* **Use:** Ghar, office, normal network connections jaise Wi-Fi router ke cable.
+
+🧪 **Example:** Ghar me jo LAN cable lagti hai (RJ-45 connector wali), wo usually UTP hoti hai.
+
+---
+
+### ✅ **STP – Shielded Twisted Pair**
+
+* **Full Form:** Shielded Twisted Pair
+* **Meaning:** Is cable me wires twist kiye hote hain **aur** unke aas-paas **ek metal shield** hoti hai jo signal disturbance se bachati hai.
+* **Use:** Aise jagah jahan zyada electrical machines ho — jaise factories, labs.
+
+🧪 **Example:** Agar tumhe factory me stable internet chahiye, to STP cable use hoti hai jisse EMI se bacha ja sake.
+
+---
+
+Agar chaho to in dono ka comparison table bhi bana du for revision?
+
