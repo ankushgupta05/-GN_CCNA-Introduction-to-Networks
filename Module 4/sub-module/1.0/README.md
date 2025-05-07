@@ -33,5 +33,36 @@ Connect devices using wired and wireless media.
 
 ---
 
-> This module helps learners understand how data travels through physical media and the essential components that make up the physical layer in a network.
+Your `README.md` content is well-structured and clearly communicates the module's objective and topics. If you'd like to enhance it further, here are two optional improvements:
 
+### ✅ Optional: Add a Progress Checklist
+
+You can help learners track their progress:
+
+```markdown
+## Progress Checklist
+
+- [ ] 1. Purpose of the Physical Layer  
+- [ ] 2. Physical Layer Characteristics  
+- [ ] 3. Copper Cabling  
+- [ ] 4. UTP Cabling  
+- [ ] 5. Fiber-Optic Cabling  
+- [ ] 6. Wireless Media  
+```
+
+### ✅ Optional: Add a Table for Quick Overview
+
+```markdown
+## Topics Overview
+
+| Topic No. | Title                   | Objective                                                                 |
+|-----------|-------------------------|---------------------------------------------------------------------------|
+| 1         | Purpose of the Physical Layer | Describe the purpose and functions of the physical layer in the network. |
+| 2         | Physical Layer Characteristics | Describe characteristics of the physical layer.                          |
+| 3         | Copper Cabling          | Identify the basic characteristics of copper cabling.                    |
+| 4         | UTP Cabling             | Explain how UTP cable is used in Ethernet networks.                      |
+| 5         | Fiber-Optic Cabling     | Describe fiber optic cabling and its advantages over other media.        |
+| 6         | Wireless Media          | Connect devices using wired and wireless media.                          |
+```
+
+Would you like me to include both enhancements or just one of them?
