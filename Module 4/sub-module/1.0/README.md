@@ -210,3 +210,62 @@ Ships used this method to send messages with **light flashes** or **sound pulses
 
 
 
+
+
+# 4.2.5 – Bandwidth
+
+## 📶 What is Bandwidth?
+
+**Bandwidth** refers to the *capacity* of a network medium to carry data — not the speed at which the bits travel.
+
+> 📌 **Think of bandwidth like a water pipe**: a wider pipe carries more water at once, just as higher bandwidth carries more bits at once.
+
+---
+
+## ⚙️ Digital Bandwidth Is Measured In:
+
+| Abbreviation | Full Form              | Equivalent Bits per Second   |
+|--------------|-------------------------|-------------------------------|
+| **bps**      | Bits per second         | 1 bit per second              |
+| **Kbps**     | Kilobits per second     | 1,000 bps (10³ bps)           |
+| **Mbps**     | Megabits per second     | 1,000,000 bps (10⁶ bps)       |
+| **Gbps**     | Gigabits per second     | 1,000,000,000 bps (10⁹ bps)   |
+| **Tbps**     | Terabits per second     | 1,000,000,000,000 bps (10¹²)  |
+
+---
+
+## ⚡ Bandwidth vs. Speed: What's the Difference?
+
+Although people often say "internet speed," **bandwidth is not how *fast* bits travel** — they always move at about the same speed (like the speed of electricity or light). What differs is **how many bits** are sent per second.
+
+### 📌 Example:
+- In **10 Mbps Ethernet** and **100 Mbps Ethernet**, both send bits at the speed of electricity, but **100 Mbps Ethernet** sends **10× more bits** in the same amount of time.
+
+---
+
+## 🧠 What Affects Bandwidth?
+
+1. 🧪 **Properties of the physical medium**  
+   (e.g., copper vs. fiber-optic)
+
+2. 🔁 **Encoding and signaling technologies**  
+   (e.g., Manchester encoding vs. 8B/10B)
+
+3. 🌐 **Physical limitations and physics**  
+   (e.g., noise, interference, resistance)
+
+---
+
+## 🚿 Real-Life Analogy: Water Pipes
+
+| Network Concept  | Water Analogy                        |
+|------------------|--------------------------------------|
+| Bandwidth        | Width of the pipe (volume capacity)  |
+| Signal (bit)     | Drops of water                       |
+| Speed of signal  | Speed of water flow (usually constant) |
+
+---
+
+> 📎 **Conclusion:** Bandwidth is about how *much* data can be transferred per second, not how *fast* it moves.
+
+
