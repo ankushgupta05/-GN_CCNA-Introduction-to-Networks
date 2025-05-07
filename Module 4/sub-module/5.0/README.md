@@ -158,3 +158,71 @@ Let's break it down more simply:
   * **Less expensive** solutions for basic networking tasks.
 
 Does this breakdown make more sense? Let me know if you need further details!
+
+
+
+Here are the **correct answers** with **explanations** for each question:
+
+---
+
+### ✅ **Question 1:**
+
+**Which of the following fiber-optic cable types can help data travel approximately 500 meters?**
+✔️ **Correct Answer: Multimode**
+
+**Explanation:**
+Multimode fiber (MMF) is typically used for distances **up to 550 meters**, especially in LANs. It's cheaper and ideal for shorter ranges.
+
+---
+
+### ✅ **Question 2:**
+
+**Which of the following fiber-optic cable types use light emitting diodes (LEDs) as a data light source transmitter?**
+✔️ **Correct Answer: Multimode**
+
+**Explanation:**
+**Multimode fiber** uses **LEDs** to send light pulses. These are cheaper and suitable for short distances.
+
+---
+
+### ✅ **Question 3:**
+
+**Which of the following fiber-optic cable types use lasers in a single stream as a data light source transmitter?**
+✔️ **Correct Answer: Single-mode**
+
+**Explanation:**
+**Single-mode fiber (SMF)** uses **lasers** to transmit light in one straight path. It's best for **long distances** and **higher speeds**.
+
+---
+
+### ✅ **Question 4:**
+
+**Which of the following fiber-optic cable types is used to connect long-distance telephony and cable TV applications?**
+✔️ **Correct Answer: Single-mode**
+
+**Explanation:**
+**Single-mode** is used for **long-distance** communication, like **telephony, cable TV**, and **internet backbone**.
+
+---
+
+### ✅ **Question 5:**
+
+**Which of the following fiber-optic cable types can travel approximately 100 km?**
+✔️ **Correct Answer: Single-mode**
+
+**Explanation:**
+**Single-mode** fiber can support distances **up to 100 km or more** without signal loss.
+
+---
+
+### ✅ **Question 6:**
+
+**Which of the following fiber-optic cable types is used within a campus network?**
+✔️ **Correct Answer: Multimode**
+
+**Explanation:**
+**Multimode** is commonly used **within enterprise or campus networks** due to lower cost and sufficient range.
+
+---
+
+Let me know if you'd like these in a table format or want a quick revision sheet!
