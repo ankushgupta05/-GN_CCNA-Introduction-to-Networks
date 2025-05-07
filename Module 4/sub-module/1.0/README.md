@@ -64,5 +64,11 @@ You can help learners track their progress:
 | 5         | Fiber-Optic Cabling     | Describe fiber optic cabling and its advantages over other media.        |
 | 6         | Wireless Media          | Connect devices using wired and wireless media.                          |
 ```
+## 4.1.3 – Check Your Understanding: Purpose of the Physical Layer
 
-Would you like me to include both enhancements or just one of them?
+| No. | Question                                                                 | Options                                                                                  | Answer       | Explanation                                                                                     |
+|-----|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------|
+| 1   | True or false? The physical layer is only concerned with wired network connections. | - True<br>- False                                                                       | **False**    | The physical layer is responsible for both wired **and** wireless media.                        |
+| 2   | True or false? When a frame is encoded by the physical layer, all bits are sent over the media at the same time. | - True<br>- False                                                    | **False**    | Bits are transmitted **sequentially**, one at a time, not all at once.                         |
+| 3   | The physical layer of the receiving device passes bits up to which higher level layer? | - Application<br>- Presentation<br>- Network<br>- Data link                              | **Data link**| The physical layer passes bits to the **data link layer**, which then assembles them into frames.|
+| 4   | What PDU is received by the physical layer for encoding and transmission? | - Frame<br>- Segment<br>- Packet                                                         | **Frame**    | The physical layer receives a **frame** from the data link layer and encodes it into bits.      |
