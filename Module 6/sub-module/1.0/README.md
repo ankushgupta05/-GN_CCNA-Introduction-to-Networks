@@ -248,4 +248,96 @@ Lekin **Data Link Layer** (Layer 2) ke rules **ye organizations banate hain**:
 
 ---
 
-Agar ab bhi confusion ho to bolo kis part mein dikkat ho rahi hai — router kaam samajhna hai ya standards ka part?
+Here are the answers for **6.1.5 – Check Your Understanding: Purpose of the Data Link Layer** in the required format:
+
+---
+
+### Question 1
+
+What is another name for the OSI data link layer?
+
+| Option                                                                                             | Answer                                                               | Explanation |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ----------- |
+| 🅐 Layer 1                                                                                         | ❌ Incorrect. Layer 1 is the Physical layer.                          |             |
+| 🅑 Layer 2                                                                                         | ✅ Correct. The data link layer is known as Layer 2 in the OSI model. |             |
+| 🅒 Layer 3                                                                                         | ❌ Incorrect. Layer 3 is the Network layer.                           |             |
+| 🅓 Layer 6                                                                                         | ❌ Incorrect. Layer 6 is the Presentation layer.                      |             |
+| 🔹 **Example**: The OSI model has 7 layers; Layer 2 handles framing, addressing, and media access. |                                                                      |             |
+| 🔹 **Use**: Helps devices communicate over a shared medium.                                        |                                                                      |             |
+
+---
+
+### Question 2
+
+The IEEE 802 LAN/MAN data link layer consists of which two sublayers? (Choose two.)
+
+| Option                                                                                                         | Answer                                                                    | Explanation |
+| -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------- |
+| 🅐 Network Control Protocol                                                                                    | ❌ Incorrect. Used in PPP, not part of IEEE 802.                           |             |
+| 🅑 Logical Link Control                                                                                        | ✅ Correct. LLC (IEEE 802.2) manages communication with the network layer. |             |
+| 🅒 Media Access Control                                                                                        | ✅ Correct. MAC handles physical addressing and access to the medium.      |             |
+| 🅓 Link Control Protocol                                                                                       | ❌ Incorrect. Also used in PPP, not IEEE 802.                              |             |
+| 🔹 **Example**: LLC enables multiple Layer 3 protocols over one link; MAC handles access to Ethernet or Wi-Fi. |                                                                           |             |
+
+---
+
+### Question 3
+
+What is the responsibility of the MAC sublayer?
+
+| Option                                                                                          | Answer                                                                     | Explanation |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ----------- |
+| 🅐 Adds Layer 3 addresses to the frame                                                          | ❌ Incorrect. Layer 3 addresses (like IP) are added by the network layer.   |             |
+| 🅑 Communicates with the network layer (Layer 3)                                                | ❌ Incorrect. That’s the LLC sublayer's job.                                |             |
+| 🅒 Provides the method to get the frame on and off the media                                    | ✅ Correct. MAC controls how data is placed on and removed from the medium. |             |
+| 🅓 Transmits the bits on the media                                                              | ❌ Incorrect. That’s handled by the Physical layer.                         |             |
+| 🔹 **Example**: MAC handles frame addressing, error detection, and access to Ethernet or Wi-Fi. |                                                                            |             |
+| 🔹 **Use**: Controls who can send data and when.                                                |                                                                            |             |
+
+---
+
+### Question 4
+
+What Layer 2 function does a router perform? (Choose three.)
+
+| Option                                                                                        | Answer                                                                    | Explanation |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------- |
+| 🅐 Accepts a frame from a medium                                                              | ✅ Correct. Routers receive Layer 2 frames from interfaces.                |             |
+| 🅑 De-encapsulates the frame                                                                  | ✅ Correct. Routers remove Layer 2 headers to get the IP packet.           |             |
+| 🅒 Refers to its Layer 3 routing table                                                        | ❌ Incorrect. This is a Layer 3 function, not Layer 2.                     |             |
+| 🅓 Re-encapsulates the packet into a new frame                                                | ✅ Correct. Routers create a new Layer 2 frame for the outgoing interface. |             |
+| 🔹 **Example**: Ethernet → Router → Serial link; router rewrites Layer 2 frame for each link. |                                                                           |             |
+
+---
+
+### Question 5
+
+The media access control method used depends on which two criteria?
+
+| Option                                                                         | Answer                                                        | Explanation |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------- | ----------- |
+| 🅐 Layer 3 IP protocol                                                         | ❌ Incorrect. Layer 3 doesn’t affect MAC method.               |             |
+| 🅑 Media sharing                                                               | ✅ Correct. Shared media needs rules (e.g., CSMA/CD).          |             |
+| 🅒 Topology                                                                    | ✅ Correct. Access methods vary by topology (bus, ring, star). |             |
+| 🅓 Transport layer protocol                                                    | ❌ Incorrect. Transport layer is independent of MAC.           |             |
+| 🅔 Type of data                                                                | ❌ Incorrect. Data type doesn’t impact media access control.   |             |
+| 🔹 **Example**: CSMA/CA for wireless (shared), token passing in ring topology. |                                                               |             |
+
+---
+
+### Question 6
+
+Which organization defines standards for the network access layer (i.e., the OSI physical and data link layers)?
+
+| Option                                                             | Answer                                                                            | Explanation |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------------- | ----------- |
+| 🅐 Cisco                                                           | ❌ Incorrect. Cisco is a networking company, not a standards body.                 |             |
+| 🅑 IANA                                                            | ❌ Incorrect. IANA manages IP address allocation.                                  |             |
+| 🅒 IEEE                                                            | ✅ Correct. IEEE (especially 802 series) defines physical and data link standards. |             |
+| 🅓 IETF                                                            | ❌ Incorrect. IETF defines upper layer protocols like TCP/IP, not Layer 2.         |             |
+| 🔹 **Example**: IEEE 802.3 = Ethernet, IEEE 802.11 = Wi-Fi.        |                                                                                   |             |
+| 🔹 **Use**: Ensures hardware and protocols work together globally. |                                                                                   |             |
+
+---
+
+Let me know if you want all of these exported as a markdown table or PDF.
