@@ -33,3 +33,18 @@ These values are part of the base-16 number system, which uses digits `0-9` and 
 ---
 
 Would you like a simple example of converting an IPv6 address segment to binary or decimal?
+
+
+
+
+Here are the correct answers and explanations for each question on hexadecimal number system:
+
+| Q# | Question                                                | Correct Answer | Explanation                                                       |
+| -- | ------------------------------------------------------- | -------------- | ----------------------------------------------------------------- |
+| 1  | Which is the hexadecimal equivalent of 202?             | **CA**         | 202 in decimal → CA in hex (202 ÷ 16 = 12 R 10 → C (12), A (10)). |
+| 2  | Which is the hexadecimal equivalent of 254?             | **FE**         | 254 ÷ 16 = 15 R 14 → F (15), E (14). So 254 = **FE** in hex.      |
+| 3  | Which is the decimal equivalent of A9?                  | **169**        | A = 10, so A9 = 10×16 + 9 = 160 + 9 = **169**.                    |
+| 4  | Which of the following is the decimal equivalent of 7D? | **125**        | 7D = 7×16 + 13 = 112 + 13 = **125**.                              |
+
+Let me know if you'd like these added to a table for your README or notes.
+
