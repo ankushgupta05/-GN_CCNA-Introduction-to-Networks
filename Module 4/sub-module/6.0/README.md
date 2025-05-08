@@ -60,4 +60,45 @@ Wireless open hota hai, isliye **security** zaroori hai — jaise strong Wi-Fi p
 
 ---
 
-Agar tum chaho toh main iska ek simple table ya diagram bhi bana sakta hoon. Batao?
+
+
+Here are the correct answers with explanations for **4.6.4 Check Your Understanding – Wireless Media**:
+
+---
+
+### ✅ **Question 1:**
+
+**True or False. Wireless is not well suited for enterprise networks.**
+**✅ Correct Answer:** **False**
+📘 *Explanation:* Wireless **is** well suited for enterprise networks and is widely used for mobile access. However, it must be properly managed due to security and bandwidth limitations.
+
+---
+
+### ✅ **Question 2:**
+
+**True or False. Wireless LANs operate in full-duplex allowing all devices to send or receive data at the same time so the number of users does not impact performance.**
+**✅ Correct Answer:** **False**
+📘 *Explanation:* Wireless LANs operate in **half-duplex**, meaning only one device can send/receive at a time. More users = slower speed.
+
+---
+
+### ✅ **Question 3:**
+
+**Which of the following wireless standards is best suited for industrial and IoT environments?**
+**✅ Correct Answer:** **Zigbee**
+📘 *Explanation:* Zigbee is designed for **low-power**, **short-range** communication, ideal for **IoT and industrial** use (like smart meters, sensors).
+
+---
+
+### ✅ **Question 4:**
+
+**Which of the following wireless standards is used for Personal Area Networks (PANs) and allows devices to communicate over distances of 1 to 100 meters?**
+**✅ Correct Answer:** **Bluetooth**
+📘 *Explanation:* Bluetooth is used for **PANs**, like connecting earbuds, watches, and phones — typically within **1–100 meters**.
+
+---
+
+Let me know if you want this in Hindi or as a table for your notes.
+
+
+
