@@ -177,5 +177,51 @@ Right se left position lete hain:
 ### Total = 128 + 32 + 8 = **168**
 
 ---
+Let's go through each question and determine which option is correct for both:
 
-Agar ab bhi confusion ho, to mujhe batao — main tumhare liye ek simple **animation ya diagram** bhi bana sakta hoon. Kya bana du?
+---
+
+### **Question 1: Which is the binary equivalent to the 192.168.11.10 IP address?**
+
+* **Option A:** **11000000.11000000.00001011.00001010**
+
+  * This is not correct. The second part should be 168, not 192.
+* **Option B:** **11000000.10101000.00001011.00001010**
+
+  * This is correct. The binary equivalent of **192.168.11.10** is **11000000.10101000.00001011.00001010**.
+* **Option C:** **11000000.10101000.00001010.00001011**
+
+  * This is not correct. The third part should be 11, not 10.
+* **Option D:** **11000000.10101000.00001011.00010010**
+
+  * This is not correct. The fourth part should be 10, not 18.
+
+**Answer:** **B**
+
+---
+
+### **Question 2: Which of the following is the binary equivalent to the 172.16.31.30 IP address?**
+
+* **Option A:** **11000000.00010000.00011111.00011110**
+
+  * This is not correct. The first part should be 172, not 192.
+* **Option B:** **10101000.00010000.00011111.00011110**
+
+  * This is not correct. The first part should be 172, not 168.
+* **Option C:** **10101100.00010000.00011110.00011110**
+
+  * This is not correct. The third part should be 31, not 30.
+* **Option D:** **10101100.00010000.00011111.00011110**
+
+  * This is correct. The binary equivalent of **172.16.31.30** is **10101100.00010000.00011111.00011110**.
+
+**Answer:** **D**
+
+---
+
+### Final Answers:
+
+1. **Question 1:** **B**
+2. **Question 2:** **D**
+
+Let me know if you need more help!
