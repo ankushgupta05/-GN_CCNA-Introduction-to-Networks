@@ -186,4 +186,66 @@ The **Data Link Layer (Layer 2)** is split into **two sublayers** as per the **I
 
 ---
 
-Chaaho toh main is structure ka ek diagram bhi bana sakta hoon, batao?
+Chalo, main aur **aasaan Hindi** mein samjhaata hoon section **6.1.3** aur **6.1.4**:
+
+---
+
+## 🔹 **6.1.3 – Media Tak Access Dena (Providing Access to Media)**
+
+### 🧠 Simple Socho:
+
+Jab ek computer (host) kisi door ke computer ko data bhejta hai, to data **alag-alag networks se guzarta hai** (LAN, WAN, etc.).
+
+Har jagah alag tarah ka network hota hai:
+
+* 🖥️ **LAN** (jaise Ethernet): Kai log ek wire use karte hain → sabko turn lena padta hai.
+* 🔗 **Serial Link** (jaise router to router): Sirf 2 devices hote hain → sidha data jaata hai.
+
+---
+
+### 📦 Router Kya Karta Hai?
+
+Router data ko **frame** ke form mein receive karta hai, aur ye steps karta hai:
+
+1. **Frame ko accept karta hai** (data ko pakadta hai).
+2. **Frame ko kholta hai** (Layer 2 part hataata hai, Layer 3 packet milta hai).
+3. **Routing decision leta hai** (packet ko kahan bhejna hai decide karta hai).
+4. **Naya frame banata hai** (naye medium ke hisaab se).
+5. **Data bhejta hai** agle device ko.
+
+---
+
+### 🔄 Example:
+
+* Tumhara computer → router ko **Ethernet frame** bhejta hai.
+* Router frame kholta hai → andar ka IP packet dekhta hai.
+* Fir router **serial link** ke liye **naya frame** banata hai.
+* Fir ye naya frame **agle router** ko bhejta hai.
+
+Har jagah **media alag ho sakta hai**, isliye har baar naya frame banana padta hai.
+
+---
+
+## 🔹 **6.1.4 – Data Link Layer ke Rules aur Standards**
+
+Upper layers (jaise IP, TCP) ke rules **IETF ke RFCs** se bante hain.
+
+Lekin **Data Link Layer** (Layer 2) ke rules **ye organizations banate hain**:
+
+| Organization | Kya kaam karta hai                         |
+| ------------ | ------------------------------------------ |
+| **IEEE**     | Ethernet, Wi-Fi jaise standards banata hai |
+| **ITU**      | Telecom rules banata hai (international)   |
+| **ISO**      | General international standards banata hai |
+| **ANSI**     | USA ke standards set karta hai             |
+
+---
+
+### 🔑 Yaad Raho:
+
+* **Router** har hop pe frame ko open karta hai aur naye media ke hisaab se naye frame mein daal kar aage bhejta hai.
+* **Data link layer ke rules IEEE, ITU jaise organizations banate hain, IETF nahi.**
+
+---
+
+Agar ab bhi confusion ho to bolo kis part mein dikkat ho rahi hai — router kaam samajhna hai ya standards ka part?
