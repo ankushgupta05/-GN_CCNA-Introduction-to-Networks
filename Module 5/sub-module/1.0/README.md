@@ -225,3 +225,16 @@ Let's go through each question and determine which option is correct for both:
 2. **Question 2:** **D**
 
 Let me know if you need more help!
+
+
+
+
+
+
+
+
+
+
+
+# Decimal to Binery Learn it self by 
+# Binery Decimal Learn it self by 
