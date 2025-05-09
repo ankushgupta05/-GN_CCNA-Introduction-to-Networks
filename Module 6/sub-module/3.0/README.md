@@ -54,3 +54,51 @@ When the letter arrives:
 ---
 
 Would you like a diagram to visualize the frame structure?
+
+
+
+
+Here's a **simplified explanation** of Section **6.3.3 Layer 2 Addresses** along with a **simple example** to help you understand it clearly:
+
+---
+
+### ✅ **Summary: Layer 2 Addresses (Physical/MAC Addresses)**
+
+* **Layer 2 (Data Link Layer)** uses **physical addresses**, also called **MAC addresses**, to deliver data between devices **within the same local network**.
+* These addresses are **burned into the NIC** and **do not change** when you move the device to another network.
+* Layer 2 addresses are used **only for local delivery**; they don't indicate where the device is in the world, unlike IP (Layer 3) addresses.
+* Every time a packet goes from one device to another over a new link (like from one router to the next), it gets **a new Layer 2 frame** with **updated source and destination MAC addresses**.
+* The **IP address remains the same**, but the **MAC address changes** at every hop.
+
+---
+
+### 🔁 **How Layer 2 Works with Layer 3 (Simple Example)**
+
+Imagine sending a parcel from your house to a friend in another city.
+
+* The **address on the envelope** is like the **IP address** (Layer 3) — it stays the same from start to finish.
+* But the **delivery truck label** changes every time the parcel goes through a local delivery station — like a **MAC address** (Layer 2), which is only valid in that local area.
+
+---
+
+### 🖥️ Example: PC → R1 → R2 → Web Server
+
+| Hop         | Source MAC | Destination MAC | IP Source     | IP Destination |
+| ----------- | ---------- | --------------- | ------------- | -------------- |
+| PC → R1     | PC's MAC   | R1's MAC        | 192.168.1.110 | 172.16.1.99    |
+| R1 → R2     | R1's MAC   | R2's MAC        | 192.168.1.110 | 172.16.1.99    |
+| R2 → Server | R2's MAC   | Server's MAC    | 192.168.1.110 | 172.16.1.99    |
+
+🟢 The **MAC (Layer 2)** source/destination changes at each hop
+🔵 The **IP address (Layer 3)** source/destination stays the same
+
+---
+
+### ⚙️ Why It's Important:
+
+* Layer 2 is **fast and local** — ideal for communication within a network.
+* Layer 3 is **routable and global** — allows reaching devices anywhere in the world.
+* Routers use both: they read the **MAC to accept a frame**, then **IP to decide where to forward the packet**.
+
+Would you like a visual diagram of this packet and frame transition through the network?
+
