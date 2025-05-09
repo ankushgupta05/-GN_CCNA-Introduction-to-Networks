@@ -230,3 +230,80 @@ This way, **no one talks over each other**, avoiding a collision.
 Would you like a diagram or visual explanation too?
 
 
+
+Here is your formatted response for Questions 1 to 5 in the specified style:
+
+---
+
+### Question 1
+
+Which topology displays networking device layer IP addresses?
+
+| Option                                                                                                         | Answer      | Explanation                                                                              |
+| -------------------------------------------------------------------------------------------------------------- | ----------- | ---------------------------------------------------------------------------------------- |
+| 🅐 Aerial topology                                                                                             | ❌ Incorrect | This is not a recognized topology in networking.                                         |
+| 🅑 IP address topology                                                                                         | ❌ Incorrect | This is not a standard term in networking.                                               |
+| 🅒 Logical topology                                                                                            | ✅ Correct   | Logical topology refers to how data flows in a network and often involves IP addressing. |
+| 🅓 Physical topology                                                                                           | ❌ Incorrect | Physical topology shows the physical layout of devices, not IP addressing.               |
+| 🔹 **Example**: A logical topology diagram might show routers and switches with their respective IP addresses. |             |                                                                                          |
+
+---
+
+### Question 2
+
+What kind of network would use point-to-point, hub and spoke, or mesh topologies?
+
+| Option                                                                          | Answer      | Explanation                                                                                      |
+| ------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------ |
+| 🅐 PAN                                                                          | ❌ Incorrect | Personal Area Networks are usually simple and don't use such complex topologies.                 |
+| 🅑 LAN                                                                          | ❌ Incorrect | LANs generally use bus, ring, or star topologies.                                                |
+| 🅒 WLAN                                                                         | ❌ Incorrect | WLANs typically use star topologies and don't commonly use mesh or hub-and-spoke.                |
+| 🅓 WAN                                                                          | ✅ Correct   | WANs often use point-to-point, hub-and-spoke, or mesh to connect geographically separated sites. |
+| 🔹 **Example**: The internet backbone uses mesh topology, common in large WANs. |             |                                                                                                  |
+
+---
+
+### Question 3
+
+Which LAN topology is a hybrid topology?
+
+| Option                                                                                                                              | Answer      | Explanation                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------- |
+| 🅐 Bus                                                                                                                              | ❌ Incorrect | A bus topology is a single backbone to which all devices connect.                            |
+| 🅑 Extended star                                                                                                                    | ✅ Correct   | Extended star is a hybrid that combines multiple star networks, making it a hybrid topology. |
+| 🅒 Ring                                                                                                                             | ❌ Incorrect | Ring topology connects each node to exactly two other nodes.                                 |
+| 🅓 Star                                                                                                                             | ❌ Incorrect | Star is a basic and standard topology, not hybrid.                                           |
+| 🔹 **Example**: In a school network, each department may have a star topology, all connected via a central switch—an extended star. |             |                                                                                              |
+
+---
+
+### Question 4
+
+Which duplex communication method is used in WLANs?
+
+| Option                                                                                                  | Answer      | Explanation                                                                               |
+| ------------------------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------------- |
+| 🅐 Full-duplex                                                                                          | ❌ Incorrect | WLANs cannot transmit and receive simultaneously on the same channel.                     |
+| 🅑 Half-duplex                                                                                          | ✅ Correct   | WLANs use half-duplex, meaning they can either transmit or receive at one time, not both. |
+| 🅒 Simplex                                                                                              | ❌ Incorrect | Simplex is one-way only communication, which is not suitable for WLANs.                   |
+| 🔹 **Example**: When a laptop connects to Wi-Fi, it either sends data or receives it, not both at once. |             |                                                                                           |
+
+---
+
+### Question 5
+
+Which media access control method is used in legacy Ethernet LANs?
+
+| Option                                                                                                                   | Answer      | Explanation                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------ | ----------- | ----------------------------------------------------------------------------------- |
+| 🅐 Carrier sense multiple access/collision annoyance                                                                     | ❌ Incorrect | This is a made-up term.                                                             |
+| 🅑 Carrier sense multiple access/collision avoidance                                                                     | ❌ Incorrect | This is used in WLANs, not Ethernet.                                                |
+| 🅒 Carrier sense multiple access/collision destruction                                                                   | ❌ Incorrect | Not a valid MAC method.                                                             |
+| 🅓 Carrier sense multiple access/collision detection                                                                     | ✅ Correct   | CSMA/CD was used in early Ethernet to detect collisions and manage retransmissions. |
+| 🔹 **Example**: In older Ethernet using hubs, if two devices sent data at the same time, CSMA/CD detected the collision. |             |                                                                                     |
+
+---
+
+Would you like me to format more questions like this?
+
+
