@@ -247,3 +247,100 @@ An **Ethernet frame** is the structure used for data transmission over Ethernet 
 
 Would you like further clarification or an example related to error detection (FCS)?
 
+
+
+Here are the answers and explanations for the questions:
+
+---
+
+### **Question 1**
+
+Which part of an Ethernet Frame uses a pad to increase the frame field to at least 64 bytes?
+
+| **Option**                      | **Answer**  | **Explanation**                                                                           |
+| ------------------------------- | ----------- | ----------------------------------------------------------------------------------------- |
+| 🅐 **EtherType**                | ❌ Incorrect | EtherType specifies the higher layer protocol and does not use a pad.                     |
+| 🅑 **Preamble**                 | ❌ Incorrect | The preamble is for synchronization and does not affect the data size.                    |
+| 🅒 **Start of Frame Delimiter** | ❌ Incorrect | SFD is used for marking the start of a frame, not for padding.                            |
+| 🅓 **Data field**               | ✅ Correct   | The **Data** field uses padding to ensure the frame reaches the minimum size of 64 bytes. |
+
+---
+
+### **Question 2**
+
+Which part of an Ethernet frame detects errors in the frame?
+
+| **Option**                      | **Answer**  | **Explanation**                                                                                    |
+| ------------------------------- | ----------- | -------------------------------------------------------------------------------------------------- |
+| 🅐 **Preamble**                 | ❌ Incorrect | The preamble is for synchronization and does not detect errors.                                    |
+| 🅑 **Start of Frame Delimiter** | ❌ Incorrect | The SFD marks the start of the frame, not for error detection.                                     |
+| 🅒 **Frame Check Sequence**     | ✅ Correct   | The **Frame Check Sequence (FCS)** is used to detect errors using a cyclic redundancy check (CRC). |
+
+---
+
+### **Question 3**
+
+Which part of an Ethernet Frame describes the higher-layer protocol that is encapsulated?
+
+| **Option**                      | **Answer**  | **Explanation**                                                                             |
+| ------------------------------- | ----------- | ------------------------------------------------------------------------------------------- |
+| 🅐 **EtherType**                | ✅ Correct   | **EtherType** specifies the protocol of the upper layer encapsulated in the Ethernet frame. |
+| 🅑 **Preamble**                 | ❌ Incorrect | The preamble is used for synchronization and does not describe the higher-layer protocol.   |
+| 🅒 **Start of Frame Delimiter** | ❌ Incorrect | The SFD marks the beginning of the frame, not the encapsulated protocol.                    |
+| 🅓 **Frame Check Sequence**     | ❌ Incorrect | The FCS checks for errors, not for the higher-layer protocol.                               |
+
+---
+
+### **Question 4**
+
+Which part of an Ethernet Frame notifies the receiver to get ready for a new frame?
+
+| **Option**                      | **Answer**  | **Explanation**                                                                                                            |
+| ------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------- |
+| 🅐 **Start of Frame Delimiter** | ❌ Incorrect | The **SFD** marks the end of the preamble and the beginning of the frame, but it doesn’t notify the receiver to get ready. |
+| 🅑 **Frame Check Sequence**     | ❌ Incorrect | The **FCS** is used for error checking only.                                                                               |
+| 🅒 **Preamble**                 | ✅ Correct   | The **Preamble** is used to synchronize clocks and **notify the receiver to get ready for a new frame**.                   |
+| 🅓 **Data field**               | ❌ Incorrect | The **Data** field contains the actual payload and doesn’t serve as a notification.                                        |
+
+---
+
+### **Question 5**
+
+Which data link sublayer controls the network interface through software drivers?
+
+| **Option** | **Answer**  | **Explanation**                                                                                                              |
+| ---------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 🅐 **MAC** | ❌ Incorrect | The **MAC** sublayer handles access to the physical medium but doesn’t directly control network interfaces through software. |
+| 🅑 **LLC** | ✅ Correct   | The **LLC** sublayer interacts with the network interface and higher layers, managing software-driven network control.       |
+
+---
+
+### **Question 6**
+
+Which data link sublayer works with the upper layers to add application information for delivery of data to higher level protocols?
+
+| **Option** | **Answer**  | **Explanation**                                                                               |
+| ---------- | ----------- | --------------------------------------------------------------------------------------------- |
+| 🅐 **MAC** | ❌ Incorrect | The **MAC** sublayer is concerned with media access, not with adding application information. |
+| 🅑 **LLC** | ✅ Correct   | The **LLC** sublayer works with higher layers to handle data from applications.               |
+
+---
+
+### **Question 7**
+
+What is a function of the MAC sublayer? (Choose three.)
+
+| **Option**                                                                                           | **Answer**  | **Explanation**                                                                                               |
+| ---------------------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------- |
+| 🅐 **Controls access to the media**                                                                  | ✅ Correct   | The **MAC** sublayer handles media access, determining when and how devices can transmit.                     |
+| 🅑 **Checks for errors in received bits**                                                            | ✅ Correct | Error checking is done by the **FCS** field, not the MAC sublayer.                                            |
+| 🅒 **Uses CSMA/CD or CSMA/CA to support Ethernet technology**                                        | ✅ Correct   | **CSMA/CD (Collision Detection)** or **CSMA/CA (Collision Avoidance)** is used by the MAC for access control. |
+| 🅓 **Communicates between software at the upper layers and the device hardware at the lower layers** | ❌ Incorrect | This is more related to the **LLC** sublayer than the MAC sublayer.                                           |
+| 🅔 **Allows multiple Layer 3 protocols to use the same network interface and media**                 | ❌ Incorrect | This is a responsibility of the **LLC** sublayer, not the MAC sublayer.                                       |
+
+---
+
+Feel free to ask if you need any further clarifications!
+
+
+
