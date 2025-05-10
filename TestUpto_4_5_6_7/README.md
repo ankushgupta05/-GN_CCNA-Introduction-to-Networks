@@ -178,4 +178,128 @@ Here's the formatted quiz with correct answers and explanations:
 
 ---
 
-Would you like the answers for Question 3 or any other questions you skipped?
+Here are the answers in the previous format (table style) with options, correct answers, and brief explanations:
+
+---
+
+### ✅ **Question 16**
+
+**Which two statements describe features or functions of the logical link control sublayer in Ethernet standards? (Choose two.)**
+
+| Option                                                                                          | Answer | Explanation                                                                  |
+| ----------------------------------------------------------------------------------------------- | ------ | ---------------------------------------------------------------------------- |
+| Logical link control is implemented in software.                                                | ✅      | LLC is a software-based sublayer used for flow control and error management. |
+| The LLC sublayer is responsible for the placement and retrieval of frames on and off the media. | ❌      | That function belongs to the MAC sublayer.                                   |
+| The data link layer uses LLC to communicate with the upper layers of the protocol suite.        | ✅      | LLC provides an interface to the Network layer.                              |
+| The LLC sublayer adds a header and a trailer to the data.                                       | ❌      | Only a header is added by LLC; trailers are handled by MAC.                  |
+| Logical link control is specified in the IEEE 802.3 standard.                                   | ❌      | LLC is specified in IEEE 802.2.                                              |
+
+---
+
+### ✅ **Question 17**
+
+**Which is a multicast MAC address?**
+
+| Option            | Answer | Explanation                                  |
+| ----------------- | ------ | -------------------------------------------- |
+| 01-00-5E-00-00-03 | ✅      | Multicast MAC addresses begin with 01-00-5E. |
+| 5C-26-0A-4B-19-3E | ❌      | This is a unicast MAC address.               |
+| 00-26-0F-4B-00-3E | ❌      | This is a unicast MAC address.               |
+| FF-FF-FF-FF-FF-FF | ❌      | This is a broadcast address.                 |
+
+---
+
+### ✅ **Question 18**
+
+**When the store-and-forward method of switching is in use, what part of the Ethernet frame is used to perform an error check?**
+
+| Option                                | Answer | Explanation                                                                      |
+| ------------------------------------- | ------ | -------------------------------------------------------------------------------- |
+| destination MAC address in the header | ❌      | Used for forwarding, not error checking.                                         |
+| CRC in the trailer                    | ✅      | CRC (Cyclic Redundancy Check) is in the trailer and is used for error detection. |
+| source MAC address in the header      | ❌      | Identifies sender, not for error checking.                                       |
+| protocol type in the header           | ❌      | Indicates protocol type, not for checking errors.                                |
+
+---
+
+### ✅ **Question 19**
+
+**What are two actions performed by a Cisco switch? (Choose two.)**
+
+| Option                                                                             | Answer | Explanation                                                            |
+| ---------------------------------------------------------------------------------- | ------ | ---------------------------------------------------------------------- |
+| forwarding frames with unknown destination IP addresses to the default gateway     | ❌      | Switches operate at Layer 2 and use MAC addresses, not IP.             |
+| using the source MAC addresses of frames to build and maintain a MAC address table | ✅      | Switches learn MAC addresses from the source field of incoming frames. |
+| utilizing the MAC address table to forward frames via the destination MAC address  | ✅      | Switches use the MAC table to decide where to forward frames.          |
+| building a routing table that is based on the first IP address in the frame header | ❌      | Routing tables are Layer 3 functions, not handled by switches.         |
+| examining the destination MAC address to add new entries to the MAC address table  | ❌      | Switches add entries based on **source** MAC addresses.                |
+
+---
+
+### ✅ **Question 21**
+
+**What is the purpose of the FCS field in a frame?**
+
+| Option                                                            | Answer | Explanation                                             |
+| ----------------------------------------------------------------- | ------ | ------------------------------------------------------- |
+| to verify the logical address of the sending node                 | ❌      | Logical address verification is not FCS's purpose.      |
+| to determine if errors occurred in the transmission and reception | ✅      | FCS holds the CRC for error checking.                   |
+| to compute the CRC header for the data field                      | ❌      | FCS stores the result of a CRC, not compute it.         |
+| to obtain the MAC address of the sending node                     | ❌      | The MAC address is in the frame header, not in the FCS. |
+
+---
+
+### ✅ **Question 22**
+
+**A network administrator is connecting two modern switches using a straight-through cable. The switches are new and have never been configured. Which three statements are correct about the final result of the connection?**
+
+| Option                                                                                               | Answer | Explanation                                                           |
+| ---------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------- |
+| The auto-MDIX feature will configure the interfaces eliminating the need for a crossover cable.      | ✅      | Auto-MDIX automatically detects cable type.                           |
+| The link between the switches will work at the fastest speed that is supported by both switches.     | ✅      | Auto-negotiation sets the best speed both switches support.           |
+| The link between switches will work as full-duplex.                                                  | ✅      | Duplex mode is also auto-negotiated.                                  |
+| The connection will not be possible unless the administrator changes the cable to a crossover cable. | ❌      | Auto-MDIX makes this unnecessary.                                     |
+| The duplex capability has to be manually configured because it cannot be negotiated.                 | ❌      | Modern switches can auto-negotiate duplex.                            |
+| If both switches support different speeds, they will each work at their own fastest speed.           | ❌      | They will work at the **highest common speed**, not different speeds. |
+
+---
+
+### ✅ **Question 23**
+
+**Which switching method uses the CRC value in a frame?**
+
+| Option            | Answer | Explanation                                                        |
+| ----------------- | ------ | ------------------------------------------------------------------ |
+| fragment-free     | ❌      | Fragment-free only checks the first 64 bytes.                      |
+| fast-forward      | ❌      | Fast-forward starts forwarding before receiving the full frame.    |
+| cut-through       | ❌      | Like fast-forward, doesn’t check CRC.                              |
+| store-and-forward | ✅      | It receives the entire frame and checks the CRC before forwarding. |
+
+---
+
+### ✅ **Question 24**
+
+**Which advantage does the store-and-forward switching method have compared with the cut-through switching method?**
+
+| Option                                                | Answer | Explanation                                                                      |
+| ----------------------------------------------------- | ------ | -------------------------------------------------------------------------------- |
+| frame forwarding using IPv4 Layer 3 and 4 information | ❌      | Not specific to store-and-forward.                                               |
+| collision detecting                                   | ❌      | Handled by media access methods like CSMA/CD.                                    |
+| frame error checking                                  | ✅      | Store-and-forward checks the frame's integrity before forwarding.                |
+| faster frame forwarding                               | ❌      | Cut-through is faster; store-and-forward is slower due to full-frame inspection. |
+
+---
+
+### ✅ **Question 25**
+
+**A Layer 2 switch is used to switch incoming frames from a 1000BASE-T port to a port connected to a 100Base-T network. Which method of memory buffering would work best for this task?**
+
+| Option                        | Answer | Explanation                                                             |
+| ----------------------------- | ------ | ----------------------------------------------------------------------- |
+| fixed configuration buffering | ❌      | Not a memory buffering method.                                          |
+| port-based buffering          | ❌      | Each port uses its own memory; not efficient for speed mismatches.      |
+| shared memory buffering       | ✅      | Allows frames from faster ports to be buffered and sent to slower ones. |
+| level 1 cache buffering       | ❌      | Not a relevant buffering type in this context.                          |
+
+---
+
