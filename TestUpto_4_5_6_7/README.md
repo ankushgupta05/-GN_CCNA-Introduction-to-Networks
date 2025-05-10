@@ -390,6 +390,87 @@ Here are the answers for Questions 26, 27, 29, 32, 33, and 34 in the same **tabl
 
 ---
 
-Would you like me to continue formatting the next set of questions in this format?
+Here is the answer to **Question 30** in the same **table format**:
+
+---
+
+### ✅ **Question 30**
+
+**Refer to the exhibit. What is wrong with the displayed termination?**
+
+| Option                                                  | Answer | Explanation                                                                                  |
+| ------------------------------------------------------- | ------ | -------------------------------------------------------------------------------------------- |
+| The woven copper braid should not have been removed.    | ❌      | This applies to coaxial cables, not twisted-pair Ethernet cables.                            |
+| The wrong type of connector is being used.              | ❌      | No evidence suggests that the RJ45 connector is incorrect.                                   |
+| The wires are too thick for the connector that is used. | ❌      | There's no indication of wire thickness being the issue.                                     |
+| The untwisted length of each wire is too long.          | ✅      | Excessive untwisting increases crosstalk and signal interference, violating cable standards. |
+
+---
+
+Absolutely! Here's **Question 28** in the **same table format** as requested:
+
+---
+
+### ✅ **Question 28**
+
+**Refer to the exhibit. The PC is connected to the console port of the switch. All the other connections are made through FastEthernet links. Which types of UTP cables can be used to connect the devices?**
+
+| Connection                      | Cable Type       | Explanation                                                                                       |
+| ------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------- |
+| 1 - PC to Switch (Console Port) | Rollover         | Rollover cables are used to connect a PC's serial port to the console port of a switch or router. |
+| 2 - Switch to Router            | Crossover        | A crossover cable is traditionally used between different device types (switch ↔ router).         |
+| 3 - Router to Router            | Straight-through | When connecting routers through Ethernet interfaces, a straight-through cable can be used.        |
+
+| Option                                            | Answer | Explanation                                                                    |
+| ------------------------------------------------- | ------ | ------------------------------------------------------------------------------ |
+| 1 - rollover, 2 - straight-through, 3 - crossover | ❌      | The Switch-Router connection requires a crossover, not straight-through.       |
+| 1 - crossover, 2 - straight-through, 3 - rollover | ❌      | The PC-Switch Console connection must use a rollover cable, not a crossover.   |
+| 1 - crossover, 2 - rollover, 3 - straight-through | ❌      | The Switch-Router link should not use a rollover cable.                        |
+| 1 - rollover, 2 - crossover, 3 - straight-through | ✅      | This matches standard cabling practices for these types of device connections. |
+
+---
+Here is the **Question 3** formatted using the **matching table format**:
+
+---
+
+### ✅ **Question 3**
+
+**Match the situation with the appropriate use of network media.**
+
+| **Situation**                       | **Appropriate Use of Network Media** | **Explanation**                                                                 |
+| ----------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------- |
+| horizontal cabling structure        | **Copper cables**                    | Copper is commonly used for short-distance horizontal cabling within buildings. |
+| desktop PCs in an enterprise office | **Copper cables**                    | Ideal for cost-effective wired connections at desks.                            |
+| backbone cabling in an enterprise   | **Fiber-optic cables**               | Supports high bandwidth and long distances across floors or buildings.          |
+| long-haul networks                  | **Fiber-optic cables**               | Preferred for high-speed data over long distances, like between cities.         |
+| guest access in a coffee shop       | **Wireless**                         | Provides convenient, flexible access for multiple mobile users.                 |
+| waiting rooms in a hospital         | **Wireless**                         | Eliminates physical cabling, providing safe and convenient access for patients. |
+
+---
+
+Let me know if you'd like this added to a document or want the next question formatted too!
 
 
+
+
+
+Question 31
+file_download
+PT Activity
+
+Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.
+
+Which port does Switch0 use to send frames to the host with the IPv4 address 10.1.1.5?
+
+
+1)
+Fa0/9
+
+2)
+Fa0/5
+
+3)
+Fa0/1
+
+4)
+Fa0/11
