@@ -303,3 +303,93 @@ Here are the answers in the previous format (table style) with options, correct 
 
 ---
 
+
+Here are the answers for Questions 26, 27, 29, 32, 33, and 34 in the same **table format**:
+
+---
+
+### ✅ **Question 26**
+
+**What are two examples of the cut-through switching method? (Choose two.)**
+
+| Option                      | Answer | Explanation                                                                                          |
+| --------------------------- | ------ | ---------------------------------------------------------------------------------------------------- |
+| fragment-free switching     | ✅      | This is a type of cut-through switching that checks the first 64 bytes of a frame before forwarding. |
+| QOS switching               | ❌      | Not a switching method; QoS is a network service feature.                                            |
+| CRC switching               | ❌      | No such method; CRC is used in store-and-forward.                                                    |
+| fast-forward switching      | ✅      | This is the purest form of cut-through; it begins forwarding before the full frame is received.      |
+| store-and-forward switching | ❌      | This is a separate switching method that checks the entire frame including CRC.                      |
+
+---
+
+### ✅ **Question 27**
+
+**What makes fiber preferable to copper cabling for interconnecting buildings? (Choose three.)**
+
+| Option                            | Answer | Explanation                                                           |
+| --------------------------------- | ------ | --------------------------------------------------------------------- |
+| greater distances per cable run   | ✅      | Fiber supports much longer distances than copper without signal loss. |
+| limited susceptibility to EMI/RFI | ✅      | Fiber is immune to electromagnetic and radio frequency interference.  |
+| durable connections               | ❌      | Fiber is actually more fragile than copper.                           |
+| lower installation cost           | ❌      | Fiber is usually more expensive to install.                           |
+| greater bandwidth potential       | ✅      | Fiber supports much higher bandwidths than copper.                    |
+| easily terminated                 | ❌      | Fiber termination is complex compared to copper.                      |
+
+---
+
+### ✅ **Question 29**
+
+**What does the term "attenuation" mean in data communication?**
+
+| Option                                            | Answer | Explanation                                             |
+| ------------------------------------------------- | ------ | ------------------------------------------------------- |
+| leakage of signals from one cable pair to another | ❌      | That's known as crosstalk.                              |
+| loss of signal strength as distance increases     | ✅      | Attenuation is the weakening of a signal over distance. |
+| time for a signal to reach its destination        | ❌      | That’s latency.                                         |
+| strengthening of a signal by a networking device  | ❌      | That would be amplification or regeneration.            |
+
+---
+
+### ✅ **Question 32**
+
+**What OSI physical layer term describes the amount of time, including delays, for data to travel from one point to another?**
+
+| Option     | Answer | Explanation                                                        |
+| ---------- | ------ | ------------------------------------------------------------------ |
+| throughput | ❌      | Throughput is the actual data transferred per unit of time.        |
+| latency    | ✅      | Latency is the delay or time it takes for a signal to travel.      |
+| bandwidth  | ❌      | Bandwidth is the maximum capacity of a link.                       |
+| goodput    | ❌      | Goodput is the actual useful data transferred, excluding overhead. |
+
+---
+
+### ✅ **Question 33**
+
+**Which two functions are performed at the LLC sublayer of the OSI data link layer? (Choose two.)**
+
+| Option                                                                 | Answer | Explanation                                                  |
+| ---------------------------------------------------------------------- | ------ | ------------------------------------------------------------ |
+| Implements a trailer to detect transmission errors.                    | ❌      | This is handled by the MAC sublayer.                         |
+| Adds Layer 2 control information to network protocol data.             | ✅      | LLC adds headers to identify network layer protocols.        |
+| Provides synchronization between source and target nodes.              | ❌      | Not a core LLC function.                                     |
+| Enables IPv4 and IPv6 to utilize the same network interface and media. | ✅      | LLC supports multiple network protocols over the same media. |
+| Integrates various physical technologies.                              | ❌      | That is more related to MAC and Physical layers.             |
+
+---
+
+### ✅ **Question 34**
+
+**What action will occur if a switch receives a frame with the destination MAC address FF\:FF\:FF\:FF\:FF\:FF?**
+
+| Option                                                                                             | Answer | Explanation                                          |
+| -------------------------------------------------------------------------------------------------- | ------ | ---------------------------------------------------- |
+| The switch sends the frame to a connected router because the destination MAC address is not local. | ❌      | The address is broadcast, not destined for a router. |
+| The switch does not forward the frame.                                                             | ❌      | Switches do forward broadcast frames.                |
+| The switch forwards it out all ports except the ingress port.                                      | ✅      | This is standard behavior for broadcast frames.      |
+| The switch shares the MAC address table entry with any connected switches.                         | ❌      | Switches do not share MAC address tables by default. |
+
+---
+
+Would you like me to continue formatting the next set of questions in this format?
+
+
