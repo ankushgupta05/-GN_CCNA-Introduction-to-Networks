@@ -189,6 +189,48 @@ If packets are **lost**, **duplicated**, or **out of order**, higher-level proto
 | Fragmentation (IPv6) | Routers do **not** fragment; sender must ensure packet fits MTU |
 
 ---
+Here are the **correct answers** for each question, based on the IP characteristics you've studied:
 
-Would you like a labeled diagram showing packet fragmentation and media types, or a quiz to test your understanding?
+---
 
+### ✅ **Question 1:**
+
+**Which OSI layer sends segments to be encapsulated in an IPv4 or IPv6 packet?**
+**Correct Answer:** **Transport layer**
+
+📘 **Explanation:**
+The **transport layer** (Layer 4) creates **segments**, which are then passed down to the **network layer** (Layer 3) to be encapsulated in an IP packet.
+
+---
+
+### ✅ **Question 2:**
+
+**Which layer is responsible for taking an IP packet and preparing it for transmission over the communications medium?**
+**Correct Answer:** **Data link layer**
+
+📘 **Explanation:**
+The **data link layer** (Layer 2) wraps the IP packet in a frame appropriate for the specific **medium** (copper, fiber, wireless, etc.).
+
+---
+
+### ✅ **Question 3:**
+
+**What is the term for splitting up an IP packet when forwarding it from one medium to another medium with a smaller MTU?**
+**Correct Answer:** **Fragmentation**
+
+📘 **Explanation:**
+**Fragmentation** is the process of breaking a large IP packet into smaller pieces so it can be transmitted over a medium with a smaller **MTU**.
+
+---
+
+### ✅ **Question 4:**
+
+**Which delivery method does not guarantee that the packet will be delivered fully without errors?**
+**Correct Answer:** **Best effort**
+
+📘 **Explanation:**
+IP uses a **best-effort** delivery model — it tries to deliver packets, but **doesn't guarantee** delivery, order, or error correction.
+
+---
+
+Would you like these answers in a table format for easy copying into a document or README?
