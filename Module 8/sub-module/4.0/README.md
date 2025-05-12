@@ -137,3 +137,49 @@ Zaroor! Neeche har ek term ka simple aur clear explanation diya gaya hai, taaki 
 ---
 
 Agar aap chahein toh main aapko is pure concept ka ek **diagram** ya **flowchart** bhi bana ke de sakta hoon — aap chahte hain kya?
+Here are the correct answers with explanations for each question:
+
+---
+
+### ✅ **Question 1:**
+
+**Which statement about host forwarding decisions is true?**
+
+✔️ **Correct Answer:**
+
+> **Local hosts can reach each other without the need of a router.**
+
+📝 **Explanation:**
+If two hosts are on the **same local network** (i.e., same subnet), they can communicate **directly** without using a router. Only when the destination IP is outside the subnet does the host need to forward the packet to the **default gateway (router)**.
+
+---
+
+### ✅ **Question 2:**
+
+**Which default gateway statement is true?**
+
+✔️ **Correct Answer:**
+
+> **The default gateway address is the IP address of the router on the local network.**
+
+📝 **Explanation:**
+The **default gateway** is the **local router's IP address**. It is used when the destination IP address is **outside the host's local subnet**. It's not a switch and not on a remote network.
+
+---
+
+### ✅ **Question 3:**
+
+**Which two commands could be entered on a Windows host to view its IPv4 and IPv6 routing table?**
+
+✔️ **Correct Answers:**
+
+* `netstat -r`
+* `route print`
+
+📝 **Explanation:**
+Both `netstat -r` and `route print` display the routing table on a Windows machine.
+The other options (`netroute -l`, `print route`, `print net`) are **invalid commands**.
+
+---
+
+Let me know if you'd like this in table format too!
