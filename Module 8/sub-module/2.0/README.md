@@ -29,4 +29,92 @@ Here's a summarized explanation of the **IPv4 Packet Header** based on your prov
 * **Fragmentation**: Handled using Identification, Flags, and Fragment Offset.
 * **Options**: Advanced usage, not commonly applied.
 
-Would you like a diagram or visual to go along with this explanation?
+Here's a detailed breakdown of the **"Check Your Understanding - IPv4 Packet"** questions with correct answers and explanations for each option:
+
+---
+
+### **Question 1:**
+
+**What are the two most commonly referenced fields in an IPv4 packet header that indicate where the packet is coming from and where it is going? (Choose two.)**
+
+✅ **Correct Answers:**
+
+* ✅ **Destination IP address**
+* ✅ **Source IP address**
+
+📘 **Explanation:**
+
+* These fields contain the 32-bit IPv4 addresses of the **sender (source)** and **receiver (destination)**, helping routers and devices know where the packet came from and where it's going. These are the most commonly referenced fields in IP packet analysis.
+
+❌ **Incorrect Options:**
+
+* **Protocol** – This identifies the next-layer protocol (e.g., TCP or UDP), **not the source or destination**.
+* **Time to Live** – TTL limits the lifespan of a packet; it doesn’t tell you where the packet is from or going.
+* **Differentiated Services (DS)** – Used for packet priority and QoS, not location info.
+
+---
+
+### **Question 2:**
+
+**Which statement is correct about IPv4 packet header fields?**
+
+✅ **Correct Answer:**
+
+* ✅ **The source and destination IPv4 addresses remain the same while travelling from source to destination.**
+
+📘 **Explanation:**
+
+* The source and destination addresses are **constant** throughout the packet’s journey. Routers use them to route the packet correctly.
+
+❌ **Incorrect Options:**
+
+* **The Time to Live field is used to determine the priority of each packet.**
+  ✘ Wrong – **TTL** limits lifetime, **DS** determines priority.
+* **The Total Length and Header Checksum fields are used to reorder a fragmented packet.**
+  ✘ Wrong – **Identification**, **Flags**, and **Fragment Offset** are used for reordering.
+* **The Version field identifies the next level protocol.**
+  ✘ Wrong – **Protocol field** identifies the next-layer protocol; Version indicates IPv4 (0100).
+
+---
+
+### **Question 3:**
+
+**Which field is used to detect corruption in the IPv4 header?**
+
+✅ **Correct Answer:**
+
+* ✅ **Header Checksum**
+
+📘 **Explanation:**
+
+* The Header Checksum field helps routers verify the integrity of the IPv4 **header**. If there's a mismatch after recalculation, it means the header is corrupted.
+
+❌ **Incorrect Options:**
+
+* **Time to Live** – TTL is for limiting packet life, not for error checking.
+* **Protocol** – Identifies the type of transport-layer data; not related to corruption detection.
+* **Differentiated Services (DS)** – Used for priority/QoS; not for error detection.
+
+---
+
+### **Question 4:**
+
+**Which field includes common values such as ICMP (1), TCP (6), and UDP (17)?**
+
+✅ **Correct Answer:**
+
+* ✅ **Protocol**
+
+📘 **Explanation:**
+
+* The **Protocol** field tells which transport or upper-layer protocol the data should be passed to. Example values: ICMP = 1, TCP = 6, UDP = 17.
+
+❌ **Incorrect Options:**
+
+* **Header Checksum** – Used for error detection, not protocol identification.
+* **Time to Live** – Used to limit packet’s life; unrelated to upper-layer protocols.
+* **Differentiated Services (DS)** – For prioritization and QoS, not protocol type.
+
+---
+
+Would you like all this formatted in a table for your notes or project documentation?
