@@ -50,4 +50,40 @@ ND uses **five types of ICMPv6 messages**:
 
 ---
 
-Would you like this summarized into a Markdown table or converted into a cheat-sheet format?
+Here are the correct answers for **9.3.5 Check Your Understanding - Neighbor Discovery**:
+
+---
+
+### ✅ **Question 1: Which two ICMPv6 messages are used in SLAAC?**
+
+✔️ **Router Advertisement**
+✔️ **Router Solicitation**
+
+> **Explanation:**
+> SLAAC (Stateless Address Autoconfiguration) uses *Router Solicitation* to ask for configuration, and *Router Advertisement* to receive it from the router.
+
+---
+
+### ✅ **Question 2: Which two ICMPv6 messages are used to determine the MAC address of a known IPv6 address?**
+
+✔️ **Neighbor Solicitation**
+✔️ **Neighbor Advertisement**
+
+> **Explanation:**
+> These two are used like ARP in IPv4:
+
+* A device sends a *Neighbor Solicitation* to ask who owns an IPv6 address.
+* The device with that address replies with a *Neighbor Advertisement* containing its MAC address.
+
+---
+
+### ✅ **Question 3: To what type of address are ICMPv6 neighbor solicitation messages sent?**
+
+✔️ **Multicast**
+
+> **Explanation:**
+> IPv6 ND uses **multicast**, not broadcast like ARP. This is more efficient and reduces unnecessary load on other hosts.
+
+---
+
+Let me know if you'd like these added to a markdown study sheet or visual summary!
