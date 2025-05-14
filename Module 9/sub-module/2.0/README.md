@@ -252,5 +252,73 @@ Only the **device with the matching IP address** from the ARP request will send 
 * **Remote destination** → ARP for **default gateway’s MAC**
 
 ---
+Here's a clear explanation of **Section 9.2.6 – Removing Entries from an ARP Table**, including key points and how it works in real systems:
 
-Would you like a visual diagram or comparison table between **ARP for local vs remote communication**?
+---
+
+## 🧹 **9.2.6 – Removing Entries from an ARP Table**
+
+### ⏳ **Automatic Expiry (Timeout-Based Removal)**
+
+Each device has a **timer** for ARP entries (also known as the **ARP cache**). When a MAC address mapping is **not used for a period of time**, it is **automatically removed**.
+
+* ⌛ **Typical Lifetime**:
+
+  * On **Windows OS**, entries are kept for **15 to 45 seconds**.
+  * Other operating systems may have different timeout values.
+
+#### 📌 Example:
+
+> **PC A’s ARP Table**
+> Stores the mapping:
+> `192.168.1.1 → MAC 00:0D`
+
+If PC A doesn't send data to `192.168.1.1` for 15–45 seconds, this entry will be **automatically removed** from its ARP cache.
+
+---
+
+### 🧑‍💻 **Manual Removal (Admin-Controlled)**
+
+You can **manually remove ARP entries** using commands:
+
+| OS              | Command to Clear ARP Table                          |
+| --------------- | --------------------------------------------------- |
+| **Windows**     | `arp -d` or `arp -d [IP]`                           |
+| **Linux/macOS** | `ip -s -s neigh flush all` or `ip neigh flush [IP]` |
+
+#### ⚠️ What Happens Next?
+
+After an entry is removed:
+
+* If communication is attempted again, the device must **repeat the ARP process**:
+
+  * Send a **new ARP request**
+  * Receive a **new ARP reply**
+  * Update the ARP table
+
+---
+
+### 🧠 Why This Matters:
+
+* **Keeps ARP table clean** by removing stale/unused mappings.
+* Helps ensure devices always use **fresh, valid MAC addresses**.
+* Prevents communication issues from devices that may have changed IPs or moved.
+
+---
+
+### 📶 Visual Summary:
+
+```
+[PC A] — ARP Table Entry for 192.168.1.1 → 00:0D
+
+Time passes (no traffic to 192.168.1.1 for ~30s)
+
+→ Entry automatically removed
+
+→ New traffic to 192.168.1.1 triggers ARP Request
+→ Receives ARP Reply
+→ Entry added again
+```
+
+---
+
