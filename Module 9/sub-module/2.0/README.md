@@ -322,3 +322,88 @@ Time passes (no traffic to 192.168.1.1 for ~30s)
 
 ---
 
+
+Here’s a clear breakdown of **Section 9.2.7 – ARP Tables on Networking Devices** to help you understand how to view and interpret ARP tables on both Cisco routers and Windows PCs:
+
+---
+
+## 🔍 **9.2.7 – ARP Tables on Networking Devices**
+
+### 🔧 **On Cisco Routers**
+
+* **Command:**
+
+  ```bash
+  show ip arp
+  ```
+* **Usage:** Displays the ARP table for all IP-to-MAC mappings on the router.
+
+#### ✅ **Sample Output:**
+
+```
+R1# show ip arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  192.168.10.1            -   a0e0.af0d.e140  ARPA   GigabitEthernet0/0/0
+Internet  209.165.200.225         -   a0e0.af0d.e141  ARPA   GigabitEthernet0/0/1
+Internet  209.165.200.226         1   a03d.6fe1.9d91  ARPA   GigabitEthernet0/0/1
+```
+
+### 🧾 Breakdown:
+
+| Column          | Meaning                                                   |
+| --------------- | --------------------------------------------------------- |
+| `Protocol`      | Layer 3 protocol (usually `Internet` for IPv4)            |
+| `Address`       | IP address the router knows a MAC for                     |
+| `Age (min)`     | How old the ARP entry is (in minutes) or `-` if permanent |
+| `Hardware Addr` | The MAC address associated with the IP address            |
+| `Type`          | Ethernet type (typically `ARPA`)                          |
+| `Interface`     | Which interface the router uses to reach that IP address  |
+
+---
+
+### 🖥️ **On Windows 10 PCs**
+
+* **Command:**
+
+  ```bash
+  arp -a
+  ```
+* **Usage:** Lists the ARP table for each network interface on the PC.
+
+#### ✅ **Sample Output:**
+
+```
+C:\Users\PC> arp -a
+Interface: 192.168.1.124 --- 0x10
+  Internet Address      Physical Address      Type
+  192.168.1.1           c8-d7-19-cc-a0-86     dynamic
+  192.168.1.101         08-3e-0c-f5-f7-77     dynamic
+  ...
+  224.0.0.251           01-00-5e-00-00-fb     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+```
+
+### 🧾 Breakdown:
+
+| Column             | Meaning                                                                         |
+| ------------------ | ------------------------------------------------------------------------------- |
+| `Internet Address` | IP address the PC knows a MAC for                                               |
+| `Physical Address` | MAC address associated with the IP                                              |
+| `Type`             | `dynamic` (learned via ARP) or `static` (manually configured or system default) |
+
+---
+
+### 🧠 **Key Differences Between Router and PC ARP Tables**
+
+| Aspect                   | Cisco Router                       | Windows PC                |
+| ------------------------ | ---------------------------------- | ------------------------- |
+| Command                  | `show ip arp`                      | `arp -a`                  |
+| Interface Info Included? | Yes (shows which router interface) | Yes (lists interface IPs) |
+| Entry Types              | Dynamic and permanent              | Dynamic and static        |
+| Protocol Label           | `Internet` (for IPv4)              | `Internet Address`        |
+
+---
+
+Would you like to simulate or modify ARP entries using commands on Windows or Cisco IOS for practice?
+
+
