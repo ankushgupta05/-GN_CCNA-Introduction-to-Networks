@@ -207,3 +207,119 @@ Dynamic routing protocols routers ko **automatically** allow karte hain:
 ---
 
 Agar chaho to main ek **diagram** ya **command example (e.g., OSPF config)** bhi de sakta hoon to visualize it better. Batao chahiye kya?
+
+
+
+Here’s a clear breakdown and explanation of the **IPv4 Routing Table** on **Router R1** based on the given scenario:
+
+---
+
+### 📘 **Network Topology Summary**
+
+```
+PC1 (.10) --- Switch --- R1(G0/0/0: 192.168.10.1) 
+                           |
+            R1(G0/0/1: 209.165.200.225) --- (209.165.200.226)R2 --- Switch --- PC2(10.1.1.10)
+                                                           |
+                                                        Internet
+```
+
+---
+
+### 🛰️ **R1 Routing Table Analysis**
+
+| Code    | Destination        | Next Hop / Interface         | Meaning                                                            |
+| ------- | ------------------ | ---------------------------- | ------------------------------------------------------------------ |
+| **S**\* | 0.0.0.0/0          | via 209.165.200.226 (G0/0/1) | Default static route to R2 (for Internet and unknown destinations) |
+| **O**   | 10.1.1.0/24        | via 209.165.200.226 (G0/0/1) | Learned via **OSPF** from R2 (PC2's network)                       |
+| **C**   | 192.168.10.0/24    | Directly connected to G0/0/0 | R1’s LAN where **PC1** is connected                                |
+| **L**   | 192.168.10.1/32    | Local interface G0/0/0       | R1’s own IP on the LAN                                             |
+| **C**   | 209.165.200.224/30 | Directly connected to G0/0/1 | WAN link between R1 and R2                                         |
+| **L**   | 209.165.200.225/32 | Local interface G0/0/1       | R1’s own IP on the WAN link                                        |
+
+---
+
+### 🧠 **Key Routing Concepts Highlighted**
+
+* **Local Routes (L):** Used for identifying packets destined for the router itself.
+* **Connected Routes (C):** Directly reachable networks (interfaces physically connected).
+* **Static Route (S*):*\* Admin-configured; used when no dynamic match is found. R1 uses this to forward unknown packets to R2 (the internet gateway).
+* **OSPF (O):** Dynamic routing protocol used between R1 and R2 to exchange routes like 10.1.1.0/24 (for PC2).
+
+---
+
+### 🔁 **How Packet Routing Works**
+
+* **PC1 to PC2 (10.1.1.10):**
+
+  * R1 checks routing table → Finds **OSPF route (O)** to 10.1.1.0/24 via 209.165.200.226.
+  * Forwards packet to R2.
+
+* **PC1 to Internet:**
+
+  * R1 doesn’t find a specific match → Uses **default route (S*)*\* to R2.
+  * R2 routes it to the Internet.
+
+---
+
+### 🧪 **Conclusion**
+
+Router **R1’s routing table** efficiently:
+
+* Handles **local LAN traffic** (192.168.10.0/24),
+* Routes **PC1 to PC2** via **OSPF-learned route**,
+* And forwards all **unknown external traffic** via a **default static route to R2**, which has Internet access.
+
+Let me know if you'd like a diagram, configuration commands, or simulation steps in Packet Tracer.
+
+
+Here are the correct answers to the **8.5.7 Check Your Understanding - Introduction to Routing** quiz:
+
+---
+
+### ✅ **Question 1:**
+
+**What is the command used on a Cisco IOS router to view the routing table?**
+**Correct Answer:** `show ip route`
+
+> ✔️ This is the standard command in Cisco IOS to display the IPv4 routing table.
+
+---
+
+### ✅ **Question 2:**
+
+**What does a code of “O” indicate next to a route in the routing table?**
+**Correct Answer:** `A route learned dynamically from OSPF`
+
+> ✔️ The code "O" stands for OSPF, which is a dynamic routing protocol.
+
+---
+
+### ✅ **Question 3:**
+
+**This type of route is also known as a gateway of last resort.**
+**Correct Answer:** `Default route`
+
+> ✔️ A default route (0.0.0.0/0) is used when no other specific route is found. It acts as a gateway of last resort.
+
+---
+
+### ✅ **Question 4:**
+
+**Which is a characteristic of static routes?**
+**Correct Answer:** `They are manually configured.`
+
+> ✔️ Static routes are added by the network administrator and do not change unless manually updated.
+
+---
+
+### ✅ **Question 5:**
+
+**True or False? A router can be configured with a combination of both static routes and a dynamic routing protocol.**
+**Correct Answer:** `True`
+
+> ✔️ It's common to use both — for example, using static routes for default paths and dynamic routing for internal networks.
+
+---
+
+Would you like these in a table format or exported for documentation/notes?
