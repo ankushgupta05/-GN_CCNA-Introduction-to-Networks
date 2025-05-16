@@ -1,3 +1,5 @@
+# note :- 32 wrong  answer hai
+
 Here are the **correct answers with explanations** for each question of your quiz:
 
 ---
