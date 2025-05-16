@@ -25,3 +25,158 @@ Here are the **correct answers with explanations** for each question of your qui
 ---
 
 Let me know if you'd like this exported as a `.md` file or formatted for a document/report.
+
+
+
+
+Sure! Below are the answers with their corresponding questions from **Question 16 to Question 27**, each followed by the correct option and explanation:
+
+---
+
+### **Question 16**
+
+**Q:** PC1 (port 4) sends a frame to PC3 (port 2). Only MACs on ports 1 and 3 are in the MAC table.
+**What will the switch do with the frame?**
+
+**✅ Answer:** *The switch will forward the frame to all ports except port 4.*
+
+**Explanation:**
+The destination MAC (PC3) is not in the MAC table. The switch floods the frame to all ports except the one it came from (port 4).
+
+---
+
+### **Question 17**
+
+**Q:** Match the configuration mode with the available command.
+
+| **Mode**         | **Answer**                         |
+| ---------------- | ---------------------------------- |
+| R1(config)#      | interface fastethernet 0/0         |
+| R1>              | enable                             |
+| R1#              | copy running-config startup-config |
+| R1(config-line)# | login                              |
+
+---
+
+### **Question 18**
+
+**Q:** What is the effect of `ip default-gateway 172.16.100.1` on a switch?
+
+**✅ Answer:** *The switch can be remotely managed from a host on another network.*
+
+**Explanation:**
+This command sets the default gateway for out-of-network management access.
+
+---
+
+### **Question 19**
+
+**Q:** Match the commands to their functions.
+
+| **Function**                       | **Command**                         |
+| ---------------------------------- | ----------------------------------- |
+| Configures a name on the router    | Router(config)# hostname CL1        |
+| Provides security on the console   | Router(config-line)# password class |
+| Displays a message after accessing | Router(config)# banner motd #       |
+
+---
+
+### **Question 20**
+
+**Q:** What happens when `transport input ssh` is entered on switch vty lines?
+
+**✅ Answer:** *Communication between the switch and remote users is encrypted.*
+
+**Explanation:**
+This command restricts remote access to SSH only, ensuring encrypted communication.
+
+---
+
+### **Question 21**
+
+**Q:** Which three commands are used to set up secure console access? (Choose 3)
+
+**✅ Answers:**
+
+* ✔️ password cisco
+* ✔️ login
+* ✔️ line console 0
+
+**Explanation:**
+These commands configure and secure access via the console.
+
+---
+
+### **Question 22**
+
+**Q:** What is a description of the default gateway 192.168.1.254 from PC1?
+
+**✅ Answer:** *It is the IP address of the Router1 interface that connects the PC1 LAN to Router1.*
+
+**Explanation:**
+The default gateway must be a directly connected router interface on the same network as PC1.
+
+---
+
+### **Question 23**
+
+**Q:** Which two are primary functions of a router? (Choose 2)
+
+**✅ Answers:**
+
+* ✔️ path selection
+* ✔️ packet forwarding
+
+**Explanation:**
+Routers determine best paths and forward packets accordingly.
+
+---
+
+### **Question 24**
+
+**Q:** Match the access method descriptions.
+
+| **Description**                           | **Access Method** |
+| ----------------------------------------- | ----------------- |
+| Remote access method that uses encryption | SSH               |
+| Unsecure remote access                    | Telnet            |
+| Preferred out-of-band access method       | Console           |
+| Remote access via a dialup connection     | AUX               |
+
+---
+
+### **Question 25**
+
+**Q:** Fastest way to test if the banner is configured?
+
+**✅ Answer:** *Exit privileged EXEC mode and press Enter.*
+
+**Explanation:**
+The banner displays when a user logs in or presses Enter at the prompt.
+
+---
+
+### **Question 26**
+
+**Q:** Match phases to boot functions.
+
+| **Boot Phase** | **Function**                                    |
+| -------------- | ----------------------------------------------- |
+| Phase 1        | perform the POST and load the bootstrap program |
+| Phase 2        | locate and load the Cisco IOS software          |
+| Phase 3        | locate and load the startup configuration file  |
+
+---
+
+### **Question 27**
+
+**Q:** What does `copy running-config startup-config` do?
+
+**✅ Answer:** *The contents of NVRAM will change.*
+
+**Explanation:**
+This command saves the current config (in RAM) to NVRAM to make it persistent after reboot.
+
+---
+
+Let me know if you’d like these compiled in a table or exported as a study guide!
