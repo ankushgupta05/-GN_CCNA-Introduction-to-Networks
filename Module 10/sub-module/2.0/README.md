@@ -143,4 +143,91 @@ R1(config-if)# exit
 
 > ✅ These configurations enable R1 to communicate with both the **LAN (PC1)** and the **next router (R2)** over IPv4 and IPv6.
 
-Let me know if you want the **R2 configuration example** or a **diagram** of this topology.
+Here’s a summary of **Section 10.2.4 – Configuration Verification Commands** that lists and explains commonly used `show` commands for verifying router interface configurations:
+
+---
+
+## 🛠️ 10.2.4 Configuration Verification Commands
+
+When configuring router interfaces, it’s critical to verify that they are functioning correctly. Cisco IOS provides several **`show` commands** to help check interface status, routing, and traffic.
+
+---
+
+### 📋 Common `show` Commands and Their Descriptions
+
+| **Command**                 | **Description**                                                                                                  |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `show ip interface brief`   | Displays **IPv4 address**, interface **status** (up/down), and **protocol state**.                               |
+| `show ipv6 interface brief` | Displays **IPv6 address**, interface **status**, and link-local/global IPv6 addresses.                           |
+| `show ip interface`         | Shows **detailed IPv4 configuration and statistics** for each interface.                                         |
+| `show ipv6 interface`       | Shows **detailed IPv6 configuration and statistics** for each interface.                                         |
+| `show interfaces`           | Displays **detailed physical/interface statistics** (errors, bandwidth, etc.). Shows only **IPv4 address info**. |
+| `show ip route`             | Displays the router’s **IPv4 routing table** stored in RAM.                                                      |
+| `show ipv6 route`           | Displays the router’s **IPv6 routing table** stored in RAM.                                                      |
+
+---
+
+### ✅ What to Look For
+
+* Interfaces that are **configured and connected** should show:
+
+  * `Status = up`
+  * `Protocol = up`
+* If either is `down`, check:
+
+  * The configuration (IP, subnet mask, no shutdown)
+  * Cabling or physical connection
+* The routing table (`show ip route` or `show ipv6 route`) should contain:
+
+  * **Connected routes (C)**
+  * **Local routes (L)**
+
+---
+
+### 📌 Example Scenario
+
+After configuring interface `G0/0/0` on R1:
+
+```bash
+R1# show ip interface brief
+GigabitEthernet0/0/0   192.168.10.1    YES manual up                    up
+```
+
+This confirms that:
+
+* IP address is set correctly.
+* Interface is administratively enabled.
+* Physical connection is live.
+
+---
+
+Let me know if you'd like a **practice configuration checklist**, or **sample troubleshooting steps** using these commands.
+
+
+Here is a **summary table** of the configuration verification commands and the information each command provides, based on your output:
+
+| **Command**                 | **Purpose / Output Summary**                                                                |
+| --------------------------- | ------------------------------------------------------------------------------------------- |
+| `show ip interface brief`   | Shows interface status and IPv4 address summary. Look for `Status: up` and `Protocol: up`.  |
+| `show ipv6 interface brief` | Summarizes interface status and IPv6 addresses. Indicates operational status `[up/up]`.     |
+| `show ip route`             | Displays the IPv4 routing table including connected (C) and local (L) routes.               |
+| `show ipv6 route`           | Displays the IPv6 routing table with codes like C (Connected), L (Local).                   |
+| `show interfaces`           | Provides detailed statistics about a specific interface (errors, packets, bandwidth, etc.). |
+| `show ip interface`         | Displays detailed IPv4 settings and features of a specific interface.                       |
+| `show ipv6 interface`       | Displays detailed IPv6 status, addresses, and neighbor discovery settings of an interface.  |
+
+### Key Highlights from Your Output:
+
+* Both `GigabitEthernet0/0/0` and `GigabitEthernet0/0/1` are **"up/up"** for IPv4 and IPv6—indicating they're operational.
+* **IPv4 Routes**:
+
+  * `192.168.10.0/24` via `Gig0/0/0`
+  * `209.165.200.224/30` via `Gig0/0/1`
+* **IPv6 Routes**:
+
+  * `2001:DB8:ACAD:10::/64` via `Gig0/0/0`
+  * `2001:DB8:FEED:224::/64` via `Gig0/0/1`
+* `Vlan1` is **administratively down**, which is expected if not in use.
+* Interface errors: **None reported**, which is good for health check.
+
+Let me know if you want a visual representation of the network topology or a troubleshooting checklist.
