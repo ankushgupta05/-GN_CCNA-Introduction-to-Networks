@@ -178,5 +178,81 @@ The banner displays when a user logs in or presses Enter at the prompt.
 This command saves the current config (in RAM) to NVRAM to make it persistent after reboot.
 
 ---
+Here are the correct answers with explanations for **Question 28 to Question 33**:
 
-Let me know if you’d like these compiled in a table or exported as a study guide!
+---
+
+### **Question 28**
+
+**Q:** What will happen if the default gateway address is incorrectly configured on a host?
+
+**✅ Answer:** *The host cannot communicate with hosts in other networks.*
+
+**Explanation:**
+The default gateway is used to send packets to other networks. If it is incorrect, the host can still communicate within its local network but cannot reach external networks.
+
+---
+
+### **Question 29**
+
+**Q:** Which interfaces in each router are active and operational? *(From PT Activity)*
+
+Since the activity needs Packet Tracer simulation to verify, the correct answer depends on your configuration, but assuming standard configuration from Cisco labs:
+
+**✅ Possible Answer (based on common configurations):**
+*R1: G0/0 and S0/0/0*
+*R2: G0/1 and S0/0/0*
+
+**Explanation:**
+These are the most typically used interfaces for inter-router connections and local area access in labs. You should verify this answer by running `show ip interface brief` on each router.
+
+---
+
+### **Question 30**
+
+**Q:** What are two potential network problems that can result from ARP operation? (Choose two)
+
+**✅ Answers:**
+
+* ✔️ On large networks with low bandwidth, multiple ARP broadcasts could cause data communication delays.
+* ✔️ Network attackers could manipulate MAC address and IP address mappings in ARP messages with the intent of intercepting network traffic.
+
+**Explanation:**
+Excessive ARP broadcasts can congest a network. Also, ARP spoofing/poisoning is a well-known attack method used to redirect traffic.
+
+---
+
+### **Question 31**
+
+**Q:** Which term describes a field in the IPv4 packet header that contains a 32-bit binary value associated with an interface on the sending device?
+
+**✅ Answer:** *Source IPv4 address*
+
+**Explanation:**
+The source IP address field contains the 32-bit IP of the device that originated the packet.
+
+---
+
+### **Question 32**
+
+**Q:** What property of ARP causes the request to be flooded out all ports of a switch except for the port receiving the ARP request?
+
+**✅ Answer:** *The destination MAC address FF-FF-FF-FF-FF-FF appears in the header of the Ethernet frame.*
+
+**Explanation:**
+ARP requests are broadcast, and the destination MAC address of a broadcast is FF-FF-FF-FF-FF-FF. Switches flood broadcasts out all ports except the incoming one.
+
+---
+
+### **Question 33**
+
+**Q:** What IP address would be configured as the default gateway on the new host in the Payroll LAN?
+
+**✅ Answer:** *10.27.14.148*
+
+**Explanation:**
+This is the IP address of the interface `gi0/0` on RTR1, which connects to the Payroll LAN. Hosts should use the router interface on their subnet as the default gateway.
+
+---
+
+Let me know if you want these compiled into a Markdown table or exported as a PDF study guide!
