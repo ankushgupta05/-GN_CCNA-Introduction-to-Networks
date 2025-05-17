@@ -108,4 +108,86 @@ Here's a clear and summarized explanation of **Routing to the Internet using Pri
 
 ---
 
-Let me know if you'd like a visual diagram or markdown version of this for notes or documentation.
+### 🔐 11.3.3 Activity – **Pass or Block IPv4 Addresses**
+
+This activity is about determining whether an IPv4 address should be **Passed** (i.e., allowed through to the internet) or **Blocked** (i.e., stopped because it's a private address).
+
+---
+
+### ✅ **Rules Recap:**
+
+You **Block** private IPs and **Pass** public IPs.
+
+| **IP Range**                                   | **Type** | **Action** |
+| ---------------------------------------------- | -------- | ---------- |
+| `10.0.0.0` - `10.255.255.255`                  | Private  | Block      |
+| `172.16.0.0` - `172.31.255.255`                | Private  | Block      |
+| `192.168.0.0` - `192.168.255.255`              | Private  | Block      |
+| Any other valid IP address not in these ranges | Public   | Pass       |
+
+---
+
+### 🧪 **Sample Decisions**:
+
+| **IPv4 Address**  | **Private/Public**  | **Action** |
+| ----------------- | ------------------- | ---------- |
+| `10.10.10.1`      | Private             | Block      |
+| `172.16.5.4`      | Private             | Block      |
+| `172.32.0.1`      | Public              | Pass       |
+| `192.168.1.100`   | Private             | Block      |
+| `8.8.8.8`         | Public              | Pass       |
+| `203.0.113.5`     | Public (test IP)    | Pass       |
+| `127.0.0.1`       | Special (loopback)  | Block      |
+| `255.255.255.255` | Special (broadcast) | Block      |
+
+---
+
+### 🛑 Additional Notes:
+
+* **Special-use IPs** like `127.0.0.1`, `169.254.x.x`, and `255.255.255.255` should also be **Blocked**, as they are not routable on the public internet.
+* **Only globally routable public IPs** should be **Passed**.
+
+Here's a summary of **11.3.4 Special Use IPv4 Addresses**, presented clearly for review or study:
+
+---
+
+### 🔹 **Special Use IPv4 Addresses**
+
+These are addresses that either **cannot** be assigned to hosts or are only used in **limited, specific scenarios**.
+
+---
+
+#### 🔁 **1. Loopback Addresses**
+
+* **Range:** `127.0.0.0/8` → (`127.0.0.1` to `127.255.255.254`)
+* **Purpose:** Used by a **host to send traffic to itself**.
+* **Most common address:** `127.0.0.1`
+* **Use case:** Testing TCP/IP stack without physical network connection.
+* **Behavior:** Any address in this range loops traffic back to the same device.
+* **Example:**
+
+  ```bash
+  ping 127.0.0.1        # Successful replies indicate local TCP/IP is working
+  ping 127.1.1.1        # Also loops back to self
+  ```
+
+---
+
+#### 🔗 **2. Link-Local Addresses (APIPA)**
+
+* **Range:** `169.254.0.0/16` → (`169.254.0.1` to `169.254.255.254`)
+* **Purpose:** Used when a device **cannot reach a DHCP server**.
+* **OS behavior:** Automatically assigned by **Windows** when DHCP fails.
+* **Nickname:** APIPA (Automatic Private IP Addressing)
+* **Use case:** Temporary communication between devices on the same LAN without a DHCP server.
+* **Limitation:** Not routable across networks (only local LAN use).
+
+---
+
+### ❌ Cannot Be Routed to Internet
+
+Both loopback and link-local addresses are **non-routable** and should be **blocked** if a packet with one of them as source/destination tries to go to the internet.
+
+---
+
+Would you like a visual diagram or quiz to test your understanding of these special addresses?
