@@ -146,4 +146,90 @@ VLSM allows you to:
 * Assign **tiny subnets (/30)** for point-to-point WAN links.
 * Avoid waste and **optimize IPv4 usage**, especially important with limited IPs.
 
-Would you like a visual table or diagram for this example?
+Let's walk through **VLSM subnetting** for the network `192.168.5.0/24` to support **50 users per subnet**.
+
+---
+
+### 🔹 Step-by-Step Breakdown:
+
+#### ✅ Step 1: Determine subnet mask needed for 50 users
+
+* You need at least **50 usable IPs** per subnet.
+* Formula: `2^n - 2 ≥ 50`
+
+  * `2^6 = 64`, so `64 - 2 = 62 usable addresses`
+* That means a **/26** subnet is sufficient (because /26 = 255.255.255.192 = 64 IPs, 62 usable).
+
+---
+
+### ✅ **Table 1 - First Subnets Calculation (Fixed Size /26)**
+
+| Subnet # | IP Range                      | Prefix Notation | Subnet Mask     |
+| -------- | ----------------------------- | --------------- | --------------- |
+| 1        | 192.168.5.0 - 192.168.5.63    | /26             | 255.255.255.192 |
+| 2        | 192.168.5.64 - 192.168.5.127  | /26             | 255.255.255.192 |
+| 3        | 192.168.5.128 - 192.168.5.191 | /26             | 255.255.255.192 |
+| 4        | 192.168.5.192 - 192.168.5.255 | /26             | 255.255.255.192 |
+
+---
+
+### 🔘 Based on your activity instructions, here’s what to **click/select**:
+
+1. **Click the new subnet mask (decimal):**
+   ✅ **255.255.255.192**
+
+2. **Click the first prefix notation:**
+   ✅ **/26**
+
+3. **Click the first full subnet range:**
+   ✅ **192.168.5.0 - 192.168.5.63**
+
+4. **Click the second full subnet range:**
+   ✅ **192.168.5.64 - 192.168.5.127**
+
+5. **Click the last full subnet range:**
+   ✅ **192.168.5.192 - 192.168.5.255**
+
+---
+Let's break this down clearly for **Table 2 - VLSM Calculation** using `192.168.5.0/24`, where the network is being **subnetted with Variable Length Subnet Masks (VLSM)**.
+
+From **Table 1**, the **second /26 subnet** was:
+
+🔹 `192.168.5.64 - 192.168.5.127` → this full block is now being **split further using VLSM**.
+
+---
+
+### 🔹 Step-by-Step: Splitting 192.168.5.64/26 into smaller VLSM subnets
+
+#### 🧮 VLSM: New subnet mask
+
+We are breaking `/26` into smaller subnets (e.g., `/27`, `/28`).
+
+* `/27` → 32 IPs (30 usable)
+
+  * First: `192.168.5.64 - 192.168.5.95`
+  * Second: `192.168.5.96 - 192.168.5.127`
+
+---
+
+### ✅ What you should click/select:
+
+1. **Click the second full subnet range (/26) from Table 1**
+   ✅ **192.168.5.64 - 192.168.5.127**
+
+2. **Click the new VLSM subnet mask (decimal)**
+   ✅ **255.255.255.224**
+   (*This is the decimal for /27*)
+
+3. **Click the VLSM prefix notation**
+   ✅ **/27**
+
+4. **Click the first full VLSM subnet range**
+   ✅ **192.168.5.64 - 192.168.5.95**
+
+5. **Click the last full VLSM subnet range**
+   ✅ **192.168.5.96 - 192.168.5.127**
+
+---
+
+Let me know if you need help visualizing a diagram for this or calculating even smaller subnets like /28 or /29.
