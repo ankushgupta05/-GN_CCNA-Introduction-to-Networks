@@ -172,5 +172,23 @@ Efficiently subnet the private network `172.16.0.0/22` to support:
 * **6 subnets remain available** for future growth
 
 ---
+Here is the completed table for the activity **"Determine the Number of Bits to Borrow"** based on the number of required hosts:
 
-Would you like this in PDF/Markdown/diagram format for easier understanding or documentation?
+| Hosts Needed | Subnet Mask (binary)                | Subnet Mask (decimal) | Prefix Notation (/x) |
+| ------------ | ----------------------------------- | --------------------- | -------------------- |
+| 250          | 11111111.11111111.11111111.00000000 | 255.255.255.0         | /24                  |
+| 25           | 11111111.11111111.11111111.11100000 | 255.255.255.224       | /27                  |
+| 1000         | 11111111.11111111.11111100.00000000 | 255.255.252.0         | /22                  |
+| 75           | 11111111.11111111.11111111.10000000 | 255.255.255.128       | /25                  |
+| 10           | 11111111.11111111.11111111.11110000 | 255.255.255.240       | /28                  |
+| 500          | 11111111.11111111.11111110.00000000 | 255.255.254.0         | /23                  |
+
+### 📌 Explanation:
+
+To determine the required subnet mask:
+
+* Use the formula: `2^n - 2 ≥ number of hosts`
+* Then subtract `n` from 32 to get the prefix length.
+* Convert the prefix to binary and decimal form for the subnet mask.
+
+Let me know if you want a breakdown of any specific row.
