@@ -314,5 +314,61 @@ IANA ➝ RIRs ➝ ISPs ➝ Organizations/Users
 * **Organizations** can request addresses **directly** from RIRs (under policy).
 
 ---
+Here are the correct answers for **11.3.8 Check Your Understanding - Types of IPv4 Addresses**, along with explanations:
 
-Let me know if you'd like this content in a **Markdown**, **PDF**, or **slide** format for easy sharing or studying!
+---
+
+### **Question 1**
+
+**Which two statements are correct about private IPv4 addresses? (Choose two.)**
+
+| Option                                                                                                          | Selected | Explanation                                                                                                               |
+| --------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| ✅ **Private IPv4 addresses are assigned to devices within an organization’s intranet (internal network).**      | ✅        | **Correct.** Private IP addresses are used internally within a network and are not routable over the internet.            |
+| ❌ Internet routers will typically forward any packet with a destination address that is a private IPv4 address. | ❌        | **Incorrect.** Internet routers are configured **not** to forward packets with private IP addresses as the destination.   |
+| ❌ 172.99.1.1 is a private IPv4 address.                                                                         | ❌        | **Incorrect.** 172.99.1.1 is **not** in the private range. The private range is **172.16.0.0 to 172.31.255.255**.         |
+| ✅ **Any organization (home, school, office, company) can use the 10.0.0.0/8 address.**                          | ✅        | **Correct.** The 10.0.0.0/8 block is part of the private IP address range and can be freely used in any internal network. |
+
+> ✅ **Correct Answers:**
+
+* Private IPv4 addresses are assigned to devices within an organization’s intranet.
+* Any organization can use the 10.0.0.0/8 address.
+
+---
+
+### **Question 2**
+
+**Which two statements are correct about public IPv4 addresses? (Choose two.)**
+
+| Option                                                                                                                                 | Selected | Explanation                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| ❌ Public IPv4 addresses are allowed to be assigned to devices within an organization’s intranet (internal network).                    | ❌        | **Incorrect.** While technically possible, this is discouraged and rarely done. Public IPs are intended for internet-facing devices. |
+| ✅ **To access a device over the internet, the destination IPv4 address must be a public address.**                                     | ✅        | **Correct.** Public IP addresses are required for internet access. Private addresses cannot be reached from the internet directly.   |
+| ❌ 192.168.1.10 is a public IPv4 address.                                                                                               | ❌        | **Incorrect.** 192.168.1.10 is in the **private** address range (192.168.0.0/16).                                                    |
+| ✅ **Public IPv4 address exhaustion is a reason why there are private IPv4 addresses and why organizations are transitioning to IPv6.** | ✅        | **Correct.** Due to limited public IPs, private addresses and NAT are widely used, and IPv6 adoption is increasing.                  |
+
+> ✅ **Correct Answers:**
+
+* To access a device over the internet, the destination IPv4 address must be a public address.
+* Public IPv4 address exhaustion is a reason why there are private IPv4 addresses and why organizations are transitioning to IPv6.
+
+---
+
+### **Question 3**
+
+**Which organization or group of organizations receives IP addresses from IANA and is responsible for allocating these addresses to ISPs and some organizations?**
+
+| Option                                    | Selected | Explanation                                                                                                 |
+| ----------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------- |
+| ❌ IETF                                    | ❌        | The **IETF** defines internet protocols but **does not allocate IP addresses**.                             |
+| ❌ IEEE                                    | ❌        | The **IEEE** manages MAC addresses and physical standards, not IP address distribution.                     |
+| ✅ **RIRs (Regional Internet Registries)** | ✅        | **Correct.** RIRs receive IPs from **IANA** and distribute them regionally to ISPs and large organizations. |
+| ❌ Tier 1 ISPs                             | ❌        | Tier 1 ISPs receive addresses **from RIRs**, not directly from IANA.                                        |
+
+> ✅ **Correct Answer:**
+
+* **RIRs**
+
+---
+
+Let me know if you’d like a printable or markdown version of this for notes!
