@@ -60,8 +60,8 @@ Here's the correct answer to each question along with explanations for **why tha
 
 | **Option** | **Explanation**                                                                                                                                                                         |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ✅ **True** | This is **accurate**: 4 of the 5 **Regional Internet Registries (RIRs)** have already exhausted their IPv4 pools. Only **AfriNIC** had addresses left as of the last projection (2020). |
-| ❌ False    | This is **incorrect**, as it's factually established that **ARIN, RIPE NCC, APNIC, and LACNIC** have all exhausted their IPv4 addresses.                                                |
+|  ❌ **True** | This is **accurate**: 4 of the 5 **Regional Internet Registries (RIRs)** have already exhausted their IPv4 pools. Only **AfriNIC** had addresses left as of the last projection (2020). |
+| ✅ False    | This is **incorrect**, as it's factually established that **ARIN, RIPE NCC, APNIC, and LACNIC** have all exhausted their IPv4 addresses.                                                |
 
 ---
 
