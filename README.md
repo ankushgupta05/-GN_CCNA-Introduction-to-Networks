@@ -1147,3 +1147,251 @@ Because this subnet includes 192.168.1.96 as a valid host IP.
 
 If you want, I can help you with subnetting concepts or calculations!
 
+**Question 9**
+
+**How does the `service password-encryption` command enhance password security on Cisco routers and switches?**
+
+* It requires encrypted passwords to be used when connecting remotely to a router or switch with Telnet
+* **It encrypts passwords that are stored in router or switch configuration files** ✔️
+* It encrypts passwords as they are sent across the network
+* It requires that a user type encrypted passwords to gain console access to a router or switch
+
+**Answer:** It encrypts passwords that are stored in router or switch configuration files.
+
+**Explanation:**
+The `service password-encryption` command encrypts plaintext passwords in the device’s configuration file, preventing easy viewing of passwords if someone accesses the config. It does **not** encrypt passwords in transit or require encrypted passwords for access.
+
+
+**Question 10**
+
+Match each description to its corresponding term:
+
+| Description                                                                                         | Term                         |
+| --------------------------------------------------------------------------------------------------- | ---------------------------- |
+| The process of placing one message format inside another message format                             | **A: message encapsulation** |
+| The process of converting information from one format into another acceptable for transmission      | **B: message encoding**      |
+| The process of breaking up a long message into individual pieces before being sent over the network | **C: message sizing**        |
+
+
+
+Sure! Here it is with the question and options:
+
+---
+
+**Question:**
+A disgruntled employee is using some free wireless networking tools to determine information about the enterprise wireless networks. This person is planning on using this information to hack the wireless network. What type of attack is this?
+
+**Options:**
+
+* DoS
+* Reconnaissance
+* Trojan horse
+* Access
+
+**Answer:** Reconnaissance
+
+**Explanation:**
+Reconnaissance attacks involve gathering information about a target network or system before launching an actual attack. Using wireless tools to scan and collect data about wireless networks is a typical reconnaissance activity.
+
+
+
+Here you go, with question and options:
+
+---
+
+**Question 12**
+
+A company has a file server that shares a folder named Public. The network security policy specifies that the Public folder is assigned Read-Only rights to anyone who can log into the server while the Edit rights are assigned only to the network admin group. Which component is addressed in the AAA network service framework?
+
+**Options:**
+
+* Accounting
+* Automation
+* Authentication
+* Authorization
+
+**Answer:** Authorization
+
+**Explanation:**
+Authorization controls what an authenticated user is allowed to do, such as assigning Read-Only or Edit rights to resources.
+
+
+
+Here’s your question with options and the correct answer:
+
+---
+
+**Question 13**
+
+Why would a Layer 2 switch need an IP address?
+
+**Options:**
+
+* To enable the switch to function as a default gateway
+* To enable the switch to receive frames from attached PCs
+* To enable the switch to be managed remotely
+* To enable the switch to send broadcast frames to attached PCs
+
+**Answer:** To enable the switch to be managed remotely
+
+**Explanation:**
+A Layer 2 switch uses an IP address primarily for management purposes, such as remote access via SSH or Telnet. It does not route traffic or act as a default gateway.
+
+
+
+Here’s the question with options and the correct answer:
+
+---
+
+**Question 14**
+
+```
+Switch1> config t
+
+               ^
+% Invalid input detected at '^' marker.
+```
+
+Refer to the exhibit. An administrator is trying to configure the switch but receives the error message that is displayed in the exhibit. What is the problem?
+
+**Options:**
+
+* The entire command, configure terminal, must be used
+* The administrator is already in global configuration mode
+* The administrator must connect via the console port to access global configuration mode
+* The administrator must first enter privileged EXEC mode before issuing the command
+
+**Answer:** The administrator must first enter privileged EXEC mode before issuing the command
+
+**Explanation:**
+The prompt `Switch1>` indicates the user is in user EXEC mode. To enter configuration mode (`config t`), the user must be in privileged EXEC mode, indicated by the prompt `Switch1#`. So, the user should first enter `enable` to switch to privileged mode.
+
+
+
+Here’s Question 15 with options and the correct answer:
+
+---
+
+**Question 15**
+
+What is an advantage to using a protocol that is defined by an open standard?
+
+**Options:**
+
+* A company can monopolize the market
+* It encourages competition and promotes choices
+* An open standard protocol is not controlled or regulated by standards organizations
+* The protocol can only be run on equipment from a specific vendor
+
+**Answer:** It encourages competition and promotes choices
+
+**Explanation:**
+Open standards allow multiple vendors to implement the protocol, promoting interoperability, competition, and giving users more choices in products and services.
+
+
+
+Here’s Question 16 with options and the correct answers:
+
+---
+
+**Question 16**
+
+Which two commands can be used on a Windows host to display the routing table? (Choose two)
+
+**Options:**
+
+* route print ✔️
+* netstat -s
+* tracert
+* netstat -r ✔️
+* show ip route
+
+**Answer:** route print; netstat -r
+
+**Explanation:**
+`route print` and `netstat -r` both display the current routing table on a Windows host. `tracert` traces the route to a destination but does not display the routing table. `show ip route` is a Cisco IOS command, not for Windows. `netstat -s` shows statistics, not routes.
+
+
+
+Certainly! Here’s **Question 17** with the full options clearly listed, and the correct answers marked:
+
+---
+
+### Question 17
+
+**Which two statements are correct in a comparison of IPv4 and IPv6 packet headers? (Choose two)**
+
+* A) The Version field from IPv4 is not kept in IPv6
+* B) The Source Address field name from IPv4 is kept in IPv6
+* C) The Header Checksum field name from IPv4 is kept in IPv6
+* D) The Time-to-Live field from IPv4 has been replaced by the Hop Limit field in IPv6
+* E) The Destination Address field is new in IPv6
+
+---
+
+### **Answer:**
+
+* **B) The Source Address field name from IPv4 is kept in IPv6**
+* **D) The Time-to-Live field from IPv4 has been replaced by the Hop Limit field in IPv6**
+
+---
+
+### Explanation:
+
+* The **Version field** exists in both IPv4 and IPv6 headers, so A is incorrect.
+* The **Source Address** and **Destination Address** fields exist in both, but the Destination Address is not new in IPv6, so E is incorrect.
+* IPv6 **removes the Header Checksum field**, so C is incorrect.
+* IPv6 replaces the IPv4 **Time-to-Live (TTL)** field with the **Hop Limit** field, making D correct.
+
+---
+
+If you want, I can explain more on IPv4 vs IPv6 headers!
+
+
+Here is the matching of each description with the correct TCP mechanism:
+
+| Description                                             | TCP Mechanism            |
+| ------------------------------------------------------- | ------------------------ |
+| Method of managing segments of data loss                | **retransmission (A)**   |
+| Used to identify missing segments of data               | **sequence numbers (B)** |
+| Received by a sender before transmitting more segments  | **acknowledgment (C)**   |
+| Number of bytes a destination device can accept at once | **window size (D)**      |
+
+Let me know if you want a detailed explanation for any of these!
+
+
+
+Here's the correct matching of characteristics to the forwarding methods **Store-and-Forward** and **Cut-Through**:
+
+| Characteristic                                             | Forwarding Method     |
+| ---------------------------------------------------------- | --------------------- |
+| Low latency                                                | **Cut-Through**       |
+| Begins forwarding when the destination address is received | **Cut-Through**       |
+| May forward runt frames                                    | **Cut-Through**       |
+| Always stores the entire frame                             | **Store-and-Forward** |
+| Checks the CRC before forwarding                           | **Store-and-Forward** |
+| Checks the frame length before forwarding                  | **Store-and-Forward** |
+
+Let me know if you want me to explain any of these!
+
+
+
+**Question 21**
+
+A network administrator notices that some newly installed Ethernet cabling is carrying corrupt and distorted data signals. The new cabling was installed in the ceiling close to fluorescent lights and electrical equipment. Which two factors may interfere with the copper cabling and result in signal distortion and data corruption? (Choose two)
+
+**Options:**
+
+* Crosstalk
+* Signal attenuation
+* RFI ✔️
+* EMI ✔️
+* Extended length of cabling
+
+**Answer:** RFI, EMI
+**Explanation:**
+
+* **RFI (Radio Frequency Interference)** and **EMI (Electromagnetic Interference)** come from electrical equipment and fluorescent lights, causing signal distortion and corruption in nearby copper cabling.
+* Crosstalk is interference between pairs within the cable, not caused by external equipment.
+* Signal attenuation is loss of signal strength over distance, not interference.
+* Extended cabling length affects attenuation, not interference.
