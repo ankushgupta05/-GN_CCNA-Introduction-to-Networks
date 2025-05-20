@@ -932,6 +932,22 @@ Sure! Here's **Question 3** along with the **correct answer and explanation** cl
 
 ---
 
+**Question 2**
+
+**What will happen if the default gateway address is incorrectly configured on a host?**
+
+| **Option** | **Answer**                                                        | **Correct?**  | **Explanation**                                                                                                             |
+| ---------- | ----------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| A          | The switch will not forward packets initiated by the host         | ❌             | Switches forward based on MAC addresses and are not dependent on the default gateway configuration of the host.             |
+| B          | A ping from the host to 127.0.0.1 would not be successful         | ❌             | 127.0.0.1 is the loopback address; it's internal to the host and doesn't depend on the gateway.                             |
+| C          | The host cannot communicate with hosts in other networks          | ✅ **Correct** | The default gateway is required to reach networks outside the local subnet. If misconfigured, external communication fails. |
+| D          | The host cannot communicate with other hosts in the local network | ❌             | Communication within the same network doesn't require a gateway, so this would still work.                                  |
+| E          | The host will have to use ARP to determine the correct address    | ❌             | ARP is used to resolve MAC addresses, not to fix incorrect gateway settings.                                                |
+
+✅ **Correct Option: C – The host cannot communicate with hosts in other networks**.
+
+
+
 ### **Question 3**
 
 **What will happen if the default gateway address is incorrectly configured on a host?**
@@ -962,6 +978,30 @@ D. A ping from the host to 127.0.0.1 would not be successful
 
 Let me know if you want the next question too!
 
+
+
+**Question 4**
+
+**Which two statements describe features of an IPv4 routing table on a router? (Choose two)**
+
+| **Option** | **Statement**                                                                                                  | **Correct?**  | **Explanation**                                                                                                                         |
+| ---------- | -------------------------------------------------------------------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| A          | The `netstat` command can be used to display the routing table of a router                                     | ❌             | `netstat` is a host-level command, not typically used to view the routing table on a router. Routers use commands like `show ip route`. |
+| B          | It stores information about routes derived from the active router interfaces                                   | ✅ **Correct** | Directly connected routes from active interfaces are stored in the routing table.                                                       |
+| C          | Directly connected interfaces will have two route source codes in the routing table: C and S                   | ❌             | Directly connected interfaces show up with **C**. **S** indicates a static route, not a directly connected one.                         |
+| D          | If a default static route is configured, an entry will be included in the routing table with source code **S** | ✅ **Correct** | Static routes, including default static routes (`0.0.0.0/0`), appear with source code **S** in the routing table.                       |
+| E          | If there are two or more possible routes to the same destination, the one with the higher metric is included   | ❌             | The route with the **lower metric** (better path) is preferred and included.                                                            |
+| F          | The routing table lists the MAC addresses of each active interface                                             | ❌             | MAC addresses are part of the **Data Link layer**; the routing table deals with **network layer (Layer 3)** IP routing information.     |
+
+### ✅ **Correct Answers:**
+
+* **B** – It stores information about routes derived from the active router interfaces
+* **D** – If a default static route is configured in the router, an entry will be included in the routing table with source code S
+
+
+
+
+
 ### **Question 4**
 
 **Which scenario describes a function provided by the transport layer?**
@@ -972,6 +1012,8 @@ C. A student is playing a short web-based movie with sound. The movie and sound 
 👉 **D. A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window.** ✅
 
 ---
+
+
 
 ### **Correct Answer: D**
 
@@ -991,6 +1033,23 @@ Let me know if you'd like the next question too!
 Sure! Here's **Question 5** presented **with options, correct answers, and explanations**:
 
 ---
+
+
+**Question 3**
+
+**Which scenario describes a function provided by the transport layer?**
+
+| **Option** | **Answer**                                                                                                                                      | **Correct?**  | **Explanation**                                                                                                                                    |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A          | A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header                      | ❌             | Media encoding happens at the application layer, not the transport layer.                                                                          |
+| B          | A corporate worker is accessing a web server. The transport layer formats the screen so the page appears properly                               | ❌             | Display formatting is handled by the application layer, not the transport layer.                                                                   |
+| C          | A student is using a VoIP phone. The unique identifier burned into the phone is a transport layer address                                       | ❌             | This refers to the MAC address (Data Link Layer), not transport layer functionality.                                                               |
+| D          | A student has two web browser windows open to access two websites. The transport layer ensures the correct web page is delivered to each window | ✅ **Correct** | This describes **multiplexing**, a function of the transport layer. It uses **port numbers** to ensure correct delivery to different applications. |
+
+✅ **Correct Option: D – The transport layer ensures the correct web page is delivered to the correct browser window**.
+
+
+
 
 ### **Question 5**
 
