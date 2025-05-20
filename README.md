@@ -1395,3 +1395,465 @@ A network administrator notices that some newly installed Ethernet cabling is ca
 * Crosstalk is interference between pairs within the cable, not caused by external equipment.
 * Signal attenuation is loss of signal strength over distance, not interference.
 * Extended cabling length affects attenuation, not interference.
+
+
+
+
+**Question 22**
+
+A network administrator is designing the layout of a new wireless network. Which three areas of concern should be accounted for when building a wireless network? (Choose three)
+
+**Options:**
+
+* extensive cabling
+* security ✔️
+* coverage area ✔️
+* packet collision
+* mobility options ✔️
+* interference ✔️
+
+**Answer:** security, coverage area, interference
+
+**Explanation:**
+
+* **Security:** Wireless networks are more vulnerable to unauthorized access, so security must be a top concern.
+* **Coverage area:** Proper placement of access points is needed to provide reliable coverage.
+* **Interference:** Wireless signals can be affected by interference from other devices or physical barriers.
+* Extensive cabling is less relevant in wireless networks since they minimize wired connections.
+* Packet collision is more a concern in wired Ethernet or older Wi-Fi standards, but less emphasized here.
+* Mobility options relate to user movement, but the main technical concerns are security, coverage, and interference.
+
+
+**Question 23**
+
+What are two features of ARP? (Choose two.)
+
+**Options:**
+
+* If no device responds to the ARP request then the originating node will broadcast the data packet to all devices on the network segment
+* If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply ✔️
+* If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast ✔️
+* When a host is encapsulating a packet into a frame, it refers to the MAC address able to determine the mapping of IP addresses to MAC addresses
+* An ARP request is sent to all devices on the Ethernet LAN and contains the IP address of the destination host and its multicast MAC address
+
+---
+
+**Answer:**
+
+* If a device receiving an ARP request has the destination IPv4 address, it responds with an ARP reply
+* If a host is ready to send a packet to a local destination device and it has the IP address but not the MAC address of the destination, it generates an ARP broadcast
+
+---
+
+**Explanation:**
+
+* ARP (Address Resolution Protocol) is used to map IP addresses to MAC addresses within a local network.
+* When a device wants to communicate locally but only knows the IP address, it broadcasts an ARP request asking "Who has this IP?"
+* The device with that IP responds with an ARP reply containing its MAC address.
+* ARP requests are broadcast frames, but they do not include multicast MAC addresses.
+* The originating node does **not** broadcast data packets if ARP request fails; it simply cannot send the packet.
+
+
+
+**Question 24**
+
+A client is using SLAAC to obtain an IPv6 address for its interface. After an address has been generated and applied to the interface, what must the client do before it can begin to use this IPv6 address?
+
+**Options:**
+
+* It must send an ICMPv6 Router Solicitation message to determine what default gateway it should use
+* It must send a DHCPv6 REQUEST message to the DHCPv6 server to request permission to use this address
+* It must send a DHCPv6 INFORMATION-REQUEST message to request the address or the DNS server
+* It must send an ICMPv6 Neighbor Solicitation message to ensure that the address is not already in use on the network ✔️
+
+---
+
+**Answer:**
+It must send an ICMPv6 Neighbor Solicitation message to ensure that the address is not already in use on the network.
+
+---
+
+**Explanation:**
+When using SLAAC (Stateless Address Autoconfiguration), after a device generates its IPv6 address (usually by combining the network prefix received from a router and its interface identifier), it performs **Duplicate Address Detection (DAD)**. This process uses ICMPv6 Neighbor Solicitation messages to check if the generated address is already in use on the local network. Only after confirming no duplicates exist can the client safely use the address.
+
+
+
+**Question 25**
+
+Users are reporting longer delays in authentication and in accessing network resources during certain time periods of the week. What kind of information should network engineers check to find out if this situation is part of a normal network behavior?
+
+**Options:**
+
+* network configuration files
+* debug output and packet captures
+* **the network performance baseline**
+* syslog records and messages
+
+---
+
+**Answer:**
+**the network performance baseline**
+
+---
+
+**Explanation:**
+A **network performance baseline** provides historical data about normal network behavior, including typical traffic loads and response times during various periods. By comparing current performance against the baseline, network engineers can determine if delays are expected during certain busy times or indicate abnormal issues. Configuration files, debug outputs, or syslog messages might help diagnose problems but won't tell if the delays are part of normal behavior.
+
+
+
+
+**Question 26**
+
+A new network administrator has been asked to enter a banner message on a Cisco device. What is the easiest way a network administrator could test whether the banner is properly configured?
+
+**Options:**
+
+* Enter CTRL-Z at the privileged mode prompt
+* Reboot the device
+* Power cycle the device
+* Exit global configuration mode
+* Exit privileged EXEC mode and press Enter
+
+---
+
+**Answer:**
+**Exit privileged EXEC mode and press Enter**
+
+---
+
+**Explanation:**
+Banner messages like the **banner motd** appear when a user accesses the device and reaches the **privileged EXEC mode** (or when the device prompts for login). Exiting privileged EXEC mode back to user EXEC mode and pressing Enter will typically display the banner without needing to reboot or power cycle the device. This is the quickest way to verify the banner is correctly configured.
+
+
+
+
+**Question 28**
+
+What is the consequence of configuring a router with the `ipv6 unicast-routing` global configuration command?
+
+**Correct answer:**
+Each router interface will generate an IPv6 link-local address
+
+---
+
+### Explanation:
+
+* The `ipv6 unicast-routing` command enables IPv6 routing on the router.
+* Once enabled, **each router interface automatically generates an IPv6 link-local address**.
+* The router interfaces start sending ICMPv6 Router Advertisement messages only if **IPv6 routing is enabled and certain other conditions are met**.
+* It does **not** automatically activate all interfaces or statically create global unicast addresses.
+
+
+
+**Question 29**
+
+What mechanism is used by a router to prevent a received IPv4 packet from traveling endlessly on a network?
+
+**Correct answer:**
+It decrements the value of the TTL field by 1 and if the result is 0, it discards the packet and sends a Time Exceeded message to the source host.
+
+---
+
+### Explanation:
+
+* The **TTL (Time To Live)** field in the IPv4 header limits the packet’s lifetime to prevent loops.
+* Each router that forwards the packet **decrements TTL by 1**.
+* If the TTL reaches **0**, the router discards the packet and sends an **ICMP Time Exceeded** message back to the source.
+* This prevents packets from looping endlessly in the network.
+
+
+
+**Question 32**
+
+What are two characteristics of IP? (Choose two.)
+
+**Options:**
+
+* A) does not require a dedicated end-to-end connection
+* B) guarantees delivery of packets
+* C) re-assembles out of order packets into the correct order at the receiver end
+* D) retransmits packets if errors occur
+* E) operates independently of the network media
+
+**Correct answers:**
+
+* A) does not require a dedicated end-to-end connection
+* E) operates independently of the network media
+
+---
+
+### Explanation:
+
+* **IP** is a connectionless protocol, meaning it does **not require a dedicated end-to-end connection**.
+* IP does **not guarantee delivery** nor does it handle retransmission or reordering — these are handled by higher layer protocols like TCP.
+* IP **operates independently of the underlying physical media** (Ethernet, Wi-Fi, etc.).
+
+
+
+**Question 33**
+
+An employee of a large corporation remotely logs into the company using the appropriate username and password. The employee is attending an important video conference with a customer concerning a large sale. It is important for the video quality to be excellent during the meeting. The employee is unaware that after a successful login, the connection to the company ISP failed. The secondary connection, however, activated within seconds. The disruption was not noticed by the employee or other employees.
+
+What three network characteristics are described in this scenario? (Choose three)
+
+**Options:**
+
+* A) scalability
+* B) integrity
+* C) security
+* D) powerline networking
+* E) fault tolerance
+
+**Correct answers:**
+
+* B) integrity
+* C) security
+* E) fault tolerance
+
+---
+
+### Explanation:
+
+* **Integrity:** The data (video conference) was not corrupted or altered during transmission.
+* **Security:** The user logged in with the correct credentials, indicating secure authentication.
+* **Fault tolerance:** The network continued to function seamlessly by switching to a secondary ISP connection without disruption.
+
+**Scalability** and **powerline networking** are not relevant in this context.
+
+
+**Question 34**
+
+Which two traffic types use the Real-Time Transport Protocol (RTP)? (Choose two)
+
+**Options:**
+
+* A) web
+* B) file transfer
+* C) video
+* D) voice
+* E) peer to peer
+
+**Correct answers:**
+
+* C) video
+* D) voice
+
+---
+
+**Explanation:**
+RTP is primarily used to deliver real-time data such as audio (voice) and video streams over IP networks, supporting applications like VoIP and video conferencing. It is not used for typical web traffic, file transfers, or peer-to-peer file sharing.
+
+
+
+
+
+**Question 35**
+
+Which two statements describe how to assess traffic flow patterns and network traffic types using a protocol analyzer? (Choose two)
+
+**Options:**
+
+* A) Perform the capture on different network segments
+* B) Only capture WAN traffic because traffic to the web is responsible for the largest amount of traffic on a network
+* C) Capture traffic on the weekends when most employees are off work
+* D) Only capture traffic in the areas of the network that receive most of the traffic such as the data center
+* E) Capture traffic during peak utilization times to get a good representation of the different traffic types
+
+**Correct answers:**
+
+* A) Perform the capture on different network segments
+* E) Capture traffic during peak utilization times to get a good representation of the different traffic types
+
+---
+
+**Explanation:**
+To accurately assess traffic flow and types, captures should be done on various network segments to get a comprehensive view. Capturing during peak times helps represent actual traffic patterns. Capturing only WAN or during low usage times (like weekends) can provide incomplete or misleading data.
+
+
+
+
+**Question 37**
+
+When a switch configuration includes a user defined error threshold on a per-port basis, to which switching method will the switch revert when the error threshold is reached?
+
+**Options:**
+
+* A) cut-through
+* B) store-and-forward
+* C) fragment-free
+* D) fast-forward
+
+**Correct answer:**
+**B) store-and-forward**
+
+---
+
+**Explanation:**
+When the error threshold is reached, the switch will revert to the **store-and-forward** method because it performs error checking on the entire frame before forwarding it. This reduces the chance of forwarding corrupted frames, unlike cut-through or fast-forward methods which forward frames before checking errors completely.
+
+
+
+
+**Question 38**
+
+A network administrator wants to have the same subnet mask for three subnetworks at a small site. The site has the following networks and numbers of devices:
+
+* Subnetwork A: IP phones — 10 addresses
+* Subnetwork B: PCs — 8 addresses
+* Subnetwork C: Printers — 2 addresses
+
+What single subnet mask would be appropriate to use for the three subnetworks?
+
+**Options:**
+
+* A) 255.255.255.248
+* B) 255.255.255.0
+* C) 255.255.255.240
+* D) 255.255.255.252
+
+---
+
+**Answer:**
+**C) 255.255.255.240**
+
+---
+
+**Explanation:**
+
+* 255.255.255.240 (/28) provides 16 IP addresses per subnet, with 14 usable hosts (16 total - 2 for network and broadcast).
+* This subnet size can support all three subnetworks:
+
+  * IP phones need 10 addresses (fits within 14 usable)
+  * PCs need 8 addresses (fits within 14 usable)
+  * Printers need 2 addresses (fits within 14 usable)
+* Smaller masks like 255.255.255.248 (/29) provide only 6 usable addresses, which is not enough for IP phones or PCs.
+* Larger masks like 255.255.255.0 (/24) provide too many addresses, which is inefficient for small subnets but possible.
+* 255.255.255.252 (/30) only provides 2 usable addresses, which is too small for all subnets except printers.
+
+Therefore, 255.255.255.240 is the most efficient subnet mask covering all three subnetworks.
+
+
+
+
+
+
+**Question 40**
+
+What three requirements are defined by the protocols used in network communications to allow message transmission across a network? (Choose three)
+
+**Options:**
+
+* A) end-device installation
+* B) delivery options
+* C) media selection
+* D) message size
+* E) connector specifications
+* F) message encoding
+
+---
+
+**Answer:**
+**B) delivery options**
+**D) message size**
+**F) message encoding**
+
+---
+
+**Explanation:**
+Protocols define how data is transmitted across a network, including:
+
+* **Delivery options:** How messages are delivered (e.g., reliable, unreliable, ordered, or unordered).
+* **Message size:** The maximum size of a message or packet allowed by the protocol.
+* **Message encoding:** How data is represented and encoded for transmission.
+
+The other options like **end-device installation**, **media selection**, and **connector specifications** are more related to physical hardware and installation standards, not directly defined by communication protocols.
+
+
+
+
+
+**Question 41**
+
+What is the purpose of the TCP sliding window?
+
+**Options:**
+
+A) to request that a source decrease the rate at which it transmits data
+B) to inform a source to retransmit data from a specific point forward
+C) to end communication when data transmission is complete
+D) to ensure that segments arrive in order at the destination
+
+---
+
+**Answer:**
+**A) to request that a source decrease the rate at which it transmits data**
+
+---
+
+**Explanation:**
+The TCP sliding window controls the flow of data between sender and receiver by specifying how much data can be sent before receiving an acknowledgment. This mechanism helps manage network congestion and ensures that the sender does not overwhelm the receiver by sending too much data at once. It essentially *requests the sender to slow down or speed up* depending on the receiver’s capacity to process data.
+
+
+
+
+
+**Question 42**
+
+A technician can ping the IP address of the web server of a remote company but cannot successfully ping the URL address of the same web server. Which software utility can the technician use to diagnose the problem?
+
+**Options:**
+
+* ipconfig
+* nslookup
+* tracert
+* netstat
+
+---
+
+**Answer:**
+**nslookup**
+
+---
+
+**Explanation:**
+The technician can ping the IP address but not the URL, indicating a possible Domain Name System (DNS) resolution issue. The `nslookup` utility is used to query DNS servers to resolve domain names to IP addresses and can help diagnose problems related to DNS name resolution.
+
+
+
+
+
+
+**Question 43**
+
+Match each type of frame field to its function
+
+---
+
+**Categories and Options:**
+
+| Category            | Function Description                                                |
+| ------------------- | ------------------------------------------------------------------- |
+| Addressing (A)      | This field helps to direct the frame toward its destination         |
+| Frame start (B)     | This field identifies the beginning of a frame                      |
+| Type (C)            | This field is used by the LLC to identify the Layer 3 protocol      |
+| Error detection (D) | This field checks if the frame has been damaged during the transfer |
+
+---
+
+Let me know if you want it formatted differently!
+
+
+
+**Question 44**
+
+What is an advantage for small organizations of adopting IMAP instead of POP?
+
+* **Correct answer:**
+  *Messages are kept in the mail servers until they are manually deleted from the email client*
+
+---
+
+Explanation:
+IMAP keeps emails on the server, allowing multiple clients to access and synchronize the mailbox, while POP usually downloads and removes emails from the server. This is especially useful for small organizations where users access mail from multiple devices.
+
+
