@@ -893,3 +893,257 @@ Here are the answers with explanations for Questions 47 to 55:
 
 If you want, I can explain any answer further!
 
+
+
+## final exam
+
+The correct answer is:
+
+**audio conference, financial transactions, web page** ✔️
+
+---
+
+### **Explanation:**
+
+Quality of Service (QoS) prioritizes network traffic based on sensitivity to delay and packet loss:
+
+1. **Audio Conference** → **Highest Priority**
+
+   * Real-time traffic like voice and video is **very sensitive to delay and jitter**.
+   * Must be delivered immediately or it becomes unintelligible.
+
+2. **Financial Transactions** → **Medium Priority**
+
+   * Critical for business, but can tolerate slight delays (not real-time).
+   * Usually uses TCP, which ensures delivery.
+
+3. **Web Page (HTTP traffic)** → **Lowest Priority**
+
+   * Not time-sensitive.
+   * Delay doesn’t impact usability significantly.
+
+---
+
+So, if QoS is implemented properly, it will prioritize traffic in the following order:
+
+**✅ audio conference > financial transactions > web page**
+
+Sure! Here's **Question 3** along with the **correct answer and explanation** clearly formatted:
+
+---
+
+### **Question 3**
+
+**What will happen if the default gateway address is incorrectly configured on a host?**
+
+A. The switch will not forward packets initiated by the host
+B. The host will have to use ARP to determine the correct address of the default gateway
+C. The host cannot communicate with other hosts in the local network
+D. A ping from the host to 127.0.0.1 would not be successful
+👉 E. **The host cannot communicate with hosts in other networks** ✅
+
+---
+
+### **Correct Answer:**
+
+**E. The host cannot communicate with hosts in other networks**
+
+---
+
+### **Explanation:**
+
+* The **default gateway** is the device (typically a router) used by the host to **send traffic to external networks** (i.e., outside its own subnet).
+* If the default gateway is misconfigured:
+
+  * The host **can still talk to devices in the same local network** ✅
+  * But it **cannot reach devices in other networks** ❌ because it doesn't know where to send those packets.
+
+---
+
+Let me know if you want the next question too!
+
+### **Question 4**
+
+**Which scenario describes a function provided by the transport layer?**
+
+A. A student is using a classroom VoIP phone to call home. The unique identifier burned into the phone is a transport layer address used to contact another network device on the same network.
+B. A corporate worker is accessing a web server located on a corporate network. The transport layer formats the screen so the web page appears properly no matter what device is being used to view the web site.
+C. A student is playing a short web-based movie with sound. The movie and sound are encoded within the transport layer header.
+👉 **D. A student has two web browser windows open in order to access two web sites. The transport layer ensures the correct web page is delivered to the correct browser window.** ✅
+
+---
+
+### **Correct Answer: D**
+
+---
+
+### **Explanation:**
+
+* The **Transport Layer (Layer 4)** is responsible for:
+
+  * **Port numbering** to keep track of multiple applications (like two browser windows).
+  * **End-to-end communication**, **segmentation**, **reassembly**, and **flow control**.
+* In this case, the **two browser windows** use different ports, and the **transport layer uses port numbers** to deliver the correct data to the right application/browser window.
+
+---
+
+Let me know if you'd like the next question too!
+Sure! Here's **Question 5** presented **with options, correct answers, and explanations**:
+
+---
+
+### **Question 5**
+
+**Which two statements accurately describe an advantage or a disadvantage when deploying NAT for IPv4 in a network?** (Choose two)
+
+A. NAT causes routing tables to include more information
+✅ **B. NAT provides a solution to slow down the IPv4 address depletion**
+C. NAT will impact negatively on switch performance
+D. NAT adds authentication capability to IPv4
+✅ **E. NAT introduces problems for some applications that require end-to-end connectivity**
+F. NAT improves packet handling
+
+---
+
+### **Correct Answers:**
+
+✅ **B. NAT provides a solution to slow down the IPv4 address depletion**
+✅ **E. NAT introduces problems for some applications that require end-to-end connectivity**
+
+---
+
+### **Explanation:**
+
+* **B.** ✅ **Advantage:** NAT enables multiple devices on a private network to share a single public IP address, helping to **conserve IPv4 addresses**.
+* **E.** ✅ **Disadvantage:** NAT breaks **end-to-end connectivity**, which some applications like **VoIP or IPsec VPNs** require.
+
+**Why others are incorrect:**
+
+* **A.** ❌ NAT does **not** affect routing tables. It only changes IP addresses in the headers.
+* **C.** ❌ NAT affects **routers**, not **switches**. So switch performance is not impacted.
+* **D.** ❌ NAT does **not provide authentication**; it only modifies address info.
+* **F.** ❌ NAT may **increase processing overhead**; it does not "improve" packet handling.
+
+---
+
+Let me know if you want to continue with Question 6!
+Sure! Here’s **Question 6** with header fields matched to OSI layers **using layer numbers and names**:
+
+---
+
+### Question 6
+
+Match the header field with the appropriate OSI model layer (number and name):
+
+| Header Field               | OSI Layer Number | OSI Layer Name  |
+| -------------------------- | ---------------- | --------------- |
+| FCS (Frame Check Sequence) | Layer 2          | Data Link Layer |
+| 802.2 Header               | Layer 2          | Data Link Layer |
+| Destination MAC Address    | Layer 2          | Data Link Layer |
+| Source IP Address          | Layer 3          | Network Layer   |
+
+---
+
+### Explanation:
+
+* **Layer 2 (Data Link Layer)**: Responsible for physical addressing (MAC), framing, error detection (FCS), and LLC (802.2).
+* **Layer 3 (Network Layer)**: Responsible for logical addressing (IP addresses) and routing.
+
+---
+
+If you want, I can explain more OSI layers and their roles!
+Here’s the matching of the given fields with their OSI layers (number and name):
+
+| Header Field          | OSI Layer Number | OSI Layer Name  |
+| --------------------- | ---------------- | --------------- |
+| TTL (Time To Live)    | Layer 3          | Network Layer   |
+| Destination Port No   | Layer 4          | Transport Layer |
+| Acknowledgement (ACK) | Layer 4          | Transport Layer |
+
+---
+
+### Explanation:
+
+* **TTL (Time To Live):**
+  Found in the IP header at the **Network Layer (Layer 3)**. It limits the lifespan of a packet to prevent infinite looping.
+
+* **Destination Port Number:**
+  Found in TCP/UDP headers at the **Transport Layer (Layer 4)**. It identifies the specific process or service on the destination device.
+
+* **Acknowledgement (ACK):**
+  Part of TCP control flags at the **Transport Layer (Layer 4)**. It confirms successful receipt of data.
+
+---
+
+If you want more details or examples, just ask!
+Let's analyze the options to find which subnet includes **192.168.1.96** as a **usable host address**.
+
+---
+
+### Given IP: 192.168.1.96
+
+---
+
+### Option 1: 192.168.1.32/27
+
+* **/27** means subnet mask: 255.255.255.224
+* Block size: 32 addresses per subnet (256 - 224 = 32)
+* Subnet ranges (start - end):
+
+  * 192.168.1.0 - 192.168.1.31
+  * 192.168.1.32 - 192.168.1.63
+  * 192.168.1.64 - 192.168.1.95
+  * 192.168.1.96 - 192.168.1.127
+
+**192.168.1.96** falls in **192.168.1.96 - 192.168.1.127** subnet, *not* in 192.168.1.32/27 subnet.
+
+---
+
+### Option 2: 192.168.1.64/29
+
+* **/29** means subnet mask: 255.255.255.248
+* Block size: 8 addresses (256 - 248 = 8)
+* Subnet ranges:
+
+  * 192.168.1.64 - 192.168.1.71
+  * 192.168.1.72 - 192.168.1.79
+  * ...
+* **192.168.1.96** is not in the range 192.168.1.64 - 192.168.1.71.
+
+---
+
+### Option 3: 192.168.1.64/26
+
+* **/26** means subnet mask: 255.255.255.192
+* Block size: 64 addresses (256 - 192 = 64)
+* Subnet ranges:
+
+  * 192.168.1.0 - 192.168.1.63
+  * 192.168.1.64 - 192.168.1.127
+
+**192.168.1.96** falls within 192.168.1.64 - 192.168.1.127 subnet.
+Usable host addresses range from 192.168.1.65 to 192.168.1.126 (first address is network, last is broadcast).
+
+---
+
+### Option 4: 192.168.1.32/28
+
+* **/28** means subnet mask: 255.255.255.240
+* Block size: 16 addresses
+* Subnet ranges:
+
+  * 192.168.1.32 - 192.168.1.47
+  * 192.168.1.48 - 192.168.1.63
+  * ...
+* **192.168.1.96** is outside this range.
+
+---
+
+## **Answer: 192.168.1.64/26**
+
+Because this subnet includes 192.168.1.96 as a valid host IP.
+
+---
+
+If you want, I can help you with subnetting concepts or calculations!
+
