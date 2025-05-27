@@ -1,3 +1,12 @@
+
+```
+final practice quize answer linke
+https://itexamanswers.net/ccna-1-version-7-00-itnv7-practice-final-exam-answers.html
+
+```
+
+
+
 https://itexamanswers.net/itn-version-7-00-final-pt-skills-assessment-ptsa-exam-answers.html
 
 https://itexamanswers.net/itn-version-7-00-final-pt-skills-assessment-ptsa-exam-answers.html
