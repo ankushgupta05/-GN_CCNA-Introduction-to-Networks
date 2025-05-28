@@ -3,6 +3,9 @@
 final practice quize answer linke
 https://itexamanswers.net/ccna-1-version-7-00-itnv7-practice-final-exam-answers.html
 
+// final quize answer links
+https://itexamanswers.net/ccna-1-v7-0-final-exam-answers-full-introduction-to-networks.html
+
 ```
 
 
